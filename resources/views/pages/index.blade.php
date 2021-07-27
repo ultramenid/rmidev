@@ -64,7 +64,7 @@
         {{-- companies text --}}
         <div class="max-w-6xl mx-auto px-6 md:px-8 sm:py-16 py-8">
            <h1 class="uppercase text-center text-gray-300 text-3xl font-bold mb-6">Companies</h1>
-           <p class="text-gray-300 sm:text-center text-justify font-semibold leading-8">
+           <p class="text-gray-300 sm:text-center text-left font-semibold leading-8">
             The RMI Report 2020 covers 38 companies from 19 home countries, including publicly-
             listed, state-owned and private companies. These companies operate in more than
             780 mine sites in 49 producing countries and control over 200 closed or suspended
