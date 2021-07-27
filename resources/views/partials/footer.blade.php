@@ -17,7 +17,7 @@
                 <div class="flex space-x-6 text-right">
                     <img loading="lazy" src="{{ asset('assets/twitter.svg') }}" alt="" class="w-5 mt-10 ">
                     <img loading="lazy" src="{{ asset('assets/facebook.svg') }}" alt="" class="w-5 mt-10">
-                    <img loading="lazy" src="{{ asset('assets/ig.png') }}" alt="" class="w-5 mt-10" >
+                    <img loading="lazy" src="{{ asset('assets/ig.png') }}" alt="" class="h-5 mt-10" >
                     <img loading="lazy" src="{{ asset('assets/linkedin.png') }}" alt="" class="w-5 mt-10">
                 </div>
             </div>
