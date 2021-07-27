@@ -18,6 +18,6 @@
         "tailwindcss": "^2.2.7"
     },
     "dependencies": {
-        "turbolinks": "^5.2.0"
+        "tailwind-scrollbar-hide": "^1.0.3"
     }
 }

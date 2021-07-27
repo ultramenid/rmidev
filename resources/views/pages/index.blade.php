@@ -1,5 +1,10 @@
 @extends('layout.index')
 
+
+@section('meta')
+    @include('partials.metaIndex')
+@endsection
+
 @section('content')
     @include('partials.header')
     @include('partials.nav')
@@ -53,7 +58,7 @@
 
         {{-- map --}}
         <div class="max-w-6xl mx-auto px-6 md:px-8 sm:py-8 py-8">
-            <img loading="lazy" src="{{ secure_asset('assets/indonesiamap.png') }}" alt="">
+            <img loading="lazy" src="{{ asset('assets/indonesiamap.png') }}" alt="">
         </div>
 
         {{-- companies text --}}
@@ -72,8 +77,8 @@
         <div class="max-w-6xl mx-auto px-6 md:px-8 sm:py-16 py-8">
             <h1 class="uppercase text-center text-gray-300 text-3xl font-bold mb-6">Overall Company Result</h1>
             <div class="lg:flex flex-row mt-12">
-                <img loading="lazy" src="{{ secure_asset('assets/businessConduct.png') }}" alt="" class="w-full">
-                <img loading="lazy" src="{{ secure_asset('assets/environmentalResponsibility.png') }}" alt="" class="w-full">
+                <img loading="lazy" src="{{ asset('assets/businessConduct.png') }}" alt="" class="w-full">
+                <img loading="lazy" src="{{ asset('assets/environmentalResponsibility.png') }}" alt="" class="w-full">
             </div>
          </div>
     </main>

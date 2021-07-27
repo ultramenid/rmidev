@@ -1,5 +1,9 @@
 @extends('layout.index')
 
+@section('meta')
+    @include('partials.metaIndex')
+@endsection
+
 @section('content')
     @include('partials.header')
     @include('partials.nav')
