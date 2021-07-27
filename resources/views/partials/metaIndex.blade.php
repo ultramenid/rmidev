@@ -27,9 +27,9 @@
     <!-- Open Graph data -->
     <meta property="og:title" content="{{$title}}" />
     <meta property="og:type" content="website" />
-    <meta property="og:url" content="http://gakkum.link/" />
+    <meta property="og:url" content="{{url()->full()}}" />
     <!-- Facebook image must be at least 600x315px -->
     <meta property="og:image" content="{{asset('assets/thumbnail.png')}}" />
-    <meta property="og:description" content="Peningkatan Kapasitas Penegakan Hukum Sumber Daya Alam" />
+    <meta property="og:description" content="The RMI Report 2020 covers 38 companies from 19 home countries, including publicly- listed, state-owned and private companies." />
     <meta property="og:site_name" content="Quitcoal RMI" />
     <meta property="article:tag" content="Quitcoal, rmi, responsible mining index, Auriga Nusantara" />
