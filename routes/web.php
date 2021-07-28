@@ -22,7 +22,7 @@ use Illuminate\Support\Facades\URL;
 */
 
 //https force https
-URL::forceScheme('https');
+// URL::forceScheme('https');
 
 Route::get('/', [HomeController::class, 'index']);
 Route::get('/methodology', [MethodologiController::class, 'index']);
