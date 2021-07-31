@@ -8,7 +8,12 @@ use Livewire\Component;
 
 class LoginComponent extends Component
 {
-    public string $username = '', $password = '';
+    public  $username , $password ;
+
+    //check user is registered
+    public function getDatauser(){
+        return DB::table('users')->first();
+     }
 
     public function login(){
         $this->validate([
@@ -16,10 +21,10 @@ class LoginComponent extends Component
             'password' => 'required'
         ]);
         //log in logic
-        if($this->isValidUser()){
+        if(Hash::check($this->password, $this->getDatauser()->password) and $this->username == $this->getDatauser()->username) {
            session([
-               'id' => $this->isValidUser()->id,
-               'role_id'=> $this->isValidUser()->role_id
+               'id' => $this->getDatauser()->id,
+               'role_id'=> $this->getDatauser()->role_id
            ]);
            redirect('/cms/dashboard');
         }else{
@@ -27,13 +32,7 @@ class LoginComponent extends Component
         }
     }
 
-    //check user is registered
-    public function isValidUser(){
-        return DB::table('users')
-         ->where('username', $this->username)
-         ->where('password', $this->password)
-         ->first();
-     }
+
 
     public function render()
     {
