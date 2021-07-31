@@ -14,6 +14,7 @@ use App\Http\Controllers\Cms\OperationAreaController;
 use App\Http\Controllers\Cms\SpotlightCasesController;
 use App\Http\Controllers\SettingsController;
 use Illuminate\Support\Facades\Route;
+use Illuminate\Support\Facades\URL;
 
 /*
 |--------------------------------------------------------------------------
