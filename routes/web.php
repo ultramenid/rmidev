@@ -27,7 +27,7 @@ use Illuminate\Support\Facades\Route;
 */
 
 //https force https
-// URL::forceScheme('https');
+URL::forceScheme('https');
 
 Route::redirect('/', '/en');
 
