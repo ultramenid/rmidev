@@ -8,7 +8,7 @@
     @include('partials.header')
     @include('partials.nav')
 
-    <main class="h-screen"  style="background-color: #152136 !important">
+    <main class="h-screen bgrmi" >
         <div class="max-w-6xl mx-auto px-6 md:px-8 sm:py-16 py-8">
             <h1 class="uppercase text-center text-gray-300 text-3xl font-bold mb-6">About</h1>
             <p class="text-gray-300 text-xl text-left ">

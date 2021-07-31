@@ -3,11 +3,30 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\App;
+use Illuminate\Support\Facades\DB;
 
-class MethodologiController extends Controller
-{
+class MethodologiController extends Controller{
+
+    public function getLocale(){
+        if (App::getLocale() == 'id') {
+            // return db field name
+            return 'contentindonesia as content';
+        }
+        // return db field name
+        return 'contentenglish as content';
+    }
+
+    public function getContentMethodology(){
+        return DB::table('pages')
+            ->select($this->getLocale())
+            ->where('name', 'methodology')
+            ->first();
+    }
+
     public function index(){
+        $data = $this->getContentMethodology();
         $title = 'Methodology - Responsible Mining Index';
-        return view('pages.methodology', compact('title'));
+        return view('pages.methodology', compact('title', 'data'));
     }
 }
