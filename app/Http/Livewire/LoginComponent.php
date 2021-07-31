@@ -29,17 +29,11 @@ class LoginComponent extends Component
 
     //check user is registered
     public function isValidUser(){
-       $users = DB::table('users')
-                ->where('username', $this->username)
-                ->first();
-
-        if(Hash::check($this->password, $users->password)) {
-            return $users;
-        } else {
-            return false;
-        }
-
-    }
+        return DB::table('users')
+         ->where('username', $this->username)
+         ->where('password', $this->password)
+         ->first();
+     }
 
     public function render()
     {
