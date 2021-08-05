@@ -5,6 +5,8 @@ module.exports = {
     purge: [                               //CONFIGURE CORRECTLY
       './storage/framework/views/*.php',
       './resources/**/*.blade.php',
+      './resources/**/**/*.blade.php',
+      './resources/**/**/**/*.blade.php',
       './resources/**/*.js',
       './config/*.php',
     ],
