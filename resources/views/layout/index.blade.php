@@ -8,20 +8,21 @@
     <link rel="shortcut icon" href="{{ asset('assets/minecraft.png') }}" type="image/x-icon" >
     <title>{{$title}}</title>
     @yield('meta')
-    <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
     <link href="{{ asset('css/app.css') }}" rel="stylesheet" >
     <script src="{{ asset('js/app.js') }}"  ></script>
 
     @livewireStyles
+    @livewireScripts
+    <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/gh/livewire/turbolinks@v0.1.x/dist/livewire-turbolinks.js" data-turbolinks-eval="false" data-turbo-eval="false" defer></script>
+
 </head>
 <body>
 
     @yield('content')
 
 
-    @yield('script')
-    @livewireScripts
 
-    <script src="https://cdn.jsdelivr.net/gh/livewire/turbolinks@v0.1.x/dist/livewire-turbolinks.js" data-turbolinks-eval="false" data-turbo-eval="false"></script>
 </body>
 </html>
