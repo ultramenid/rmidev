@@ -203,7 +203,7 @@
         {{-- corporate network --}}
         <div x-show="CorporateNetwork" x-cloak style="display: none !important"  class="pb-6">
             <div class="flex justify-between items-center mb-2">
-                <h1 class="text-2xl text-newgray-900 dark:text-newgray-300 font-semibold">Financial And Ownership</h1>
+                <h1 class="text-2xl text-newgray-900 dark:text-newgray-300 font-semibold">Corporate Network</h1>
 
             </div>
             <p class="text-newgray-900 dark:text-gray-300 ">Content English :</p>
