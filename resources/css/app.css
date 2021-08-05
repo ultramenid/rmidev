@@ -2,9 +2,12 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
 .turbolinks-progress-bar {
-    visibility: hidden;
+    height: 5px;
+    background-color: #882e27;
   }
+
 
 
   .selection-bg ::selection {
