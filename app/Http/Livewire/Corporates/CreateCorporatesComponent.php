@@ -30,7 +30,9 @@ class CreateCorporatesComponent extends Component{
                 'created_at' => Carbon::now('Asia/Jakarta')
             ]);
 
-            redirect()->to('/cms/corporates');
+            $message = 'Successfully submiting new corporate';
+            $type = 'success'; //error, success
+            $this->emit('toast',$message, $type);
 
         }
 
