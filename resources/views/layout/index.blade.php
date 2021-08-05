@@ -11,12 +11,12 @@
 
 
 
-    <link href="{{ asset('css/app.css') }}" rel="stylesheet" >
+    <link href="{{ asset('css/app.css?=<?=time()?>') }}" rel="stylesheet" >
     @livewireStyles
 
     @livewireScripts
     <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
-    <script src="{{ asset('js/app.js') }}"  defer data-turbolinks-suppress-warning></script>
+    <script src="{{ asset('js/app.js?=<?=time()?>') }}"  defer data-turbolinks-suppress-warning></script>
 
 </head>
 <body>
