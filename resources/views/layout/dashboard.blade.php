@@ -11,11 +11,12 @@
     <link rel="shortcut icon" href="{{ asset('assets/minecraft.png') }}" type="image/x-icon" >
     <title>{{$title}}</title>
     <script src="{{ asset('js/dark.js')}}"></script>
-
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
     <link href="{{ asset('css/app.css') }}" rel="stylesheet" >
-    <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
-    <script src="{{ asset('js/app.js') }}" defer ></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+
+    <script defer  src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
+    <script src="{{ asset('js/app.js') }}"  ></script>
+
 
     @livewireStyles
 
