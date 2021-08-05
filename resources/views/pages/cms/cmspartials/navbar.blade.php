@@ -11,7 +11,7 @@
             </a>
             <div @click.away="pages=false" x-show="pages" x-transition class="absolute w-52 mt-11 " x-cloak style="display: none !important">
                 <div class="flex-col flex bg-white dark:bg-black px-3 py-3 space-y-2 rounded-md shadow-lg">
-                    <a class="hover:bg-gray-100 dark:text-gray-300 dark:hover:bg-newgray-900 text-gray-700 h-6" href="{{ url('/cms/page/methodology') }}" >Methodogy</a>
+                    <a data-turbolinks="false" class="hover:bg-gray-100 dark:text-gray-300 dark:hover:bg-newgray-900 text-gray-700 h-6" href="{{ url('/cms/page/methodology') }}" >Methodogy</a>
                 </div>
               </div>
 

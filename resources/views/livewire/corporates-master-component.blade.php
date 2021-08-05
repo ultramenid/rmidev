@@ -6,15 +6,10 @@
     <div class="flex justify-between mb-6">
         <h1 class="sm:text-2xl text-xl text-newgray-900 dark:text-newgray-300 font-semibold ">Corporates Profile</h1>
 
-        <button wire:loading.remove wire:target='createDataCorporate'  wire:click='createDataCorporate' id="myBtn" class="inline-flex sm:px-12 px-8 sm:py-2 py-1 rounded dark:hover:bg-newgray-900 dark:hover:border-gray-200 dark:hover:text-gray-200 hover:bg-white hover:text-newgray-900 border hover:border-newgray-900 bg-newgray-900 dark:bg-gray-100 text-newgray-100 dark:text-newgray-900">
+        <a data-turbolinks="false" href="{{ url('/cms/page/overview') }}" id="myBtn" class="inline-flex sm:px-12 px-8 sm:py-2 py-1 rounded dark:hover:bg-newgray-900 dark:hover:border-gray-200 dark:hover:text-gray-200 hover:bg-white hover:text-newgray-900 border hover:border-newgray-900 bg-newgray-900 dark:bg-gray-100 text-newgray-100 dark:text-newgray-900">
             Add
-        </button>
-        <button wire:loading wire:target='createDataCorporate' id="myBtn" class="inline-flex sm:px-12 px-8 sm:py-2 py-1 rounded dark:hover:bg-newgray-900 dark:hover:border-gray-200 dark:hover:text-gray-200 hover:bg-white hover:text-newgray-900 border hover:border-newgray-900 bg-newgray-900 dark:bg-gray-100 text-newgray-100 dark:text-newgray-900">
-            <svg class="animate-spin mx-auto h-6 w-6 " xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
-                <circle class="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4"></circle>
-                <path class="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"></path>
-            </svg>
-        </button>
+        </a>
+
     </div>
 
     <input wire:model='search' type="text" class=" mr-2  dark:bg-newgray-900 dark:border-opacity-60 dark:border-gray-700 dark:text-gray-300 appearance-none border rounded lg:w-1/4 w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"  placeholder="Search. . . ">

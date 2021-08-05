@@ -18,9 +18,6 @@ class CorporatesMasterComponent extends Component{
         $this->dataOrder = $this->dataOrder == 'asc' ? 'desc' : 'asc';
     }
 
-    public function createDataCorporate(){
-        return redirect()->to('/cms/page/overview');
-    }
 
     public function getCorporates(){
         $sc = '%' . $this->search . '%';
