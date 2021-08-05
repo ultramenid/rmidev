@@ -10,10 +10,13 @@
     @yield('meta')
 
 
-    <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
+
     <link href="{{ asset('css/app.css') }}" rel="stylesheet" >
-    <script src="{{ asset('js/app.js') }}"  ></script>
     @livewireStyles
+
+    @livewireScripts
+    <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
+    <script src="{{ asset('js/app.js') }}"  ></script>
 
 </head>
 <body>
@@ -21,6 +24,6 @@
     @yield('content')
 
 
-    @livewireScripts
+
 </body>
 </html>
