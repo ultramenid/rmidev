@@ -18,11 +18,10 @@
     <script src="{{ asset('js/dark.js')}}"></script>
     <link  href="{{ asset('css/app.css') }}" rel="stylesheet" >
     @livewireStyles
-    <script defer  src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
 
-    @livewireScripts
     <script src="https://cdn.jsdelivr.net/gh/livewire/turbolinks@v0.1.x/dist/livewire-turbolinks.js" data-turbolinks-eval="false" data-turbo-eval="false"></script>
-
+    <script defer  src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
+    @livewireScripts
 </head>
 
 <body class="selection-bg dark:selection-bg font-santuy">
