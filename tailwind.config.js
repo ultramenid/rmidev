@@ -1,7 +1,7 @@
 const defaultTheme = require('tailwindcss/defaultTheme')
 
 module.exports = {
-    mode: 'jit',                           //ADD THIS LINE
+    // mode: 'jit',                           //ADD THIS LINE
     purge: [                               //CONFIGURE CORRECTLY
       './storage/framework/views/*.php',
       './resources/**/*.blade.php',
