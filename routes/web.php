@@ -38,6 +38,7 @@ Route::group(['prefix' => '{lang}'], function () {
     Route::get('/methodology', [MethodologiController::class, 'index'])->name('methodology');
     Route::get('/about', [AboutController::class, 'index'])->name('about');
     Route::get('/corporateprofile', [CorporateProfileController::class, 'index'])->name('corporateprofile');
+    Route::get('/corporate/{id}', [CorporateProfileController::class, 'detail'])->name('corporatedetail');
 });
 
 
@@ -49,11 +50,14 @@ Route::group(['middleware' => 'checkSession'], function () {
     Route::get('/cms/dashboard', [DashboardController::class, 'index']);
     Route::get('/cms/settings', [SettingsController::class, 'index']);
     Route::get('/cms/page/methodology', [MethodologyPageController::class, 'index']);
-    Route::get('/cms/page/corporateprofile' , [CorporateProfilePageController::class, 'index']);
-    Route::get('/cms/page/operationarea', [OperationAreaController::class, 'index']);
-    Route::get('/cms/page/financialandownership', [FinancialAndOwnershipController::class, 'index']);
-    Route::get('/cms/page/corporatenetwork', [CorporateNetworkController::class, 'index']);
-    Route::get('/cms/page/spotlightcases', [SpotlightCasesController::class, 'index']);
+    Route::get('/cms/corporates' , [CorporateProfilePageController::class, 'index'])->name('corporatesmaster');
+
+
+    Route::get('/cms/page/overview', [CorporateProfilePageController::class, 'overview']);
+    Route::get('/cms/corporates/{id}', [CorporateProfilePageController::class, 'edit']);
+    // Route::get('/cms/page/financialandownership', [FinancialAndOwnershipController::class, 'index']);
+    // Route::get('/cms/page/corporatenetwork', [CorporateNetworkController::class, 'index']);
+    // Route::get('/cms/page/spotlightcases', [SpotlightCasesController::class, 'index']);
 
 
 });

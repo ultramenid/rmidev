@@ -61,27 +61,39 @@
             <img loading="lazy" src="{{ asset('assets/indonesiamap.png') }}" alt="">
         </div>
 
-        {{-- companies text --}}
-        <div class="max-w-6xl mx-auto px-6 md:px-8 sm:py-16 py-8">
-           <h1 class="uppercase text-center text-gray-300 text-3xl font-bold mb-6">Companies</h1>
-           <p class="text-gray-300 sm:text-center text-left font-semibold leading-8">
-            The RMI Report 2020 covers 38 companies from 19 home countries, including publicly-
-            listed, state-owned and private companies. These companies operate in more than
-            780 mine sites in 49 producing countries and control over 200 closed or suspended
-            mine sites. The assessment covers most mined commodities, excluding oil and gas. It is
-            possible to filter by company, using the list of all companies on the left-hand side, and
-            also to filter by producing country or commodity, using the fields below.</p>
-        </div>
-
         {{-- Overall text --}}
-        <div class="max-w-6xl mx-auto px-6 md:px-8 sm:py-16 py-8">
-            <h1 class="uppercase text-center text-gray-300 text-3xl font-bold mb-6">Overall Company Result</h1>
-            <div class="lg:flex flex-row mt-12">
-                <img loading="lazy" src="{{ asset('assets/businessConduct.png') }}" alt="" class="w-full">
-                <img loading="lazy" src="{{ asset('assets/environmentalResponsibility.png') }}" alt="" class="w-full">
+        <div class="max-w-6xl mx-auto sm:py-16 py-8">
+            <h1 class="uppercase text-center text-gray-300 text-3xl font-bold mb-6">{{__('Overall Company Result')}}</h1>
+            <div class="lg:flex flex-row mt-12 justify-between ">
+                <div class=" w-full h-full mb-6">
+                    <div class="flourish-embed flourish-chart" data-src="visualisation/6897406"></div>
+                    <span class="inline-flex items-center space-x-3 px-4 -mt-5 ">
+                        <img src="{{ asset('assets/handshake.png') }}" alt="" class="h-10">
+                        <a href="#" class="text-gray-300 sm:text-2xl inline-flex underline  text-xl">{{__('Bussines Conduct')}}</a>
+                    </span>
+                </div>
+                <div class=" w-full h-full">
+                    <div class="flourish-embed flourish-chart" data-src="visualisation/6898146"></div>
+                    <span class="inline-flex items-center space-x-3 px-4 -mt-5 ">
+                        <img src="{{ asset('assets/leaf.png') }}" alt="" class="w-9">
+                        <a href="#" class="text-gray-300 sm:text-2xl inline-flex underline text-xl">Environmental Responsibility</a>
+                    </span>
+                </div>
             </div>
          </div>
+
+        {{-- companies text --}}
+        <div class="max-w-6xl mx-auto px-6 md:px-8 sm:py-16 py-8">
+           <h1 class="uppercase text-center text-gray-300 text-3xl font-bold mb-6">{{__('Companies')}}</h1>
+           <p class="text-gray-300 sm:text-center text-left font-semibold leading-8">
+            {{__('The RMI Reports 2020 covers 38 companies from 19 home countries, including publicly-listed, stated-owned and private companies. These companies operate in more than 780 mine sites in 49 producing countries and control over 200 closed or suspended mine sites. The assesment covers most mined commodities, excluding oil and gas. it is possible to filter by company, using the list of all companies on the left hand side, and also to filter by producing country or commodity, using the fields below.')}}</p>
+        </div>
+
     </main>
 
     @include('partials.footer')
+@endsection
+
+@section('script')
+<script src="https://public.flourish.studio/resources/embed.js"></script>
 @endsection

@@ -8,31 +8,30 @@ use Livewire\Component;
 
 class CorporateProfileComponent extends Component
 {
-    public $button = 'overview';
+    public $overview = true , $operationalrea = false, $financial = false, $corporatenetwork = false, $spotlight = false;
+    public $idcorporate;
 
-    public function getLocale(){
+    public function mount($idcorporate){
+        $this->idcorporate = $idcorporate;
+    }
+
+    public function getlocalContent(){
         if (App::getLocale() == 'id') {
-            // return string db field name as content
-            return 'contentindonesia as content';
-        }
-        // return string db field name as content
-        return 'contentenglish as content';
+            return  'name, overviewindonesia as overview, operationareaindonesia as operationarea, financialownershipindonesia as financialownership, corporatenetworkindonesia as corporatenetwork, spotlightcasesindonesia as spotlightcases';
+          }
+          return 'name, overviewenglish as overview, operationareaenglish as operationarea, financialownershipenglish as financialownership, corporatenetworkenglish as corporatenetwork, spotlightcasesenglish as spotlightcases';
     }
 
-    public function getContent(){
-        return  DB::table('corporateprofilepages')
-                ->select($this->getLocale())
-                ->where('name', $this->button)
-                ->first();
-    }
-
-    public function setButton($value){
-        $this->button = $value;
+    public function getCorporates(){
+        return DB::table('corporateprofilepages')
+                    ->selectRaw($this->getlocalContent())
+                    ->where('id', $this->idcorporate)
+                    ->first();
     }
 
     public function render()
     {
-        $data = $this->getContent();
+        $data = $this->getCorporates();
         return view('livewire.corporate-profile-component', compact('data'));
     }
 }

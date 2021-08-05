@@ -16,12 +16,12 @@
 
         {{-- // responsive pc--}}
         <div class=" sm:flex items-center space-x-5 hidden">
-            @include('pages.cms.partials.toogleprofile')
+            @include('pages.cms.cmspartials.toogleprofile')
         </div>
 
         {{-- //resposive mobile --}}
         <div class="sm:hidden flex space-x-5">
-            @include('pages.cms.partials.toogleprofile')
+            @include('pages.cms.cmspartials.toogleprofile')
         </div>
      </header>
 

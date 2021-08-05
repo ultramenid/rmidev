@@ -16,8 +16,16 @@ class Corporateprofile extends Migration
         Schema::create('corporateprofilepages', function (Blueprint $table) {
             $table->id();
             $table->string('name');
-            $table->text('contentenglish');
-            $table->text('contentindonesia');
+            $table->text('overviewenglish');
+            $table->text('overviewindonesia');
+            $table->text('operationareaenglish')->nullable();
+            $table->text('operationareaindonesia')->nullable();
+            $table->text('financialownershipenglish')->nullable();
+            $table->text('financialownershipindonesia')->nullable();
+            $table->text('corporatenetworkenglish')->nullable();
+            $table->text('corporatenetworkindonesia')->nullable();
+            $table->text('spotlightcasesenglish')->nullable();
+            $table->text('spotlightcasesindonesia')->nullable();
             $table->timestamps();
         });
     }

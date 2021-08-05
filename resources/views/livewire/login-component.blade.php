@@ -4,7 +4,7 @@
         <h1 class="text-center mt-6 mb-16 text-2xl font-bold text-gray-900"> Login Page </h1>
         <div class="px-6  mb-4">
             <label for="formName" class="block text-gray-700 text-sm font-semibold mb-2">Username:</label>
-            <input type="text" class="appearance-none border rounded w-full py-2 px-5 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" autofocus wire:model.defer="username">
+            <input type="text" autofocus class="appearance-none border rounded w-full py-2 px-5 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" autofocus wire:model.defer="username">
             @error('username') <span class="text-red-500 text-xs">{{ $message }}</span>@enderror
         </div>
         <div class="px-6  mb-4">
@@ -28,6 +28,10 @@
                     <path class="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"></path>
                 </svg>
             </button>
+
+            <p class="text-xs text-center mt-4 "><a href="{{ url('/') }}" >Continue to site. . </a></p>
         </div>
+
+
     </form>
 </div>

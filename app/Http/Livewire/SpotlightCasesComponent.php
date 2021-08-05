@@ -8,12 +8,9 @@ use Livewire\Component;
 
 class SpotlightCasesComponent extends Component{
     public $contentenglish, $contentindonesia;
-    public function checkingContent(){
-        return  DB::table('corporateprofilepages')->where('name', 'spotlightcases')->first();
-     }
 
      public function mount(){
-         $data = $this->checkingContent();
+         $data = DB::table('corporateprofilepages')->where('name', 'spotlightcases')->first();
          $this->contentindonesia = empty($data->contentindonesia) ? '' : $data->contentindonesia ;
          $this->contentenglish = empty($data->contentenglish) ? '' : $data->contentenglish ;
      }
@@ -21,6 +18,10 @@ class SpotlightCasesComponent extends Component{
         'contentenglish' => 'required',
         'contentindonesia' => 'required'
     ];
+
+    public function checkingContent(){
+        return  DB::table('corporateprofilepages')->where('name', 'spotlightcases')->first();
+     }
 
     public function store(){
 

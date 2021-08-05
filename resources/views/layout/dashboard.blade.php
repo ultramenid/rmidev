@@ -5,7 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta name="theme-color" content="black" />
-    <link rel="shortcut icon" href="{{ asset('assets/icon.png') }}" type="image/x-icon" >
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+    <meta http-equiv="Pragma" content="no-cache" />
+    <meta http-equiv="Expires" content="0" />
+    <link rel="shortcut icon" href="{{ asset('assets/minecraft.png') }}" type="image/x-icon" >
     <title>{{$title}}</title>
     <script src="{{ asset('js/dark.js')}}"></script>
 

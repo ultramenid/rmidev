@@ -6,8 +6,9 @@
 
     <main class="bg-white dark:bg-newgray-900 min-h-screen">
         <div class="max-w-6xl px-6 mx-auto">
-            <livewire:methodology-page-component />
+            <div class="sm:pt-8 pt-4 ">
+                <livewire:corporates.create-corporates-component />
+            </div>
         </div>
     </main>
 @endsection
-

@@ -11,12 +11,14 @@
             </a>
             <div @click.away="pages=false" x-show="pages" x-transition class="absolute w-52 mt-11 " x-cloak style="display: none !important">
                 <div class="flex-col flex bg-white dark:bg-black px-3 py-3 space-y-2 rounded-md shadow-lg">
-                    <a data-turbolinks="false" class="hover:bg-gray-100 dark:text-gray-300 dark:hover:bg-newgray-900 text-gray-700 h-6" href="{{ url('/cms/page/methodology') }}" >Methodogy</a>
-                    <a data-turbolinks="false" class="hover:bg-gray-100 dark:text-gray-300 dark:hover:bg-newgray-900 text-gray-700 h-6" href="{{ url('/cms/page/corporateprofile') }}" >Corporate profile</a>
+                    <a class="hover:bg-gray-100 dark:text-gray-300 dark:hover:bg-newgray-900 text-gray-700 h-6" href="{{ url('/cms/page/methodology') }}" >Methodogy</a>
                 </div>
               </div>
 
+              <a href="{{url('/cms/corporates')}}" class=" px-0.5 py-3  @if($nav == 'corporates' )  dark:border-gray-300 border-newgray-900 text-newgray-900 border-b-2 dark:text-gray-300 @endif hover:text-newgray-900 dark:hover:text-gray-300 cursor-pointer   " >Corporates</a>
+
             <a href="{{url('/cms/settings')}}" class=" px-0.5 py-3  @if($nav == 'settings' )  dark:border-gray-300 border-newgray-900 text-newgray-900 border-b-2 dark:text-gray-300 @endif hover:text-newgray-900 dark:hover:text-gray-300 cursor-pointer   " >Settings</a>
+
         </nav>
     </div>
 </div>

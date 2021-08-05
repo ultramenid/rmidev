@@ -10,12 +10,10 @@ class MethodologyPageComponent extends Component
 {
     public $contentenglish, $contentindonesia;
 
-    public function checkingContent(){
-       return  DB::table('pages')->where('name', 'methodology')->first();
-    }
+
 
     public function mount(){
-        $data = $this->checkingContent();
+        $data = DB::table('pages')->where('name', 'methodology')->first();
         $this->contentindonesia = empty($data->contentindonesia) ? '' : $data->contentindonesia ;
         $this->contentenglish = empty($data->contentenglish) ? '' : $data->contentenglish ;
     }
@@ -25,8 +23,11 @@ class MethodologyPageComponent extends Component
         'contentindonesia' => 'required'
     ];
 
-    public function store(){
+    public function checkingContent(){
+        return  DB::table('pages')->where('name', 'methodology')->first();
+     }
 
+    public function store(){
         $this->validate();
         if(!$this->checkingContent()){
             DB::table('pages')->insert([
@@ -53,6 +54,6 @@ class MethodologyPageComponent extends Component
     }
 
     public function render(){
-        return view('livewire.methodology-page-component' );
+        return view('livewire.methodology-page-component');
     }
 }

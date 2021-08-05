@@ -24,9 +24,16 @@ class MethodologiController extends Controller{
             ->first();
     }
 
+    public function setTitle(){
+        if (App::getLocale() == 'id') {
+          return  'Methodologi - Responsible Mining Index';
+        }
+        return 'Methodology - Responsible Mining Index';
+    }
+
     public function index(){
         $data = $this->getContentMethodology();
-        $title = 'Methodology - Responsible Mining Index';
+        $title = $this->setTitle();
         return view('pages.methodology', compact('title', 'data'));
     }
 }
