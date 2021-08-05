@@ -11,7 +11,7 @@
 
 
 
-    <link href="{{ asset('css/app.css?'.time()) }}" rel="stylesheet" >
+    <link href="{{ asset('css/app.css') }}" rel="stylesheet" >
     @livewireStyles
 
     @livewireScripts
