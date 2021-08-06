@@ -9,14 +9,10 @@
     <title>{{$title}}</title>
     @yield('meta')
 
-
-
     <link href="{{ asset('css/app.css') }}" rel="stylesheet" >
-    @livewireStyles
-
-    @livewireScripts
-    <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
     <script src="{{ asset('js/app.js') }}"  defer data-turbolinks-suppress-warning></script>
+
+    @livewireStyles
 
 </head>
 <body>
@@ -24,6 +20,7 @@
     @yield('content')
 
 
+    @livewireScripts
 
 </body>
 </html>

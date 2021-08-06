@@ -6,7 +6,7 @@
     <div class="flex justify-between mb-6">
         <h1 class="sm:text-2xl text-xl text-newgray-900 dark:text-newgray-300 font-semibold ">Corporates Profile</h1>
 
-        <a data-turbolinks="false" href="{{ url('/cms/page/overview') }}" id="myBtn" class="inline-flex sm:px-12 px-8 sm:py-2 py-1 rounded dark:hover:bg-newgray-900 dark:hover:border-gray-200 dark:hover:text-gray-200 hover:bg-white hover:text-newgray-900 border hover:border-newgray-900 bg-newgray-900 dark:bg-gray-100 text-newgray-100 dark:text-newgray-900">
+        <a  href="{{ url('/cms/page/overview') }}" id="myBtn" class="inline-flex sm:px-12 px-8 sm:py-2 py-1 rounded dark:hover:bg-newgray-900 dark:hover:border-gray-200 dark:hover:text-gray-200 hover:bg-white hover:text-newgray-900 border hover:border-newgray-900 bg-newgray-900 dark:bg-gray-100 text-newgray-100 dark:text-newgray-900">
             Add
         </a>
 

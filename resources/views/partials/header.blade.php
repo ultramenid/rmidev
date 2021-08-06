@@ -38,8 +38,8 @@
                     </div>
                     <div class="text-center px-4">
                         <div class="space-x-1 flex text-gray-300">
-                            <a data-turbolinks="false" href="{{ route(Route::currentRouteName(), 'en') }}" class=" @if(App::getLocale() == 'en') text-red-700 @endif mb-4 px-5 text-base leading-5  font-semibold uppercase">English<a>
-                            <a data-turbolinks="false" href="{{ route(Route::currentRouteName(), 'id') }}" class=" @if(App::getLocale() == 'id') text-red-700 @endif mb-4 px-5 text-base leading-5  font-semibold uppercase">Indonesia<a>
+                            <a href="{{ route(Route::currentRouteName(), 'en') }}" class=" @if(App::getLocale() == 'en') text-red-700 @endif mb-4 px-5 text-base leading-5  font-semibold uppercase">English<a>
+                            <a href="{{ route(Route::currentRouteName(), 'id') }}" class=" @if(App::getLocale() == 'id') text-red-700 @endif mb-4 px-5 text-base leading-5  font-semibold uppercase">Indonesia<a>
                         </div>
                         <p class="border-b border-gray-300"></p>
                     </div>
@@ -51,8 +51,8 @@
             <div class="flex justify-between px-3">
                 <a></a>
                 <div class=" text-gray-500  px-12 py-1 bg-gray-300 text-sm rounded-b-lg flex space-x-4">
-                    <a data-turbolinks="false" href="{{ route(Route::currentRouteName(), 'en') }}" class=" @if(App::getLocale() == 'en') text-red-700 @endif  ">English</a>
-                    <a data-turbolinks="false" href="{{ route(Route::currentRouteName(), 'id') }}" class="@if(App::getLocale() == 'id') text-red-700 @endif">Indonesia</a>
+                    <a href="{{ route(Route::currentRouteName(), 'en') }}" class=" @if(App::getLocale() == 'en') text-red-700 @endif  ">English</a>
+                    <a href="{{ route(Route::currentRouteName(), 'id') }}" class="@if(App::getLocale() == 'id') text-red-700 @endif">Indonesia</a>
                 </div>
             </div>
         </div>

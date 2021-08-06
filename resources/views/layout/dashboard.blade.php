@@ -17,8 +17,7 @@
     @livewireStyles
 
     @livewireScripts
-    <script defer  src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js" ></script>
-    <script src="{{ asset('js/app.js') }}" defer data-turbolinks-suppress-warning ></script>
+    <script src="{{ asset('js/app.js') }}" defer></script>
     <script src="{{ asset('js/dark.js')}} "></script>
 </head>
 
