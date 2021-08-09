@@ -1,5 +1,5 @@
 <div class=" bg-gray-300" x-data="{ Overview: @entangle('overview').defer, Operation: @entangle('operationalrea').defer, Financial: @entangle('financial').defer, CorporateNetwork: @entangle('corporatenetwork').defer, Spotlight: @entangle('spotlight').defer }">
-    <div class="grid lg:grid-cols-5 md:grid-cols-2 grid-cols-1 py-6 px-6 gap-4" >
+    <div class="grid lg:grid-cols-5 md:grid-cols-2 grid-cols-1 py-6 sm:px-6 px-2 gap-4" >
         {{-- overview --}}
         <template x-if="Overview">
                 <button @click="
@@ -128,7 +128,7 @@
     </div>
 
 
-    <div class="py-6 px-6" >
+    <div class="py-6 sm:px-6 px-2" >
         <h1 class="sm:text-3xl text-2xl mb-6 font-semibold">{{ $data->name }}</h1>
 
         {{-- Overview --}}
