@@ -1,4 +1,4 @@
-<div class="h-screen overflow-y-auto bg-gray-300" x-data="{ Overview: @entangle('overview').defer, Operation: @entangle('operationalrea').defer, Financial: @entangle('financial').defer, CorporateNetwork: @entangle('corporatenetwork').defer, Spotlight: @entangle('spotlight').defer }">
+<div class=" bg-gray-300" x-data="{ Overview: @entangle('overview').defer, Operation: @entangle('operationalrea').defer, Financial: @entangle('financial').defer, CorporateNetwork: @entangle('corporatenetwork').defer, Spotlight: @entangle('spotlight').defer }">
     <div class="grid lg:grid-cols-5 md:grid-cols-2 grid-cols-1 py-6 px-6 gap-4" >
         {{-- overview --}}
         <template x-if="Overview">
@@ -132,27 +132,27 @@
         <h1 class="sm:text-3xl text-2xl mb-6 font-semibold">{{ $data->name }}</h1>
 
         {{-- Overview --}}
-        <div x-show="Overview" x-cloak style="display: none !important">
+        <div x-show="Overview" x-cloak style="display: none !important" class="h-screen overflow-y-auto">
             {!! $data->overview !!}
         </div>
 
          {{-- Operation Area --}}
-         <div x-show="Operation" x-cloak style="display: none !important">
+         <div x-show="Operation" x-cloak style="display: none !important" class="h-screen overflow-y-auto">
             {!! $data->operationarea !!}
         </div>
 
         {{-- Financial and ownership --}}
-        <div x-show="Financial" x-cloak style="display: none !important">
+        <div x-show="Financial" x-cloak style="display: none !important" class="h-screen overflow-y-auto">
             {!! $data->financialownership !!}
         </div>
 
         {{-- Corporate Network --}}
-        <div x-show="CorporateNetwork" x-cloak style="display: none !important">
+        <div x-show="CorporateNetwork" x-cloak style="display: none !important" class="h-screen overflow-y-auto">
             {!! $data->corporatenetwork !!}
         </div>
 
         {{-- Spotlight Cases --}}
-        <div x-show="Spotlight" x-cloak style="display: none !important">
+        <div x-show="Spotlight" x-cloak style="display: none !important" class="h-screen overflow-y-auto">
             {!! $data->spotlightcases !!}
         </div>
     </div>
