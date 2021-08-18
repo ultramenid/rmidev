@@ -9,7 +9,8 @@
     @include('partials.header')
     @include('partials.nav')
 
-    <main class="bgrmi">
+    <main class="bgrmi h-min-screen">
+
         {{-- flex select --}}
         <div class="max-w-6xl mx-auto px-6 md:px-8 sm:py-16 py-8">
             <div class="sm:flex flex-row lg:space-x-16 md:space-x-12 space-x-0 sm:space-y-0 space-y-2">
@@ -90,6 +91,8 @@
         </div>
 
     </main>
+
+
 
     @include('partials.footer')
 @endsection
