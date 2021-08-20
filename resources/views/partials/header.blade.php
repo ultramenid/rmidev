@@ -37,9 +37,9 @@
                         <p class="border-b border-gray-300"></p>
                     </div>
                     <div class="text-center px-4">
-                        <div class="space-x-1 flex text-gray-300">
-                            <a href="{{ route(Route::currentRouteName(), 'en') }}" class=" @if(App::getLocale() == 'en') text-red-700 @endif mb-4 px-5 text-base leading-5  font-semibold uppercase">English<a>
-                            <a href="{{ route(Route::currentRouteName(), 'id') }}" class=" @if(App::getLocale() == 'id') text-red-700 @endif mb-4 px-5 text-base leading-5  font-semibold uppercase">Indonesia<a>
+                        <div class="space-x-1 flex text-gray-300 justify-center">
+                            <a href="{{ route(Route::currentRouteName(), 'en') }}" class=" @if(App::getLocale() == 'en') text-red-700 @endif mb-4 text-base leading-5  font-semibold uppercase">English<a>
+                            <a href="{{ route(Route::currentRouteName(), 'id') }}" class=" @if(App::getLocale() == 'id') text-red-700 @endif mb-4  text-base leading-5  font-semibold uppercase">Indonesia<a>
                         </div>
                         <p class="border-b border-gray-300"></p>
                     </div>
