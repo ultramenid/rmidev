@@ -126,7 +126,7 @@
                 </div>
 
                 <div class="flex border border-gray-300">
-                    <div class="lg:w-1/12 w-2/12  inline-flex items-center justify-center text-white mb-4" style="background-color: #5d3c23">
+                    <div class="lg:w-1/12 w-2/12  inline-flex items-center justify-center text-white" style="background-color: #5d3c23">
                        <a class="transform md:rotate-0 rotate-90">Effectiveness</a>
                     </div>
                     <div class="lg:w-10/12 w-10/12 px-6 py-3">
@@ -270,7 +270,7 @@
                 </div>
 
                 <div class="flex border border-gray-300">
-                    <div class="lg:w-1/12 w-2/12  inline-flex items-center justify-center text-white mb-4" style="background-color: #5d3c23">
+                    <div class="lg:w-1/12 w-2/12  inline-flex items-center justify-center text-white " style="background-color: #5d3c23">
                         <a class="transform md:rotate-0 rotate-90">Effectiveness</a>
                     </div>
                     <div class="lg:w-10/12 w-10/12 px-6 py-3">
