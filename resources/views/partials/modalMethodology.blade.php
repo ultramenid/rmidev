@@ -8,11 +8,11 @@
         <span class="hidden sm:inline-block sm:align-middle sm:h-screen"></span>​
 
         <div class="inline-block align-bottom bg-white rounded-lg text-left overflow-hidden shadow-xl transform transition-all sm:my-8 sm:align-middle  w-full" role="dialog" aria-modal="true" aria-labelledby="modal-headline">
-            <h1 class="text-center px-4 text-xl pt-10 font-semibold">Business Ethics and Anti-Bribery and Corruption</h1>
+            <h1 class="text-center px-4 text-3xl pt-10 font-semibold">Business Ethics and Anti-Bribery and Corruption</h1>
             <div class="bg-white px-4 pt-5 pb-4 sm:p-6 sm:pb-4">
                 {{-- description --}}
                 <div class="flex  lg:flex-row flex-col lg:space-x-6 space-x-0">
-                    <div>
+                    <div class="sm:w-6/12 w-full">
                         <p class="mb-4">Business ethics is the application of ethical values to the conduct of a
                             company or individuals within that company. The set of ethical values
                             adopted by a company is discretionary, but often includes values such
@@ -52,7 +52,7 @@
                         </p>
 
                     </div>
-                    <div>
+                    <div class="sm:w-6/12 w-full">
                         <p class="mb-4">
                             Ethical conduct is more likely to be achieved if values are embedded in
                             the company’s culture, throughout all of its departments and operations;
@@ -184,11 +184,11 @@
         <span class="hidden sm:inline-block sm:align-middle sm:h-screen"></span>​
 
         <div class="inline-block align-bottom bg-white rounded-lg text-left overflow-hidden shadow-xl transform transition-all sm:my-8 sm:align-middle  w-full" role="dialog" aria-modal="true" aria-labelledby="modal-headline">
-            <h1 class="text-center px-4 text-xl pt-10 font-semibold">Board and Senior Management Accountability and Diversity</h1>
+            <h1 class="text-center px-4 text-3xl pt-10 font-semibold">Board and Senior Management Accountability and Diversity</h1>
             <div class="bg-white px-4 pt-5 pb-4 sm:p-6 sm:pb-4">
                 {{-- description --}}
                 <div class="flex  lg:flex-row flex-col lg:space-x-6 space-x-0">
-                    <div>
+                    <div class="sm:w-6/12 w-full">
                         <p class="mb-4">Corporate sustainability is a concept that has been embraced by
                             companies around the globe. It is increasingly viewed as essential
                             to long-term corporate success. It involves businesses respecting
@@ -212,7 +212,7 @@
 
 
                     </div>
-                    <div>
+                    <div class="sm:w-6/12 w-full">
                         <p class="mb-4">
                             Achievement of corporate goals to protect environmental
                             values, human rights, the health and socio-economic wellbeing
@@ -315,11 +315,11 @@
         <span class="hidden sm:inline-block sm:align-middle sm:h-screen"></span>​
 
         <div class="inline-block align-bottom bg-white rounded-lg text-left overflow-hidden shadow-xl transform transition-all sm:my-8 sm:align-middle  w-full" role="dialog" aria-modal="true" aria-labelledby="modal-headline">
-            <h1 class="text-center px-4 text-xl pt-10 font-semibold">Contracts Disclosure</h1>
+            <h1 class="text-center px-4 text-3xl pt-10 font-semibold">Contracts Disclosure</h1>
             <div class="bg-white px-4 pt-5 pb-4 sm:p-6 sm:pb-4">
                 {{-- description --}}
                 <div class="flex  lg:flex-row flex-col lg:space-x-6 space-x-0">
-                    <div>
+                    <div class="sm:w-6/12 w-full">
                         <p class="mb-4">Producing countries issue licenses and develop agreements with
                             companies to explore or exploit mineral resources (e.g., through
                             bids, leases, permits, concession agreements, exploration
@@ -346,7 +346,7 @@
 
 
                     </div>
-                    <div>
+                    <div class="sm:w-6/12 w-full">
                         <p class="mb-4">
                             The contracts governing mining or other extractive projects
                             may constitute the most significant rules governing the benefits
@@ -441,11 +441,11 @@
         <span class="hidden sm:inline-block sm:align-middle sm:h-screen"></span>​
 
         <div class="inline-block align-bottom bg-white rounded-lg text-left overflow-hidden shadow-xl transform transition-all sm:my-8 sm:align-middle  w-full" role="dialog" aria-modal="true" aria-labelledby="modal-headline">
-            <h1 class="text-center px-4 text-xl pt-10 font-semibold">Tax Transparency</h1>
+            <h1 class="text-center px-4 text-3xl pt-10 font-semibold">Tax Transparency</h1>
             <div class="bg-white px-4 pt-5 pb-4 sm:p-6 sm:pb-4">
                 {{-- description --}}
                 <div class="flex  lg:flex-row flex-col lg:space-x-6 space-x-0">
-                    <div>
+                    <div class="sm:w-6/12 w-full">
                         <p class="mb-4">Mining-related taxes are a significant and critically important
                             source of income for mineral-rich countries. Revenues from
                             taxes allow countries to pay for essential public services and
@@ -472,7 +472,7 @@
 
 
                     </div>
-                    <div>
+                    <div class="sm:w-6/12 w-full">
                         <p class="mb-4">
                             Developing countries may also lose out on tax revenues by
                             offering incentives such as tax holidays or reduced tax rates.
@@ -556,7 +556,7 @@
         <span class="hidden sm:inline-block sm:align-middle sm:h-screen"></span>​
 
         <div class="inline-block align-bottom bg-white rounded-lg text-left overflow-hidden shadow-xl transform transition-all sm:my-8 sm:align-middle  w-full" role="dialog" aria-modal="true" aria-labelledby="modal-headline">
-            <h1 class="text-center px-4 text-xl pt-10 font-semibold"> Beneficial Ownership</h1>
+            <h1 class="text-center px-4 text-3xl pt-10 font-semibold"> Beneficial Ownership</h1>
             <div class="bg-white px-4 pt-5 pb-4 sm:p-6 sm:pb-4">
                 {{-- description --}}
                 <div class="flex  lg:flex-row flex-col lg:space-x-6 space-x-0">
@@ -660,11 +660,11 @@
         <span class="hidden sm:inline-block sm:align-middle sm:h-screen"></span>​
 
         <div class="inline-block align-bottom bg-white rounded-lg text-left overflow-hidden shadow-xl transform transition-all sm:my-8 sm:align-middle  w-full" role="dialog" aria-modal="true" aria-labelledby="modal-headline">
-            <h1 class="text-center px-4 text-xl pt-10 font-semibold"> Payments to Producing Countries</h1>
+            <h1 class="text-center px-4 text-3xl pt-10 font-semibold"> Payments to Producing Countries</h1>
             <div class="bg-white px-4 pt-5 pb-4 sm:p-6 sm:pb-4">
                 {{-- description --}}
                 <div class="flex  lg:flex-row flex-col lg:space-x-6 space-x-0">
-                    <div>
+                    <div class="sm:w-6/12 w-full">
                         <p class="mb-4">Governments grant mining companies the right to explore
                             and exploit mineral resources, and, in exchange, companies
                             pay taxes, royalties, license fees, bonuses, or make other
@@ -694,7 +694,7 @@
 
 
                     </div>
-                    <div>
+                    <div class="sm:w-6/12 w-full">
                         <p class="mb-4">
                             In the past decade efforts to increase payments transparency
                             have gained traction. In particular, the Extractive Industries
@@ -779,11 +779,11 @@
         <span class="hidden sm:inline-block sm:align-middle sm:h-screen"></span>​
 
         <div class="inline-block align-bottom bg-white rounded-lg text-left overflow-hidden shadow-xl transform transition-all sm:my-8 sm:align-middle  w-full" role="dialog" aria-modal="true" aria-labelledby="modal-headline">
-            <h1 class="text-center px-4 text-xl pt-10 font-semibold">Lobbying Practices</h1>
+            <h1 class="text-center px-4 text-3xl pt-10 font-semibold">Lobbying Practices</h1>
             <div class="bg-white px-4 pt-5 pb-4 sm:p-6 sm:pb-4">
                 {{-- description --}}
                 <div class="flex  lg:flex-row flex-col lg:space-x-6 space-x-0">
-                    <div>
+                    <div class="sm:w-6/12 w-full">
                         <p class="mb-4">In many countries lobbying plays a prominent role in policymaking. Private lobbyists, industry groups and civil society
                             organisations work in a variety of ways to influence politicians and
                             decision-makers. Lobbying, however, is often highly unregulated,
@@ -796,7 +796,7 @@
                         </p>
 
                     </div>
-                    <div>
+                    <div class="sm:w-6/12 w-full">
                         <p class="mb-4">
                             Mining companies can take proactive steps to help foster greater
                             integrity and trust in public decision-making processes and elicit
@@ -875,11 +875,11 @@
         <span class="hidden sm:inline-block sm:align-middle sm:h-screen"></span>​
 
         <div class="inline-block align-bottom bg-white rounded-lg text-left overflow-hidden shadow-xl transform transition-all sm:my-8 sm:align-middle  w-full" role="dialog" aria-modal="true" aria-labelledby="modal-headline">
-            <h1 class="text-center px-4 text-xl pt-10 font-semibold">Responsible Contracting and Sourcing</h1>
+            <h1 class="text-center px-4 text-3xl pt-10 font-semibold">Responsible Contracting and Sourcing</h1>
             <div class="bg-white px-4 pt-5 pb-4 sm:p-6 sm:pb-4">
                 {{-- description --}}
                 <div class="flex  lg:flex-row flex-col lg:space-x-6 space-x-0">
-                    <div>
+                    <div class="sm:w-6/12 w-full">
                         <p class="mb-4">Increasingly, there is a global expectation that businesses not only
                             demonstrate a high level of human rights, social and environmental
                             responsibility in their own actions, but also demand the same of
@@ -912,7 +912,7 @@
                             non-compliance with social or environmental regulations.
                         </p>
                     </div>
-                    <div>
+                    <div class="sm:w-6/12 w-full">
                         <p class="mb-4">
                             Companies can minimise risks to workers, communities, the
                             environment and their own reputations by assessing the social,
@@ -1007,11 +1007,11 @@
         <span class="hidden sm:inline-block sm:align-middle sm:h-screen"></span>​
 
         <div class="inline-block align-bottom bg-white rounded-lg text-left overflow-hidden shadow-xl transform transition-all sm:my-8 sm:align-middle  w-full" role="dialog" aria-modal="true" aria-labelledby="modal-headline">
-            <h1 class="text-center px-4 text-xl pt-10 font-semibold">Environmental Stewardship</h1>
+            <h1 class="text-center px-4 text-3xl pt-10 font-semibold">Environmental Stewardship</h1>
             <div class="bg-white px-4 pt-5 pb-4 sm:p-6 sm:pb-4">
                 {{-- description --}}
                 <div class="flex  lg:flex-row flex-col lg:space-x-6 space-x-0">
-                    <div>
+                    <div class="sm:w-6/12 w-full">
                         <p class="mb-4">Environmental stewardship is the comprehensive understanding and
                             effective management of critical environmental risks and opportunities related
                             to climate change, emissions, waste management, resource consumption,
@@ -1048,7 +1048,7 @@
                             particular project can have in the broader landscape and regional contexts.
                         </p>
                     </div>
-                    <div>
+                    <div class="sm:w-6/12 w-full">
                         <p class="mb-4">
                             Environmental Impact Assessment (EIA) is a tool, often required by law
                             but also used voluntarily by some companies, to assess the potential
@@ -1178,11 +1178,11 @@
         <span class="hidden sm:inline-block sm:align-middle sm:h-screen"></span>​
 
         <div class="inline-block align-bottom bg-white rounded-lg text-left overflow-hidden shadow-xl transform transition-all sm:my-8 sm:align-middle  w-full" role="dialog" aria-modal="true" aria-labelledby="modal-headline">
-            <h1 class="text-center px-4 text-xl pt-10 font-semibold">Tailings Management</h1>
+            <h1 class="text-center px-4 text-3xl pt-10 font-semibold">Tailings Management</h1>
             <div class="bg-white px-4 pt-5 pb-4 sm:p-6 sm:pb-4">
                 {{-- description --}}
                 <div class="flex  lg:flex-row flex-col lg:space-x-6 space-x-0">
-                    <div>
+                    <div class="sm:w-6/12 w-full">
                         <p class="mb-4">The excavation or blasting of the rock mass which contains the minerals
                             and metals mined results in large amounts of waste rock of little or no
                             economic value. The remaining ore, where concentrations of minerals
@@ -1221,7 +1221,7 @@
                         </p>
 
                     </div>
-                    <div>
+                    <div class="sm:w-6/12 w-full">
                         <p class="mb-4">
                             Recent high-profile tailings dam failures have prompted several
                             mining industry reviews and actions by mining companies and other
@@ -1361,11 +1361,11 @@
         <span class="hidden sm:inline-block sm:align-middle sm:h-screen"></span>​
 
         <div class="inline-block align-bottom bg-white rounded-lg text-left overflow-hidden shadow-xl transform transition-all sm:my-8 sm:align-middle  w-full" role="dialog" aria-modal="true" aria-labelledby="modal-headline">
-            <h1 class="text-center px-4 text-xl pt-10 font-semibold">Water</h1>
+            <h1 class="text-center px-4 text-3xl pt-10 font-semibold">Water</h1>
             <div class="bg-white px-4 pt-5 pb-4 sm:p-6 sm:pb-4">
                 {{-- description --}}
                 <div class="flex  lg:flex-row flex-col lg:space-x-6 space-x-0">
-                    <div>
+                    <div class="sm:w-6/12 w-full">
                         <p class="mb-4">Water is a key issue for sustainable development and the growth
                             of economies. It is essential for immediate survival and longterm food security, and is intertwined with the development of
                             energy infrastructure. In addition to being a human right, clean
@@ -1400,7 +1400,7 @@
                         </p>
 
                     </div>
-                    <div>
+                    <div class="sm:w-6/12 w-full">
                         <p class="mb-4">
                             Increasingly, the mining industry also acknowledges that effective
                             water management relies on positive and transparent engagement
@@ -1539,11 +1539,11 @@
         <span class="hidden sm:inline-block sm:align-middle sm:h-screen"></span>​
 
         <div class="inline-block align-bottom bg-white rounded-lg text-left overflow-hidden shadow-xl transform transition-all sm:my-8 sm:align-middle  w-full" role="dialog" aria-modal="true" aria-labelledby="modal-headline">
-            <h1 class="text-center px-4 text-xl pt-10 font-semibold">Noise and Vibration</h1>
+            <h1 class="text-center px-4 text-3xl pt-10 font-semibold">Noise and Vibration</h1>
             <div class="bg-white px-4 pt-5 pb-4 sm:p-6 sm:pb-4">
                 {{-- description --}}
                 <div class="flex  lg:flex-row flex-col lg:space-x-6 space-x-0">
-                    <div>
+                    <div class="sm:w-6/12 w-full">
                         <p class="mb-4">Noise is a common source of community concern related
                             to mining. During a mine’s operational phase, noise can be
                             generated 24 hours a day, seven days a week, and a mine may
@@ -1575,7 +1575,7 @@
                         </p>
 
                     </div>
-                    <div>
+                    <div class="sm:w-6/12 w-full">
                         <p class="mb-4">
                             In order to address issues of noise and vibration, mining
                             companies typically include noise assessments as part of their
@@ -1666,11 +1666,11 @@
         <span class="hidden sm:inline-block sm:align-middle sm:h-screen"></span>​
 
         <div class="inline-block align-bottom bg-white rounded-lg text-left overflow-hidden shadow-xl transform transition-all sm:my-8 sm:align-middle  w-full" role="dialog" aria-modal="true" aria-labelledby="modal-headline">
-            <h1 class="text-center px-4 text-xl pt-10 font-semibold">Biodiversity and Ecosystem Services</h1>
+            <h1 class="text-center px-4 text-3xl pt-10 font-semibold">Biodiversity and Ecosystem Services</h1>
             <div class="bg-white px-4 pt-5 pb-4 sm:p-6 sm:pb-4">
                 {{-- description --}}
                 <div class="flex  lg:flex-row flex-col lg:space-x-6 space-x-0">
-                    <div>
+                    <div class="sm:w-6/12 w-full">
                         <p class="mb-4">Biological diversity – or biodiversity – refers to the variety of plants,
                             animals and microorganisms that exist, the genes they contain, and the
                             ecosystems of which they are a part. Ecosystems that are genetically
@@ -1707,7 +1707,7 @@
                             to avoid critical habitats and key biodiversity areas whenever possible.
                         </p>
                     </div>
-                    <div>
+                    <div class="sm:w-6/12 w-full">
                         <p class="mb-4">
                             Some mining companies are also applying the “mitigation hierarchy” as
                             a means of managing biodiversity risks. The mitigation hierarchy is an
@@ -1834,11 +1834,11 @@
         <span class="hidden sm:inline-block sm:align-middle sm:h-screen"></span>​
 
         <div class="inline-block align-bottom bg-white rounded-lg text-left overflow-hidden shadow-xl transform transition-all sm:my-8 sm:align-middle  w-full" role="dialog" aria-modal="true" aria-labelledby="modal-headline">
-            <h1 class="text-center px-4 text-xl pt-10 font-semibold">Climate Change and Energy Efficiency</h1>
+            <h1 class="text-center px-4 text-3xl pt-10 font-semibold">Climate Change and Energy Efficiency</h1>
             <div class="bg-white px-4 pt-5 pb-4 sm:p-6 sm:pb-4">
                  {{-- description --}}
                  <div class="flex  lg:flex-row flex-col lg:space-x-6 space-x-0">
-                    <div>
+                    <div class="sm:w-6/12 w-full">
                         <p class="mb-4">Climate change is a global issue, but the effects are not equally
                             distributed around the globe or even within individual countries.
                             Developing countries are often disproportionately affected, and
@@ -1870,7 +1870,7 @@
                         </p>
 
                     </div>
-                    <div>
+                    <div class="sm:w-6/12 w-full">
                         <p class="mb-4">
                             Many in the mining industry recognise the global challenges
                             related to greenhouse gas emissions and climate change, and
@@ -2004,11 +2004,11 @@
         <span class="hidden sm:inline-block sm:align-middle sm:h-screen"></span>​
 
         <div class="inline-block align-bottom bg-white rounded-lg text-left overflow-hidden shadow-xl transform transition-all sm:my-8 sm:align-middle  w-full" role="dialog" aria-modal="true" aria-labelledby="modal-headline">
-            <h1 class="text-center px-4 text-xl pt-10 font-semibold">Hazardous Materials Management</h1>
+            <h1 class="text-center px-4 text-3xl pt-10 font-semibold">Hazardous Materials Management</h1>
             <div class="bg-white px-4 pt-5 pb-4 sm:p-6 sm:pb-4">
                  {{-- description --}}
                  <div class="flex  lg:flex-row flex-col lg:space-x-6 space-x-0">
-                    <div>
+                    <div class="sm:w-6/12 w-full">
                         <p class="mb-4">Hazardous materials are those that represent a risk to human
                             health, property or the environment due to their physical or
                             chemical characteristics. There are a variety of potentially
@@ -2039,7 +2039,7 @@
                         </p>
 
                     </div>
-                    <div>
+                    <div class="sm:w-6/12 w-full">
                         <p class="mb-4">
                             All hazardous materials require sound management of
                             occupational health, environmental and social risks throughout
@@ -2125,11 +2125,11 @@
         <span class="hidden sm:inline-block sm:align-middle sm:h-screen"></span>​
 
         <div class="inline-block align-bottom bg-white rounded-lg text-left overflow-hidden shadow-xl transform transition-all sm:my-8 sm:align-middle  w-full" role="dialog" aria-modal="true" aria-labelledby="modal-headline">
-            <h1 class="text-center px-4 text-xl pt-10 font-semibold">Emergency Preparedness</h1>
+            <h1 class="text-center px-4 text-3xl pt-10 font-semibold">Emergency Preparedness</h1>
             <div class="bg-white px-4 pt-5 pb-4 sm:p-6 sm:pb-4">
                  {{-- description --}}
                  <div class="flex  lg:flex-row flex-col lg:space-x-6 space-x-0">
-                    <div>
+                    <div class="sm:w-6/12 w-full">
                         <p class="mb-4">Large-scale mines carry significant operational risks. The release
                             or spill of hazardous chemicals, tailings dam failures, explosions,
                             fires and a range of other possible accidents pose risks to mine
@@ -2157,7 +2157,7 @@
                         </p>
 
                     </div>
-                    <div>
+                    <div class="sm:w-6/12 w-full">
                         <p class="mb-4">
                             Guidance has been developed to help mining companies
                             prepare themselves, their workers and local communities for
