@@ -1,5 +1,5 @@
 {{-- Business Ethics and Anti-Bribery and Corruption  --}}
-<div class="fixed z-20 inset-0 overflow-y-auto scrollbar-hide lg:px-24  px-1" x-show="modal1" x-transition x-cloak style="display: none !important">
+<div class="fixed z-20 inset-0 overflow-y-auto scrollbar-hide lg:max-w-6xl mx-auto  px-1" x-show="modal1" x-transition x-cloak style="display: none !important">
     <div class="flex items-end justify-center min-h-screen pt-4 px-4 pb-4 text-center sm:block sm:p-0">
         <div class="fixed inset-0 transition-opacity">
             <div class="absolute inset-0 bg-black opacity-50"></div>
@@ -175,7 +175,7 @@
 </div>
 
 {{-- Board and Senior Management Accountability and Diversity  --}}
-<div class="fixed z-20 inset-0 overflow-y-auto scrollbar-hide lg:px-24  px-1" x-show="modal2" x-transition x-cloak style="display: none !important">
+<div class="fixed z-20 inset-0 overflow-y-auto scrollbar-hide lg:max-w-6xl mx-auto  px-1" x-show="modal2" x-transition x-cloak style="display: none !important">
     <div class="flex items-end justify-center min-h-screen pt-4 px-4 pb-4 text-center sm:block sm:p-0">
         <div class="fixed inset-0 transition-opacity">
             <div class="absolute inset-0 bg-black opacity-50"></div>
@@ -306,7 +306,7 @@
 
 
 {{-- Contracts Disclosure --}}
-<div class="fixed z-20 inset-0 overflow-y-auto scrollbar-hide lg:px-24  px-1" x-show="modal3" x-transition x-cloak style="display: none !important">
+<div class="fixed z-20 inset-0 overflow-y-auto scrollbar-hide lg:max-w-6xl mx-auto  px-1" x-show="modal3" x-transition x-cloak style="display: none !important">
     <div class="flex items-end justify-center min-h-screen pt-4 px-4 pb-4 text-center sm:block sm:p-0">
         <div class="fixed inset-0 transition-opacity">
             <div class="absolute inset-0 bg-black opacity-50"></div>
@@ -432,7 +432,7 @@
 
 
 {{-- Tax Transparency --}}
-<div class="fixed z-20 inset-0 overflow-y-auto scrollbar-hide lg:px-24  px-1" x-show="modal4" x-transition x-cloak style="display: none !important">
+<div class="fixed z-20 inset-0 overflow-y-auto scrollbar-hide lg:max-w-6xl mx-auto  px-1" x-show="modal4" x-transition x-cloak style="display: none !important">
     <div class="flex items-end justify-center min-h-screen pt-4 px-4 pb-4 text-center sm:block sm:p-0">
         <div class="fixed inset-0 transition-opacity">
             <div class="absolute inset-0 bg-black opacity-50"></div>
@@ -547,7 +547,7 @@
 
 
 {{--  Beneficial Ownership --}}
-<div class="fixed z-20 inset-0 overflow-y-auto scrollbar-hide lg:px-24  px-1" x-show="modal5" x-transition x-cloak style="display: none !important">
+<div class="fixed z-20 inset-0 overflow-y-auto scrollbar-hide lg:max-w-6xl mx-auto  px-1" x-show="modal5" x-transition x-cloak style="display: none !important">
     <div class="flex items-end justify-center min-h-screen pt-4 px-4 pb-4 text-center sm:block sm:p-0">
         <div class="fixed inset-0 transition-opacity">
             <div class="absolute inset-0 bg-black opacity-50"></div>
@@ -651,7 +651,7 @@
 
 
 {{-- Payments to Producing Countries--}}
-<div class="fixed z-20 inset-0 overflow-y-auto scrollbar-hide lg:px-24  px-1" x-show="modal6" x-transition x-cloak style="display: none !important">
+<div class="fixed z-20 inset-0 overflow-y-auto scrollbar-hide lg:max-w-6xl mx-auto  px-1" x-show="modal6" x-transition x-cloak style="display: none !important">
     <div class="flex items-end justify-center min-h-screen pt-4 px-4 pb-4 text-center sm:block sm:p-0">
         <div class="fixed inset-0 transition-opacity">
             <div class="absolute inset-0 bg-black opacity-50"></div>
@@ -770,7 +770,7 @@
 
 
 {{--Lobbying Practices--}}
-<div class="fixed z-20 inset-0 overflow-y-auto scrollbar-hide lg:px-24  px-1" x-show="modal7" x-transition x-cloak style="display: none !important">
+<div class="fixed z-20 inset-0 overflow-y-auto scrollbar-hide lg:max-w-6xl mx-auto  px-1" x-show="modal7" x-transition x-cloak style="display: none !important">
     <div class="flex items-end justify-center min-h-screen pt-4 px-4 pb-4 text-center sm:block sm:p-0">
         <div class="fixed inset-0 transition-opacity">
             <div class="absolute inset-0 bg-black opacity-50"></div>
@@ -866,7 +866,7 @@
 
 
 {{--Responsible Contracting and Sourcing--}}
-<div class="fixed z-20 inset-0 overflow-y-auto scrollbar-hide lg:px-24  px-1" x-show="modal8" x-transition x-cloak style="display: none !important">
+<div class="fixed z-20 inset-0 overflow-y-auto scrollbar-hide lg:max-w-6xl mx-auto  px-1" x-show="modal8" x-transition x-cloak style="display: none !important">
     <div class="flex items-end justify-center min-h-screen pt-4 px-4 pb-4 text-center sm:block sm:p-0">
         <div class="fixed inset-0 transition-opacity">
             <div class="absolute inset-0 bg-black opacity-50"></div>
@@ -998,7 +998,7 @@
 
 
 {{--Environmental Stewardship--}}
-<div class="fixed z-20 inset-0 overflow-y-auto scrollbar-hide lg:px-24  px-1" x-show="modal11" x-transition x-cloak style="display: none !important">
+<div class="fixed z-20 inset-0 overflow-y-auto scrollbar-hide lg:max-w-6xl mx-auto  px-1" x-show="modal11" x-transition x-cloak style="display: none !important">
     <div class="flex items-end justify-center min-h-screen pt-4 px-4 pb-4 text-center sm:block sm:p-0">
         <div class="fixed inset-0 transition-opacity">
             <div class="absolute inset-0 bg-black opacity-50"></div>
@@ -1169,7 +1169,7 @@
 
 
 {{--Tailings Management--}}
-<div class="fixed z-20 inset-0 overflow-y-auto scrollbar-hide lg:px-24  px-1" x-show="modal12" x-transition x-cloak style="display: none !important">
+<div class="fixed z-20 inset-0 overflow-y-auto scrollbar-hide lg:max-w-6xl mx-auto  px-1" x-show="modal12" x-transition x-cloak style="display: none !important">
     <div class="flex items-end justify-center min-h-screen pt-4 px-4 pb-4 text-center sm:block sm:p-0">
         <div class="fixed inset-0 transition-opacity">
             <div class="absolute inset-0 bg-black opacity-50"></div>
@@ -1352,7 +1352,7 @@
 
 
 {{--Water--}}
-<div class="fixed z-20 inset-0 overflow-y-auto scrollbar-hide lg:px-24  px-1" x-show="modal13" x-transition x-cloak style="display: none !important">
+<div class="fixed z-20 inset-0 overflow-y-auto scrollbar-hide lg:max-w-6xl mx-auto  px-1" x-show="modal13" x-transition x-cloak style="display: none !important">
     <div class="flex items-end justify-center min-h-screen pt-4 px-4 pb-4 text-center sm:block sm:p-0">
         <div class="fixed inset-0 transition-opacity">
             <div class="absolute inset-0 bg-black opacity-50"></div>
@@ -1530,7 +1530,7 @@
 
 
 {{--Noise and Vibration--}}
-<div class="fixed z-20 inset-0 overflow-y-auto scrollbar-hide lg:px-24  px-1" x-show="modal14 " x-transition x-cloak style="display: none !important">
+<div class="fixed z-20 inset-0 overflow-y-auto scrollbar-hide lg:max-w-6xl mx-auto  px-1" x-show="modal14 " x-transition x-cloak style="display: none !important">
     <div class="flex items-end justify-center min-h-screen pt-4 px-4 pb-4 text-center sm:block sm:p-0">
         <div class="fixed inset-0 transition-opacity">
             <div class="absolute inset-0 bg-black opacity-50"></div>
@@ -1657,7 +1657,7 @@
 
 
 {{--Biodiversity and Ecosystem Services--}}
-<div class="fixed z-20 inset-0 overflow-y-auto scrollbar-hide lg:px-24  px-1" x-show="modal15 " x-transition x-cloak style="display: none !important">
+<div class="fixed z-20 inset-0 overflow-y-auto scrollbar-hide lg:max-w-6xl mx-auto  px-1" x-show="modal15 " x-transition x-cloak style="display: none !important">
     <div class="flex items-end justify-center min-h-screen pt-4 px-4 pb-4 text-center sm:block sm:p-0">
         <div class="fixed inset-0 transition-opacity">
             <div class="absolute inset-0 bg-black opacity-50"></div>
@@ -1825,7 +1825,7 @@
 
 
 {{--Climate Change and Energy Efficiency--}}
-<div class="fixed z-20 inset-0 overflow-y-auto scrollbar-hide lg:px-24  px-1" x-show="modal16" x-transition x-cloak style="display: none !important">
+<div class="fixed z-20 inset-0 overflow-y-auto scrollbar-hide lg:max-w-6xl mx-auto  px-1" x-show="modal16" x-transition x-cloak style="display: none !important">
     <div class="flex items-end justify-center min-h-screen pt-4 px-4 pb-4 text-center sm:block sm:p-0">
         <div class="fixed inset-0 transition-opacity">
             <div class="absolute inset-0 bg-black opacity-50"></div>
@@ -1995,7 +1995,7 @@
 
 
 {{--Hazardous Materials Management--}}
-<div class="fixed z-20 inset-0 overflow-y-auto scrollbar-hide lg:px-24  px-1" x-show="modal17" x-transition x-cloak style="display: none !important">
+<div class="fixed z-20 inset-0 overflow-y-auto scrollbar-hide lg:max-w-6xl mx-auto  px-1" x-show="modal17" x-transition x-cloak style="display: none !important">
     <div class="flex items-end justify-center min-h-screen pt-4 px-4 pb-4 text-center sm:block sm:p-0">
         <div class="fixed inset-0 transition-opacity">
             <div class="absolute inset-0 bg-black opacity-50"></div>
@@ -2116,7 +2116,7 @@
 </div>
 
 {{--Emergency Preparedness--}}
-<div class="fixed z-20 inset-0 overflow-y-auto scrollbar-hide lg:px-24  px-1" x-show="modal18" x-transition x-cloak style="display: none !important">
+<div class="fixed z-20 inset-0 overflow-y-auto scrollbar-hide lg:max-w-6xl mx-auto  px-1" x-show="modal18" x-transition x-cloak style="display: none !important">
     <div class="flex items-end justify-center min-h-screen pt-4 px-4 pb-4 text-center sm:block sm:p-0">
         <div class="fixed inset-0 transition-opacity">
             <div class="absolute inset-0 bg-black opacity-50"></div>
