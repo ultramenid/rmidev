@@ -21,7 +21,7 @@
     <script src="{{ asset('js/dark.js')}} "></script>
 </head>
 
-<body class="selection-bg dark:selection-bg font-santuy">
+<body class="selection-bg dark:selection-bg">
 
     @yield('content')
 

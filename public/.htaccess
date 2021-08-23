@@ -25,7 +25,7 @@
         </IfModule>
     </FilesMatch>
 
-
+    # include css|js in production
     <FilesMatch ".(xml|txt|css|js)$">
         <IfModule mod_headers.c>
             Header set Cache-Control "max-age=604800, proxy-revalidate"

@@ -132,27 +132,27 @@
         <h1 class="sm:text-3xl text-2xl mb-6 font-semibold">{{ $data->name }}</h1>
 
         {{-- Overview --}}
-        <div x-show="Overview" x-cloak style="display: none !important" class="h-screen overflow-y-auto prose">
+        <div x-show="Overview" x-cloak style="display: none !important" class="h-screen overflow-y-auto ">
             {!! $data->overview !!}
         </div>
 
          {{-- Operation Area --}}
-         <div x-show="Operation" x-cloak style="display: none !important" class="h-screen overflow-y-auto prose">
+         <div x-show="Operation" x-cloak style="display: none !important" class="h-screen overflow-y-auto ">
             {!! $data->operationarea !!}
         </div>
 
         {{-- Financial and ownership --}}
-        <div x-show="Financial" x-cloak style="display: none !important" class="h-screen overflow-y-auto prose">
+        <div x-show="Financial" x-cloak style="display: none !important" class="h-screen overflow-y-auto ">
             {!! $data->financialownership !!}
         </div>
 
         {{-- Corporate Network --}}
-        <div x-show="CorporateNetwork" x-cloak style="display: none !important" class="h-screen overflow-y-auto prose">
+        <div x-show="CorporateNetwork" x-cloak style="display: none !important" class="h-screen overflow-y-auto ">
             {!! $data->corporatenetwork !!}
         </div>
 
         {{-- Spotlight Cases --}}
-        <div x-show="Spotlight" x-cloak style="display: none !important" class="h-screen overflow-y-auto prose">
+        <div x-show="Spotlight" x-cloak style="display: none !important" class="h-screen overflow-y-auto ">
             {!! $data->spotlightcases !!}
         </div>
     </div>

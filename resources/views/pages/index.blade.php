@@ -57,11 +57,6 @@
 
         </div>
 
-        {{-- map --}}
-        <div class="max-w-6xl mx-auto px-6 md:px-8 sm:py-8 py-8">
-            <img loading="lazy" src="{{ asset('assets/indonesiamap.png') }}" alt="">
-        </div>
-
         {{-- Overall text --}}
         <div class="max-w-6xl mx-auto sm:py-16 py-8">
             <h1 class="uppercase text-center text-gray-300 text-3xl font-bold mb-6">{{__('Overall Company Result')}}</h1>
@@ -83,7 +78,15 @@
             </div>
          </div>
 
-        {{-- companies text --}}
+        {{-- map --}}
+        <div class="max-w-6xl mx-auto px-6 md:px-8 sm:py-8 py-8">
+            <img loading="lazy" src="{{ asset('assets/indonesiamap.png') }}" alt="">
+        </div>
+
+
+
+
+         {{-- companies text --}}
         <div class="max-w-6xl mx-auto px-6 md:px-8 sm:py-16 py-8">
            <h1 class="uppercase text-center text-gray-300 text-3xl font-bold mb-6">{{__('Companies')}}</h1>
            <p class="text-gray-300 sm:text-center text-left font-semibold leading-8">

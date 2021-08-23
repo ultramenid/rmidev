@@ -12,7 +12,7 @@
         <div class="max-w-6xl mx-auto px-6 md:px-8 sm:py-16 py-8 min-h-screen">
             {{-- <livewire:corporate-profile-component /> --}}
             <div class="text-center">
-                <h1 class="text-2xl text-gray-200 mb-10">{{__('List of all companies')}}</h1>
+                <h1 class="uppercase text-center text-gray-300 text-3xl font-bold mb-6">{{__('List of all companies')}}</h1>
             </div>
             <div class="flex flex-col justify-center">
                 @foreach ($corporates as $item)
