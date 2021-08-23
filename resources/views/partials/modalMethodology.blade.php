@@ -104,7 +104,7 @@
                 {{-- detail --}}
                 <div class="flex border border-gray-300 mb-4">
                     <div class="lg:w-1/12 w-2/12  inline-flex items-center justify-center text-white " style="background-color: #d1af98">
-                        <a class="transform md:rotate-0 rotate-90">Commitment</a>
+                        <a class="transform  -rotate-90">Commitment</a>
                     </div>
                     <div class="lg:w-10/12 w-10/12 px-6 py-3">
                         <h1 class="text-xl font-semibold mb-2">
@@ -127,7 +127,7 @@
 
                 <div class="flex border border-gray-300">
                     <div class="lg:w-1/12 w-2/12  inline-flex items-center justify-center text-white" style="background-color: #5d3c23">
-                       <a class="transform md:rotate-0 rotate-90">Effectiveness</a>
+                       <a class="transform  -rotate-90">Effectiveness</a>
                     </div>
                     <div class="lg:w-10/12 w-10/12 px-6 py-3">
                         <h1 class="text-xl font-semibold mb-2"> The company commits to prevent all direct and indirect forms of bribery and corruption</h1>
@@ -247,7 +247,7 @@
                 {{-- detail --}}
                 <div class="flex border border-gray-300 mb-4">
                     <div class="lg:w-1/12 w-2/12  inline-flex items-center justify-center text-white " style="background-color: #8d5d43">
-                        <a class="transform md:rotate-0 rotate-90">Action</a>
+                        <a class="transform  -rotate-90">Action</a>
                     </div>
                     <div class="lg:w-10/12 w-10/12 px-6 py-3">
                         <h1 class="text-xl font-semibold mb-2">
@@ -271,7 +271,7 @@
 
                 <div class="flex border border-gray-300">
                     <div class="lg:w-1/12 w-2/12  inline-flex items-center justify-center text-white " style="background-color: #5d3c23">
-                        <a class="transform md:rotate-0 rotate-90">Effectiveness</a>
+                        <a class="transform  -rotate-90">Effectiveness</a>
                     </div>
                     <div class="lg:w-10/12 w-10/12 px-6 py-3">
                         <h1 class="text-xl font-semibold mb-2"> Individual board directors and senior managers responsible for such performance are held accountable via documented measures?</h1>
@@ -396,7 +396,7 @@
                 {{-- detail --}}
                 <div class="flex border border-gray-300 mb-4">
                     <div class="lg:w-1/12 w-2/12  inline-flex items-center justify-center text-white " style="background-color: #8d5d43">
-                        <a class="transform md:rotate-0 rotate-90">Action</a>
+                        <a class="transform  -rotate-90">Action</a>
                     </div>
                     <div class="lg:w-10/12 w-10/12 px-6 py-3">
                         <h1 class="text-xl font-semibold mb-2">
@@ -512,7 +512,7 @@
                 {{-- detail --}}
                 <div class="flex border border-gray-300 mb-4">
                     <div class="lg:w-1/12 w-2/12  inline-flex items-center justify-center text-white " style="background-color: #8d5d43">
-                        <a class="transform md:rotate-0 rotate-90">Action</a>
+                        <a class="transform  -rotate-90">Action</a>
                     </div>
                     <div class="lg:w-10/12 w-10/12 px-6 py-3">
                         <h1 class="text-xl font-semibold mb-2">
@@ -616,7 +616,7 @@
                 {{-- detail --}}
                 <div class="flex border border-gray-300 mb-4">
                     <div class="lg:w-1/12 w-2/12  inline-flex items-center justify-center text-white " style="background-color: #8d5d43">
-                        <a class="transform md:rotate-0 rotate-90">Action</a>
+                        <a class="transform  -rotate-90">Action</a>
                     </div>
                     <div class="lg:w-10/12 w-10/12 px-6 py-3">
                         <h1 class="text-xl font-semibold mb-2">
@@ -734,7 +734,7 @@
                 {{-- detail --}}
                 <div class="flex border border-gray-300 mb-4">
                     <div class="lg:w-1/12 w-2/12  inline-flex items-center justify-center text-white " style="background-color: #8d5d43">
-                        <a class="transform md:rotate-0 rotate-90">Action</a>
+                        <a class="transform  -rotate-90">Action</a>
                     </div>
                     <div class="lg:w-10/12 w-10/12 px-6 py-3">
                         <h1 class="text-xl font-semibold mb-2">
@@ -831,7 +831,7 @@
                 {{-- detail --}}
                 <div class="flex border border-gray-300 mb-4">
                     <div class="lg:w-1/12 w-2/12  inline-flex items-center justify-center text-white " style="background-color: #8d5d43">
-                        <a class="transform md:rotate-0 rotate-90">Action</a>
+                        <a class="transform  -rotate-90">Action</a>
                     </div>
                     <div class="lg:w-10/12 w-10/12 px-6 py-3">
                         <h1 class="text-xl font-semibold mb-2">
@@ -961,7 +961,7 @@
                 {{-- detail --}}
                 <div class="flex border border-gray-300 mb-4">
                     <div class="lg:w-1/12 w-2/12  inline-flex items-center justify-center text-white " style="background-color: #8d5d43">
-                        <a class="transform md:rotate-0 rotate-90">Action</a>
+                        <a class="transform  -rotate-90">Action</a>
                     </div>
                     <div class="lg:w-10/12 w-10/12 px-6 py-3">
                         <h1 class="text-xl font-semibold mb-2">
@@ -1111,7 +1111,7 @@
                 {{-- detail --}}
                 <div class="flex border border-gray-300 mb-4">
                     <div class="lg:w-1/12 w-2/12  inline-flex items-center justify-center text-white " style="background-color: #b9d478">
-                        <a class="transform md:rotate-0 rotate-90">Commitment</a>
+                        <a class="transform  -rotate-90">Commitment</a>
                     </div>
                     <div class="lg:w-10/12 w-10/12 px-6 py-3">
                         <h1 class="text-xl font-semibold mb-2">
@@ -1133,7 +1133,7 @@
                 </div>
                 <div class="flex border border-gray-300 mb-4">
                     <div class="lg:w-1/12 w-2/12  inline-flex items-center justify-center text-white " style="background-color: #76b82a">
-                        <a class="transform md:rotate-0 rotate-90">Action</a>
+                        <a class="transform  -rotate-90">Action</a>
                     </div>
                     <div class="lg:w-10/12 w-10/12 px-6 py-3">
                         <h1 class="text-xl font-semibold mb-2">
@@ -1271,7 +1271,7 @@
                 {{-- detail --}}
                 <div class="flex border border-gray-300 mb-4">
                     <div class="lg:w-1/12 w-2/12  inline-flex items-center justify-center text-white " style="background-color: #b9d478">
-                        <a class="transform md:rotate-0 rotate-90">Commitment</a>
+                        <a class="transform  -rotate-90">Commitment</a>
                     </div>
                     <div class="lg:w-10/12 w-10/12 px-6 py-3">
                         <h1 class="text-xl font-semibold mb-2">
@@ -1293,7 +1293,7 @@
                 </div>
                 <div class="flex border border-gray-300 mb-4">
                     <div class="lg:w-1/12 w-2/12  inline-flex items-center justify-center text-white " style="background-color: #76b82a">
-                        <a class="transform md:rotate-0 rotate-90">Action</a>
+                        <a class="transform  -rotate-90">Action</a>
                     </div>
                     <div class="lg:w-10/12 w-10/12 px-6 py-3">
                         <h1 class="text-xl font-semibold mb-2">
@@ -1317,7 +1317,7 @@
 
                 <div class="flex border border-gray-300 mb-4">
                     <div class="lg:w-1/12 w-2/12  inline-flex items-center justify-center text-white " style="background-color: #0e6f24">
-                        <a class="transform md:rotate-0 rotate-90">Effectiveness</a>
+                        <a class="transform  -rotate-90">Effectiveness</a>
                     </div>
                     <div class="lg:w-10/12 w-10/12 px-6 py-3">
                         <h1 class="text-xl font-semibold mb-2">
@@ -1447,7 +1447,7 @@
 
                 <div class="flex border border-gray-300 mb-4">
                     <div class="lg:w-1/12 w-2/12  inline-flex items-center justify-center text-white " style="background-color: #76b82a">
-                        <a class="transform md:rotate-0 rotate-90">Action</a>
+                        <a class="transform  -rotate-90">Action</a>
                     </div>
                     <div class="lg:w-10/12 w-10/12 px-6 py-3">
                         <h1 class="text-xl font-semibold mb-2">
@@ -1474,7 +1474,7 @@
 
                 <div class="flex border border-gray-300 mb-4">
                     <div class="lg:w-1/12 w-2/12  inline-flex items-center justify-center text-white " style="background-color: #0e6f24">
-                        <a class="transform md:rotate-0 rotate-90">Effectiveness</a>
+                        <a class="transform  -rotate-90">Effectiveness</a>
                     </div>
                     <div class="lg:w-10/12 w-10/12 px-6 py-3">
                         <h1 class="text-xl font-semibold mb-2">
@@ -1621,7 +1621,7 @@
 
                 <div class="flex border border-gray-300 mb-4">
                     <div class="lg:w-1/12 w-2/12  inline-flex items-center justify-center text-white " style="background-color: #76b82a">
-                        <a class="transform md:rotate-0 rotate-90">Action</a>
+                        <a class="transform  -rotate-90">Action</a>
                     </div>
                     <div class="lg:w-10/12 w-10/12 px-6 py-3">
                         <h1 class="text-xl font-semibold mb-2">
@@ -1765,7 +1765,7 @@
 
                 <div class="flex border border-gray-300 mb-4">
                     <div class="lg:w-1/12 w-2/12  inline-flex items-center justify-center text-white " style="background-color: #b9d478">
-                        <a class="transform md:rotate-0 rotate-90">Commitment</a>
+                        <a class="transform  -rotate-90">Commitment</a>
                     </div>
                     <div class="lg:w-10/12 w-10/12 px-6 py-3">
                         <h1 class="text-xl font-semibold mb-2">
@@ -1788,7 +1788,7 @@
                 </div>
                 <div class="flex border border-gray-300 mb-4">
                     <div class="lg:w-1/12 w-2/12  inline-flex items-center justify-center text-white " style="background-color: #0e6f24">
-                        <a class="transform md:rotate-0 rotate-90">Effectiveness</a>
+                        <a class="transform  -rotate-90">Effectiveness</a>
                     </div>
                     <div class="lg:w-10/12 w-10/12 px-6 py-3">
                         <h1 class="text-xl font-semibold mb-2">
@@ -1914,7 +1914,7 @@
 
                 <div class="flex border border-gray-300 mb-4">
                     <div class="lg:w-1/12 w-2/12  inline-flex items-center justify-center text-white " style="background-color: #76b82a">
-                        <a class="transform md:rotate-0 rotate-90">Action</a>
+                        <a class="transform  -rotate-90">Action</a>
                     </div>
                     <div class="lg:w-10/12 w-10/12 px-6 py-3">
                         <h1 class="text-xl font-semibold mb-2">
@@ -1939,7 +1939,7 @@
                 </div>
                 <div class="flex border border-gray-300 mb-4">
                     <div class="lg:w-1/12 w-2/12  inline-flex items-center justify-center text-white " style="background-color: #0e6f24">
-                        <a class="transform md:rotate-0 rotate-90">Effectiveness</a>
+                        <a class="transform  -rotate-90">Effectiveness</a>
                     </div>
                     <div class="lg:w-10/12 w-10/12 px-6 py-3">
                         <h1 class="text-xl font-semibold mb-2">
@@ -2080,7 +2080,7 @@
 
                 <div class="flex border border-gray-300 mb-4">
                     <div class="lg:w-1/12 w-2/12  inline-flex items-center justify-center text-white " style="background-color: #76b82a">
-                        <a class="transform md:rotate-0 rotate-90">Action</a>
+                        <a class="transform  -rotate-90">Action</a>
                     </div>
                     <div class="lg:w-10/12 w-10/12 px-6 py-3">
                         <h1 class="text-xl font-semibold mb-2">
@@ -2202,7 +2202,7 @@
 
                 <div class="flex border border-gray-300 mb-4">
                     <div class="lg:w-1/12 w-2/12  inline-flex items-center justify-center text-white " style="background-color: #76b82a">
-                        <a class="transform md:rotate-0 rotate-90">Action</a>
+                        <a class="transform  -rotate-90">Action</a>
                     </div>
                     <div class="lg:w-10/12 w-10/12 px-6 py-3">
                         <h1 class="text-xl font-semibold mb-2">
