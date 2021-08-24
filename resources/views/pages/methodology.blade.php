@@ -35,7 +35,10 @@
                     <a class=" text-gray-300 h-full ">Thematic Areas</a>
                 </div>
                 <div class="flex flex-col space-y-2  w-full ">
-                    <h1 class=" text-center text-gray-300 ">Measurement Areas</h1>
+                    <div class="flex ">
+                        <div class="w-1/12"></div>
+                        <h1 class="w-11/12 text-center text-gray-300 ">Measurement Areas</h1>
+                    </div>
 
                     {{-- #header --}}
                     <div class="flex ">
@@ -54,7 +57,7 @@
 
                      {{-- #Economic Development --}}
                      <div >
-                        <div class="flex cursor-pointer" >
+                        <div class="flex " >
                             <div class="w-1/12 flex items-center justify-end sm:h-12 h-8 border-t border-l border-gray-600">
                                 <img src="{{ asset('assets/Economicdevelopicon.png') }}" alt=""  class="sm:h-12 h-8">
                             </div>
@@ -72,8 +75,8 @@
                     </div>
 
                      {{-- #Business Conduct--}}
-                     <div x-data="{businessConduct : false}" class="border-l border-gray-600">
-                        <div class="flex cursor-pointer" @click="businessConduct = ! businessConduct" >
+                     <div class="border-l border-gray-600">
+                        <div class="flex " >
                             <div class="w-1/12 flex items-center justify-end sm:h-12 h-8 ">
                                 <img src="{{ asset('assets/handshake.png') }}" alt=""  class="sm:h-12 h-8">
                             </div>
@@ -87,7 +90,7 @@
                                 <a class="text-gray-300 sm:text-base text-xs text-center px-1"></a>
                             </div>
                         </div>
-                        <div class="flex" x-show="businessConduct" x-transition x-cloak style="display: none !important;">
+                        <div class="flex" >
                             <div class="w-1/12 flex items-center justify-end sm:h-12 h-8"></div>
                             <div class=" w-11/12 bg-gray-300 px-6 py-3">
                                 <p class="cursor-pointer underline" @click = "modal1 = true">1. Business Ethics and Anti-Bribery and Corruption</p>
@@ -105,7 +108,7 @@
 
                      {{-- #Lifecycle Management--}}
                      <div class=" border-l border-gray-600">
-                        <div class="flex cursor-pointer">
+                        <div class="flex ">
                             <div class="w-1/12 flex items-center justify-end sm:h-12 h-8">
                                 <img src="{{ asset('assets/lifecycle.png') }}" alt=""  class="sm:h-12 h-8">
                             </div>
@@ -126,7 +129,7 @@
 
                      {{-- #Community Wellbeing--}}
                      <div class=" border-l border-gray-600">
-                        <div class="flex cursor-pointer">
+                        <div class="flex ">
                             <div class="w-1/12 flex items-center justify-end sm:h-12 h-8">
                                 <img src="{{ asset('assets/Communitywel.png') }}" alt=""  class="sm:h-12 h-8">
                             </div>
@@ -147,7 +150,7 @@
 
                     {{-- #Working Conditions--}}
                     <div class=" border-l border-gray-600">
-                        <div class="flex cursor-pointer">
+                        <div class="flex ">
                             <div class="w-1/12 flex items-center justify-end sm:h-12 h-8">
                                 <img src="{{ asset('assets/WorkingConditions.png') }}" alt=""  class="sm:h-12 h-8">
                             </div>
@@ -168,8 +171,8 @@
 
 
                     {{-- #Environmental Responsibility--}}
-                    <div x-data="{envResponsibility : false}" class="border-gray-600  border-l border-b">
-                        <div class="flex cursor-pointer" @click="envResponsibility = ! envResponsibility">
+                    <div  class="border-gray-600  border-l border-b">
+                        <div class="flex " >
                             <div class="w-1/12 flex items-center justify-end sm:h-12 h-8 ">
                                 <img src="{{ asset('assets/leaf.png') }}" alt=""  class="sm:h-12 h-8">
                             </div>
@@ -183,7 +186,7 @@
                                 <a class="text-gray-300 sm:text-base text-xs text-center px-1"></a>
                             </div>
                         </div>
-                        <div class="flex" x-show="envResponsibility" x-transition x-cloak style="display: none !important;">
+                        <div class="flex" >
                             <div class="w-1/12 flex items-center justify-end sm:h-12 h-8"></div>
                             <div class=" w-11/12 bg-gray-300 px-6 py-3">
                                 <p class="cursor-pointer underline" @click = "modal11 = true">1. Environmental Stewardship</p>
