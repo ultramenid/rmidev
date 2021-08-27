@@ -8,21 +8,21 @@ use Illuminate\Support\Facades\DB;
 
 class MethodologiController extends Controller{
 
-    public function getLocale(){
-        if (App::getLocale() == 'id') {
-            // return db field name
-            return 'contentindonesia as content';
-        }
-        // return db field name
-        return 'contentenglish as content';
-    }
+    // public function getLocale(){
+    //     if (App::getLocale() == 'id') {
+    //         // return db field name
+    //         return 'contentindonesia as content';
+    //     }
+    //     // return db field name
+    //     return 'contentenglish as content';
+    // }
 
-    public function getContentMethodology(){
-        return DB::table('pages')
-            ->select($this->getLocale())
-            ->where('name', 'methodology')
-            ->first();
-    }
+    // public function getContentMethodology(){
+    //     return DB::table('pages')
+    //         ->select($this->getLocale())
+    //         ->where('name', 'methodology')
+    //         ->first();
+    // }
 
     public function setTitle(){
         if (App::getLocale() == 'id') {
@@ -32,8 +32,8 @@ class MethodologiController extends Controller{
     }
 
     public function index(){
-        $data = $this->getContentMethodology();
+        // $data = $this->getContentMethodology();
         $title = $this->setTitle();
-        return view('pages.methodology', compact('title', 'data'));
+        return view('pages.methodology', compact('title'));
     }
 }

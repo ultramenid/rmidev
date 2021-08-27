@@ -62,25 +62,25 @@
             <h1 class="uppercase text-center text-gray-300 text-3xl font-bold mb-6">{{__('RMI analytical framework')}}</h1>
             <div class="flex  items-center ">
                 <div class="w-3/12 transform -rotate-90 lg:-mx-28 md:-mx-16 md:block hidden text-center ">
-                    <a class=" text-gray-300 h-full ">Thematic Areas</a>
+                    <a class=" text-gray-300 h-full ">{{__('Thematic Areas')}}</a>
                 </div>
                 <div class="flex flex-col space-y-2  w-full ">
                     <div class="flex ">
                         <div class="w-1/12"></div>
-                        <h1 class="w-11/12 text-center text-gray-300 ">Measurement Areas</h1>
+                        <h1 class="w-11/12 text-center text-gray-300 ">{{__('Measurement Areas')}}</h1>
                     </div>
                     {{-- #header --}}
                     <div class="flex ">
 
                         <div class="w-1/12 h-12 "></div>
                         <div class="flex bgdarkrmi border-gray-600  h-12 border-t border-l border-r sm:w-2/12 w-3/12 items-center justify-center">
-                            <a class="text-gray-300 sm:text-base text-xs text-center px-1">Commitment (14%)</a>
+                            <a class="text-gray-300 sm:text-base text-xs text-center px-1">{{__('Commitment')}} (14%)</a>
                         </div>
                         <div class="flex bgdarkrmi border-gray-600  h-12 border-t sm:w-7/12 w-5/12 items-center justify-center">
-                            <a class="text-gray-300 sm:text-base text-xs px-1">Action (58%)</a>
+                            <a class="text-gray-300 sm:text-base text-xs px-1">{{__('Action')}} (58%)</a>
                         </div>
                         <div class="flex bgdarkrmi border-gray-600  h-12 border-t border-l border-r sm:w-2/12 w-3/12 items-center justify-center">
-                            <a class="text-gray-300 sm:text-base text-xs text-center px-1">Effectiveness (28%)</a>
+                            <a class="text-gray-300 sm:text-base text-xs text-center px-1">{{__('Effectiveness')}} (28%)</a>
                         </div>
                     </div>
 
@@ -94,8 +94,8 @@
                                 <a class="text-gray-300 sm:text-base text-xs text-center px-1"></a>
                             </div>
                             <div class="flex flex-col  border-gray-600  sm:h-12 h-8 sm:w-7/12  w-5/12 items-center justify-center bg-edevelopment2">
-                                <a class="text-gray-300 sm:text-base text-xs px-1 text-center">Economic Development</a>
-                                <p class="text-xs">(Not available for 2021)</p>
+                                <a class="text-gray-300 sm:text-base text-xs px-1 text-center">{{__('Economic Development')}}</a>
+                                <p class="text-xs">({{__('Not available for')}} {{ date('Y') }})</p>
                             </div>
                             <div class="flex   sm:h-12 h-8  sm:w-2/12 w-3/12 items-center justify-center  bg-edevelopment3">
                                 <a class="text-gray-300 sm:text-base text-xs text-center px-1"></a>
@@ -114,7 +114,7 @@
                                 <a  class="text-gray-300 sm:text-base text-xs text-center px-1"></a>
                             </div>
                             <div class="flex  border-gray-600  sm:h-12 h-8 sm:w-7/12  w-5/12 items-center justify-center" style="background-color: #8d5d43">
-                                <a  href="{{ route('methodology', app()->getlocale() )}}" class="text-gray-300 sm:text-base text-xs px-1 text-center">Business Conduct</a>
+                                <a  href="{{ route('methodology', app()->getlocale() )}}" class="text-gray-300 sm:text-base text-xs px-1 text-center">{{__('Business Conduct')}}</a>
                             </div>
                             <div class="flex   sm:h-12 h-8  sm:w-2/12 w-3/12 items-center justify-center " style="background-color: #5d3c23">
                                 <a class="text-gray-300 sm:text-base text-xs text-center px-1"></a>
@@ -134,8 +134,8 @@
                                 <a class="text-gray-300 sm:text-base text-xs text-center px-1"></a>
                             </div>
                             <div class="flex flex-col  border-gray-600  sm:h-12 h-8 sm:w-7/12  w-5/12 items-center justify-center" style="background-color: #a71681">
-                                <a class="text-gray-300 sm:text-base text-xs px-1 text-center">Lifecycle Management</a>
-                                <p class="text-xs">(Not available for 2021)</p>
+                                <a class="text-gray-300 sm:text-base text-xs px-1 text-center">{{__('Lifecycle Management')}}</a>
+                                <p class="text-xs">({{__('Not available for')}} {{ date('Y') }})</p>
                             </div>
                             <div class="flex   sm:h-12 h-8  sm:w-2/12 w-3/12 items-center justify-center " style="background-color: #6f0954">
                                 <a class="text-gray-300 sm:text-base text-xs text-center px-1"></a>
@@ -155,8 +155,8 @@
                                 <a class="text-gray-300 sm:text-base text-xs text-center px-1"></a>
                             </div>
                             <div class="flex flex-col border-gray-600  sm:h-12 h-8 sm:w-7/12  w-5/12 items-center justify-center" style="background-color: #ef7d00">
-                                <a class="text-gray-300 sm:text-base text-xs px-1 text-center">Community Wellbeing</a>
-                                <p class="text-xs">(Not available for 2021)</p>
+                                <a class="text-gray-300 sm:text-base text-xs px-1 text-center">{{__('Community Wellbeing')}}</a>
+                                <p class="text-xs">({{__('Not available for')}} {{ date('Y') }})</p>
                             </div>
                             <div class="flex   sm:h-12 h-8  sm:w-2/12 w-3/12 items-center justify-center " style="background-color: #c54409">
                                 <a class="text-gray-300 sm:text-base text-xs text-center px-1"></a>
@@ -176,8 +176,8 @@
                                 <a class="text-gray-300 sm:text-base text-xs text-center px-1"></a>
                             </div>
                             <div class="flex flex-col  border-gray-600  sm:h-12 h-8 sm:w-7/12  w-5/12 items-center justify-center" style="background-color: #e5231b">
-                                <a class="text-gray-300 sm:text-base text-xs px-1 text-center">Working Conditions</a>
-                                <p class="text-xs">(Not available for 2021)</p>
+                                <a class="text-gray-300 sm:text-base text-xs px-1 text-center">{{__('Working Conditions')}}</a>
+                                <p class="text-xs">({{__('Not available for')}} {{ date('Y') }})</p>
                             </div>
                             <div class="flex   sm:h-12 h-8  sm:w-2/12 w-3/12 items-center justify-center " style="background-color: #931004">
                                 <a class="text-gray-300 sm:text-base text-xs text-center px-1"></a>
@@ -198,7 +198,7 @@
                                 <a class="text-gray-300 sm:text-base text-xs text-center px-1"></a>
                             </div>
                             <div class="flex  border-gray-600  sm:h-12 h-8 sm:w-7/12  w-5/12 items-center justify-center" style="background-color: #76b82a">
-                                <a href="{{ route('methodology', app()->getlocale() )}}" class="text-gray-300 sm:text-base text-xs px-1 text-center">Environmental Responsibility</a>
+                                <a href="{{ route('methodology', app()->getlocale() )}}" class="text-gray-300 sm:text-base text-xs px-1 text-center">{{__('Environmental Responsibility')}}</a>
                             </div>
                             <div class="flex   sm:h-12 h-8  sm:w-2/12 w-3/12 items-center justify-center " style="background-color: #0e6f24">
                                 <a class="text-gray-300 sm:text-base text-xs text-center px-1"></a>
