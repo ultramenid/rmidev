@@ -20,7 +20,11 @@
     @yield('content')
 
     <div x-data="{ open: false }" @scroll.window="open = (window.pageYOffset > 50) ? true : false" class="sm:block hidden">
-        <div class="fixed z-20 sm:bottom-10 sm:right-12 bottom-6 right-4 cursor-pointer " x-show="open" x-transition x-cloak style="display: none !important" @click="window.scrollTo(0, 0)">
+        <div class="fixed z-20 sm:bottom-10 sm:right-12 bottom-6 right-4 cursor-pointer " x-show="open" x-transition x-cloak style="display: none !important" @click="window.scrollTo({
+            top: 0,
+            left: 0,
+            behavior: 'smooth'
+          })">
             <div class="w-14 h-14 border border-white rounded-full bgrmi flex items-center justify-center">
                 <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 15l7-7 7 7" />
