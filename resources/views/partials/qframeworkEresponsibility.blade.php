@@ -1911,7 +1911,6 @@ x-data="{
     </div>
 
 
-
     {{-- F.05.2 --}}
     <h2 class="text-1xl font-semibold  cursor-pointer hover:underline mb-2"
     @click="F01 = false,
@@ -1933,6 +1932,125 @@ x-data="{
     F041 = false,
     F051 = ! F051,
     F052 = false,
+    F061 = false,
+    F062 = false,
+    F063 = false,
+    F071 = false,
+    F081 = false,
+    F082 = false,
+    window.scrollTo({
+        top: 405,
+        left: 1400,
+        behavior: 'smooth'
+      })
+    "
+    >F.05.1 The company commits to not explore or mine in World Heritage Sites and to respect other terrestrial and marine protected areas that are designated to conserve cultural or natural heritage. <a class="text-red-500">(/6.00)</a></h2>
+    <div x-show="F051" x-transition x-cloak style="display: none !important" class=" border-b border-t border-gray-400 py-2 mb-4">
+        <p class="italic mb-2">Can your company demonstrate at the corporate level that it has:</p>
+        {{-- a --}}
+        <div>
+            <p class="mb-4"><a class="font-semibold ">a.</a> Formalised its commitment, that is endorsed by senior management, to not explore or mine in World Heritage Sites and to respect other terrestrial and marine protected areas that are designated to conserve cultural or natural heritage?</p>
+            <div class="grid grid-cols-12 mb-4">
+                <a class="text-red-500  text-sm  col-span-1 text-center">2 points</a>
+                <p class="col-span-11">The company commits to not explore or mine in World Heritage Sites and to respect other terrestrial and marine protected areas that are designated to conserve cultural or natural heritage in a formal document which covers all of the company’s activities and is endorsed by senior management.</p>
+            </div>
+            <div class="grid grid-cols-12 mb-4">
+                <a class="text-red-500  text-sm  col-span-1 text-center">1 point </a>
+                <div class="col-span-11">
+                    <p >The company commits to not explore or mine in World Heritage Sites and to respect other terrestrial and marine protected areas that are designated to conserve cultural or natural heritage in a formal document which covers all of the company’s activities, but there is no evidence that this commitment is endorsed by senior management</p>
+                    <p>OR</p>
+                    <p>The company commits to not explore or mine in World Heritage Sites and to respect other terrestrial and marine protected areas that are designated to conserve cultural or natural heritage in a dedicated formal document which is endorsed by senior management, but does not cover all of the company’s activities</p>
+                    <p>OR</p>
+                    <p>The company commits to not explore or mine in World Heritage Sites in a dedicated formal document which is endorsed by senior management, but it only covers some limited aspects or does not refer to respecting other terrestrial and marine protected areas that are designated to conserve cultural or natural heritage.</p>
+                </div>
+            </div>
+            <div class="grid grid-cols-12  mb-4">
+                <a class="text-red-500  text-sm col-span-1 text-center">0.5 point</a>
+                <p class="col-span-11">The company refers to the need for respecting World Heritage Sites and other terrestrial and marine protected areas, but does not make a clear commitment in a formal document which is endorsed by senior management.</p>
+            </div>
+        </div>
+
+        {{-- b --}}
+        <div>
+            <p class="mb-4"><a class="font-semibold">b.</a> Assigned senior management or board-level responsibilities and accountability for carrying out this commitment?</p>
+            <div class="grid grid-cols-12 mb-4">
+                <a class="text-red-500  text-sm  col-span-1 text-center">2 points</a>
+                <p class="col-span-11">The company has a senior management level and/or Board level function responsible for carrying out this commitment and there is detailed information on its actual scope, role and accountability.</p>
+            </div>
+            <div class="grid grid-cols-12 mb-4">
+                <a class="text-red-500  text-sm  col-span-1 text-center">1 point</a>
+                <div class="col-span-11">
+                    <p >The company has a senior management level and/or Board level function responsible for carrying out this commitment, but there is limited information on its actual scope, role and accountability</p>
+                    <p>OR</p>
+                    <p>The company provides evidence qualifying for a score of 2, but the company scored 1 under a).</p>
+                </div>
+            </div>
+            <div class="grid grid-cols-12 mb-4">
+                <a class="text-red-500  text-sm  col-span-1 text-center">0.5 point</a>
+                <div class="col-span-11">
+                    <p >The company briefly mentions a function at the senior management level and/or Board level for carrying out this commitment, but does not provide any additional information</p>
+                    <p>OR</p>
+                    <p>The company provides evidence qualifying for a score of 2 or 1, but the company scored 0.5 under a).</p>
+                </div>
+            </div>
+        </div>
+
+        {{-- c --}}
+        <div>
+            <p class="mb-4"><a class="font-semibold">c.</a>Committed financial and staffing resources to implement this commitment?</p>
+            <div class="grid grid-cols-12 mb-4">
+                <a class="text-red-500  text-sm  col-span-1 text-center">2 points</a>
+                <div class="col-span-11">
+                    <p >The company has company-wide operational-level teams responsible for coordinating efforts on not exploring or mining in World Heritage Sites and respecting other terrestrial and marine protected areas that are designated to conserve cultural or natural heritage</p>
+                    <p>OR</p>
+                    <p>The company conducts company-wide awareness and/or training programmes and/ or workshops related to its commitment and there is evidence of the specific financial and/or staffing resources commited.</p>
+                </div>
+            </div>
+            <div class="grid grid-cols-12 mb-4">
+                <a class="text-red-500  text-sm  col-span-1 text-center">1 point</a>
+                <div class="col-span-11">
+                    <p >The company has company-wide operational-level teams responsible for coordinating efforts on not exploring or mining in World Heritage Sites, but only on some limited aspects or there is no reference to respecting other terrestrial and marine protected areas that are designated to conserve cultural or natural heritage.</p>
+                    <p>OR</p>
+                    <p>The company conducts company-wide awareness and/or training programmes and/ or workshops related to not exploring or mining in World Heritage Sites, but there is limited information on the actual financial and/or staffing resources committed</p>
+                    <p>OR</p>
+                    <p>The company allocates financial and staffing resources to implement this commitment (awareness/training programmes/workshops and/or responsible teams) but not on a company-wide basis</p>
+                    <p>OR</p>
+                    <p>The company provides evidence qualifying for a score of 2, but the company scored 1 under a).</p>
+                </div>
+            </div>
+            <div class="grid grid-cols-12 mb-4">
+                <a class="text-red-500  text-sm  col-span-1 text-center">0.5 point</a>
+                <div class="col-span-11">
+                    <p >The company provides limited evidence of awareness and/or training programmes and/or workshops and these do not relate specifically to World Heritage Sites or protected areas</p>
+                    <p>OR</p>
+                    <p>The company provides evidence qualifying for a score of 2 or 1, but the company scored 0.5 under a).</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    {{-- F.05.2 --}}
+    <h2 class="text-1xl font-semibold  cursor-pointer hover:underline mb-2"
+    @click="F01 = false,
+    F02 = false,
+    F03 = false,
+    F04 = false,
+    F05 = false,
+    F06 = false,
+    F07 = false,
+    F08 = false,
+    F011 = false,
+    F012 = false,
+    F023 = false,
+    F021 = false,
+    F022 = false,
+    F031 = false,
+    F032 = false,
+    F033 = false,
+    F041 = false,
+    F051 = false,
+    F052 = ! F052,
     F061 = false,
     F062 = false,
     F063 = false,
@@ -2261,8 +2379,8 @@ x-data="{
         behavior: 'smooth'
       })
     "
-    >F.06.2 The company tracks, reviews and acts to improve its performance on managing energy consumption throughout its operations. <a class="text-red-500">(/6.00)</a></h2>
-    <div x-show="F062" x-transition x-cloak style="display: none !important" class=" border-b border-t border-gray-400 py-2 mb-4">
+    >F.06.3 The company tracks, reviews and acts to improve its performance on managing energy consumption throughout its operations. <a class="text-red-500">(/6.00)</a></h2>
+    <div x-show="F063" x-transition x-cloak style="display: none !important" class=" border-b border-t border-gray-400 py-2 mb-4">
         <p class="italic mb-2">Can your company demonstrate that it systematically:</p>
         {{-- a --}}
         <div>
@@ -2358,7 +2476,7 @@ x-data="{
     F081 = false,
     F082 = false,
     window.scrollTo({
-        top: 405,
+        top: 605,
         left: 1400,
         behavior: 'smooth'
       })
@@ -2473,7 +2591,7 @@ x-data="{
     F081 = ! F081,
     F082 = false,
     window.scrollTo({
-        top: 405,
+        top: 605,
         left: 1400,
         behavior: 'smooth'
       })
@@ -2587,13 +2705,13 @@ x-data="{
     F081 = false,
     F082 = ! F082,
     window.scrollTo({
-        top: 405,
+        top: 605,
         left: 1400,
         behavior: 'smooth'
       })
     "
     >F.08.2 The company publicly discloses all relevant information about financial assurance that is provided for disaster management and recovery, throughout its operations. <a class="text-red-500">(/6.00)</a></h2>
-    <div x-show="F081" x-transition x-cloak style="display: none !important" class=" border-b border-t border-gray-400 py-2 mb-4">
+    <div x-show="F082" x-transition x-cloak style="display: none !important" class=" border-b border-t border-gray-400 py-2 mb-4">
         <p class="italic mb-2">Can your company demonstrate at the corporate level that it:</p>
         {{-- a --}}
         <div>
