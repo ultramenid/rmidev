@@ -11,6 +11,9 @@
 
     <link href="{{ asset('css/app.css') }}" rel="stylesheet" >
     <script src="{{ asset('js/app.js') }}"  defer data-turbolinks-suppress-warning></script>
+    <script src="{{ asset('js/alpine.js')}} "></script>
+
+
 
     @livewireStyles
 

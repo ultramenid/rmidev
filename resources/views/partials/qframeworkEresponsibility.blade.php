@@ -1,66 +1,11 @@
-{{-- qframework2 --}}
+{{-- qframework6 --}}
 <div class="w-full border border-gray-200 dark:border-opacity-20 rounded h-screen bg-gray-300 px-4 py-4 overflow-y-auto" x-show="qframework6" x-transition x-cloak style="display: none !important"
-x-data="{
-    F01 : false,
-    F02 : false,
-    F03 : false,
-    F04 : false,
-    F05 : false,
-    F06 : false,
-    F07 : false,
-    F08 : false,
-    F011 : false,
-    F012 : false,
-    F023 : false,
-    F021 : false,
-    F022 : false,
-    F031 : false,
-    F032 : false,
-    F033 : false,
-    F041 : false,
-    F051 : false,
-    F052 : false,
-    F061 : false,
-    F062 : false,
-    F063 : false,
-    F071 : false,
-    F081 : false,
-    F082 : false
-}">
+x-data="qframework6">
     <h1 class="text-2xl font-semibold mb-4">{{__('Environmental Responsibility')}}</h1>
 
     {{-- F.01 --}}
     <h2 class="text-1xl font-semibold cursor-pointer hover:underline "
-    @click="F01 = ! F01,
-    F02 = false,
-    F03 = false,
-    F04 = false,
-    F05 = false,
-    F06 = false,
-    F07 = false,
-    F08 = false,
-    F011 = false,
-    F012 = false,
-    F023 = false,
-    F021 = false,
-    F022 = false,
-    F031 = false,
-    F032 = false,
-    F033 = false,
-    F041 = false,
-    F051 = false,
-    F052 = false,
-    F061 = false,
-    F062 = false,
-    F063 = false,
-    F071 = false,
-    F081 = false,
-    F082 = false,
-    window.scrollTo({
-        top: 400,
-        left: 1500,
-        behavior: 'smooth'
-      })"
+    @click="toogleF01"
     >F.01 {{__('Environmental Stewardship')}}</h2>
     <div x-show="F01" x-transition x-cloak style="display: none !important" class=" border-b border-t border-gray-400 py-2 ">
         <p class="mb-4">{{__('Environmental stewardship is the comprehensive understanding and effective management of critical environmental risks and opportunities related to climate change, emissions, waste management, resource consumption, water conservation, and biodiversity and ecosystem services protection.')}}
@@ -90,7 +35,7 @@ x-data="{
             {{__('Together, the integration of environmental management with broader societal considerations, meaningful stakeholder engagement, and public disclosure of environmental management activities can enhance a company’s accountability, and increase the likelihood that its efforts will support the health and livelihoods of communities and leave positive environmental legacies. Effective environmental stewardship, in addition to protecting environmental and social values, is likely to create improved stakeholder relations, increased worker engagement, financial benefits, and a competitive advantage for companies.')}}
         </p>
         {{-- detail --}}
-        <div class="flex border border-gray-300 mb-4">
+        <div class="flex border border-gray-400 mb-4">
             <div class="lg:w-1/12 w-2/12  inline-flex items-center justify-center text-white " style="background-color: #b9d478">
                 <a class="transform  -rotate-90">{{__('Commitment')}}</a>
             </div>
@@ -112,7 +57,7 @@ x-data="{
                 </p>
             </div>
         </div>
-        <div class="flex border border-gray-300 mb-4">
+        <div class="flex border border-gray-400 mb-4">
             <div class="lg:w-1/12 w-2/12  inline-flex items-center justify-center text-white " style="background-color: #76b82a">
                 <a class="transform  -rotate-90">{{__('Action')}}</a>
             </div>
@@ -138,37 +83,7 @@ x-data="{
 
     {{-- F.02 --}}
     <h2 class="text-1xl font-semibold  cursor-pointer hover:underline"
-    @click="F01 = false,
-    F02 = ! F02,
-    F03 = false,
-    F04 = false,
-    F05 = false,
-    F06 = false,
-    F07 = false,
-    F08 = false,
-    F011 = false,
-    F012 = false,
-    F023 = false,
-    F021 = false,
-    F022 = false,
-    F031 = false,
-    F032 = false,
-    F033 = false,
-    F041 = false,
-    F051 = false,
-    F052 = false,
-    F061 = false,
-    F062 = false,
-    F063 = false,
-    F071 = false,
-    F081 = false,
-    F082 = false,
-    window.scrollTo({
-        top: 400,
-        left: 1500,
-        behavior: 'smooth'
-      })
-    "
+    @click="toogleF02"
     >F.02 {{__('Tailings Management')}}</h2>
     <div x-show="F02" x-transition x-cloak style="display: none !important" class=" border-b border-t border-gray-400 py-2 mb-4">
         <p class="mb-4">{{__('The excavation or blasting of the rock mass which contains the minerals and metals mined results in large amounts of waste rock of little or no economic value. The remaining ore, where concentrations of minerals and metals are above the “cut-off grade”, goes through a milling and beneficiation process, to extract the minerals and metals from the ore. These operations often use chemicals and generate enormous volumes of residual waste. The wastes, known as tailings, are composed primarily of pulverised rock, water and processing chemicals. Typically, tailings are piped into large surface impoundments, where they are held in by earthen dams. The fluids are recycled, or they evaporate or drain out over time. When tailings storage facilities are full, the wastes may undergo reclamation, such as the planting of vegetation, to stabilise the area.')}}
@@ -192,7 +107,7 @@ x-data="{
             {{__('There is a strong incentive for mining companies to reduce the risks associated with tailings facilities. Failures, whether catastrophic dam bursts or the slow seepage of chemicals into water, can lead to significant health and safety risks for local communities, widespread environmental damage and high clean-up and remediation costs that may ultimately fall on producing country governments. Companies implicated in tailings facility mismanagement suffer huge financial losses, face legal action, loss of social licence to operate, and not only bring reputational damage to themselves, but to the mining industry as a whole.')}}
         </p>
         {{-- detail --}}
-        <div class="flex border border-gray-300 mb-4">
+        <div class="flex border border-gray-400 mb-4">
             <div class="lg:w-1/12 w-2/12  inline-flex items-center justify-center text-white " style="background-color: #b9d478">
                 <a class="transform  -rotate-90">{{__('Commitment')}}</a>
             </div>
@@ -214,7 +129,7 @@ x-data="{
                 </p>
             </div>
         </div>
-        <div class="flex border border-gray-300 mb-4">
+        <div class="flex border border-gray-400 mb-4">
             <div class="lg:w-1/12 w-2/12  inline-flex items-center justify-center text-white " style="background-color: #76b82a">
                 <a class="transform  -rotate-90">{{__('Action')}}</a>
             </div>
@@ -237,7 +152,7 @@ x-data="{
             </div>
         </div>
 
-        <div class="flex border border-gray-300 mb-4">
+        <div class="flex border border-gray-400 mb-4">
             <div class="lg:w-1/12 w-2/12  inline-flex items-center justify-center text-white " style="background-color: #0e6f24">
                 <a class="transform  -rotate-90">{{__('Effectiveness')}}</a>
             </div>
@@ -263,37 +178,7 @@ x-data="{
 
     {{-- F.03 --}}
     <h2 class="text-1xl font-semibold  cursor-pointer hover:underline"
-    @click="F01 = false,
-    F02 = false,
-    F03 = ! F03,
-    F04 = false,
-    F05 = false,
-    F06 = false,
-    F07 = false,
-    F08 = false,
-    F011 = false,
-    F012 = false,
-    F023 = false,
-    F021 = false,
-    F022 = false,
-    F031 = false,
-    F032 = false,
-    F033 = false,
-    F041 = false,
-    F051 = false,
-    F052 = false,
-    F061 = false,
-    F062 = false,
-    F063 = false,
-    F071 = false,
-    F081 = false,
-    F082 = false,
-    window.scrollTo({
-        top: 435,
-        left: 1500,
-        behavior: 'smooth'
-      })
-    "
+    @click="toogleF03"
     >F.03 {{__('Water')}}</h2>
     <div x-show="F03" x-transition x-cloak style="display: none !important" class=" border-b border-t border-gray-400 py-2 mb-4">
         <p class="mb-4">{{__('Water is a key issue for sustainable development and the growth of economies. It is essential for immediate survival and long term food security, and is intertwined with the development of energy infrastructure. In addition to being a human right, clean water supports healthier and more productive populations and ecosystems.')}}
@@ -318,7 +203,7 @@ x-data="{
         </p>
         {{-- detail --}}
 
-        <div class="flex border border-gray-300 mb-4">
+        <div class="flex border border-gray-400 mb-4">
             <div class="lg:w-1/12 w-2/12  inline-flex items-center justify-center text-white " style="background-color: #76b82a">
                 <a class="transform  -rotate-90">{{__('Action')}}</a>
             </div>
@@ -341,7 +226,7 @@ x-data="{
             </div>
         </div>
 
-        <div class="flex border border-gray-300 mb-4">
+        <div class="flex border border-gray-400 mb-4">
             <div class="lg:w-1/12 w-2/12  inline-flex items-center justify-center text-white " style="background-color: #0e6f24">
                 <a class="transform  -rotate-90">{{__('Effectiveness')}}</a>
             </div>
@@ -384,37 +269,7 @@ x-data="{
 
     {{-- F.04 --}}
     <h2 class="text-1xl font-semibold  cursor-pointer hover:underline"
-    @click="F01 = false,
-    F02 = false,
-    F03 = false,
-    F04 = ! F04,
-    F05 = false,
-    F06 = false,
-    F07 = false,
-    F08 = false,
-    F011 = false,
-    F012 = false,
-    F023 = false,
-    F021 = false,
-    F022 = false,
-    F031 = false,
-    F032 = false,
-    F033 = false,
-    F041 = false,
-    F051 = false,
-    F052 = false,
-    F061 = false,
-    F062 = false,
-    F063 = false,
-    F071 = false,
-    F081 = false,
-    F082 = false,
-    window.scrollTo({
-        top: 470,
-        left: 1500,
-        behavior: 'smooth'
-      })
-    "
+    @click="toogleF04"
     >F.04 {{__('Noise and Vibration')}}</h2>
     <div x-show="F04" x-transition x-cloak style="display: none !important" class=" border-b border-t border-gray-400 py-2 mb-4">
         <p class="mb-4">{{__('Noise is a common source of community concern related to mining. During a mine’s operational phase, noise can be generated 24 hours a day, seven days a week, and a mine may operate for many years. Potentially significant sources of mining related noise and vibrations include helicopters used during exploration, heavy equipment used during mine construction, drilling, blasting, loading and dumping waste rock, screening and crushing, and mineral transport (e.g., corridors for railways, roads and conveyor belts).')}}
@@ -439,7 +294,7 @@ x-data="{
         </p>
         {{-- detail --}}
 
-        <div class="flex border border-gray-300 mb-4">
+        <div class="flex border border-gray-400 mb-4">
             <div class="lg:w-1/12 w-2/12  inline-flex items-center justify-center text-white " style="background-color: #76b82a">
                 <a class="transform  -rotate-90">{{__('Action')}}</a>
             </div>
@@ -465,37 +320,7 @@ x-data="{
 
     {{-- F.05--}}
     <h2 class="text-1xl font-semibold  cursor-pointer hover:underline"
-    @click="F01 = false,
-    F02 = false,
-    F03 = false,
-    F04 = false,
-    F05 = ! F05,
-    F06 = false,
-    F07 = false,
-    F08 = false,
-    F011 = false,
-    F012 = false,
-    F023 = false,
-    F021 = false,
-    F022 = false,
-    F031 = false,
-    F032 = false,
-    F033 = false,
-    F041 = false,
-    F051 = false,
-    F052 = false,
-    F061 = false,
-    F062 = false,
-    F063 = false,
-    F071 = false,
-    F081 = false,
-    F082 = false,
-    window.scrollTo({
-        top: 505,
-        left: 1400,
-        behavior: 'smooth'
-      })
-    "
+    @click="toogleF05"
     >F.05 {{__('Biodiversity and Ecosystem Services')}}</h2>
     <div x-show="F05" x-transition x-cloak style="display: none !important" class=" border-b border-t border-gray-400 py-2 mb-4">
         <p class="mb-4">{{__('Biological diversity – or biodiversity – refers to the variety of plants, animals and microorganisms that exist, the genes they contain, and the ecosystems of which they are a part. Ecosystems that are genetically diverse and species-rich are more resilient and adaptable to external stresses, and have a greater ability to recover from disturbances such as floods, fires and diseases. Biodiversity plays a role in stabilising the earth’s climate; it contributes to sustainable livelihoods and economies; and creates conditions that enable cultural diversity to thrive.')}}
@@ -523,7 +348,7 @@ x-data="{
         </p>
         {{-- detail --}}
 
-        <div class="flex border border-gray-300 mb-4">
+        <div class="flex border border-gray-400 mb-4">
             <div class="lg:w-1/12 w-2/12  inline-flex items-center justify-center text-white " style="background-color: #b9d478">
                 <a class="transform  -rotate-90">{{__('Commitment')}}</a>
             </div>
@@ -545,7 +370,7 @@ x-data="{
                 </p>
             </div>
         </div>
-        <div class="flex border border-gray-300 mb-4">
+        <div class="flex border border-gray-400 mb-4">
             <div class="lg:w-1/12 w-2/12  inline-flex items-center justify-center text-white " style="background-color: #0e6f24">
                 <a class="transform  -rotate-90">{{__('Effectiveness')}}</a>
             </div>
@@ -571,37 +396,7 @@ x-data="{
 
     {{-- F.06--}}
     <h2 class="text-1xl font-semibold  cursor-pointer hover:underline"
-    @click="F01 = false,
-    F02 = false,
-    F03 = false,
-    F04 = false,
-    F05 = false,
-    F06 = ! F06,
-    F07 = false,
-    F08 = false,
-    F011 = false,
-    F012 = false,
-    F023 = false,
-    F021 = false,
-    F022 = false,
-    F031 = false,
-    F032 = false,
-    F033 = false,
-    F041 = false,
-    F051 = false,
-    F052 = false,
-    F061 = false,
-    F062 = false,
-    F063 = false,
-    F071 = false,
-    F081 = false,
-    F082 = false,
-    window.scrollTo({
-        top: 300,
-        left: 1400,
-        behavior: 'smooth'
-      })
-    "
+    @click="toogleF06"
     >F.06 {{__('Climate Change and Energy Efficiency')}}</h2>
     <div x-show="F06" x-transition x-cloak style="display: none !important" class=" border-b border-t border-gray-400 py-2 mb-4">
         <p class="mb-4">{{__('Climate change is a global issue, but the effects are not equally distributed around the globe or even within individual countries. Developing countries are often disproportionately affected, and Indigenous Peoples, and poor and vulnerable groups within society are especially at risk from the impacts of climate change.')}}
@@ -624,7 +419,7 @@ x-data="{
 
         {{-- detail --}}
 
-        <div class="flex border border-gray-300 mb-4">
+        <div class="flex border border-gray-400 mb-4">
             <div class="lg:w-1/12 w-2/12  inline-flex items-center justify-center text-white " style="background-color: #76b82a">
                 <a class="transform  -rotate-90">{{__('Action')}}</a>
             </div>
@@ -646,7 +441,7 @@ x-data="{
                 </p>
             </div>
         </div>
-        <div class="flex border border-gray-300 mb-4">
+        <div class="flex border border-gray-400 mb-4">
             <div class="lg:w-1/12 w-2/12  inline-flex items-center justify-center text-white " style="background-color: #0e6f24">
                 <a class="transform  -rotate-90">{{__('Effectiveness')}}</a>
             </div>
@@ -689,37 +484,7 @@ x-data="{
 
     {{-- F.07--}}
     <h2 class="text-1xl font-semibold  cursor-pointer hover:underline"
-    @click="F01 = false,
-    F02 = false,
-    F03 = false,
-    F04 = false,
-    F05 = false,
-    F06 = false,
-    F07 = ! F07,
-    F08 = false,
-    F011 = false,
-    F012 = false,
-    F023 = false,
-    F021 = false,
-    F022 = false,
-    F031 = false,
-    F032 = false,
-    F033 = false,
-    F041 = false,
-    F051 = false,
-    F052 = false,
-    F061 = false,
-    F062 = false,
-    F063 = false,
-    F071 = false,
-    F081 = false,
-    F082 = false,
-    window.scrollTo({
-        top: 335,
-        left: 1400,
-        behavior: 'smooth'
-      })
-    "
+    @click="toogleF07"
     >F.07 {{__('Hazardous Materials Management')}}</h2>
     <div x-show="F07" x-transition x-cloak style="display: none !important" class=" border-b border-t border-gray-400 py-2 mb-4">
         <p class="mb-4">{{__('Hazardous materials are those that represent a risk to human health, property or the environment due to their physical or chemical characteristics. There are a variety of potentially hazardous materials that are generated or used by mining operations.')}}
@@ -741,7 +506,7 @@ x-data="{
         </p>
          {{-- detail --}}
 
-         <div class="flex border border-gray-300 mb-4">
+         <div class="flex border border-gray-400 mb-4">
             <div class="lg:w-1/12 w-2/12  inline-flex items-center justify-center text-white " style="background-color: #76b82a">
                 <a class="transform  -rotate-90">{{__('Action')}}</a>
             </div>
@@ -768,37 +533,7 @@ x-data="{
 
     {{-- F.08--}}
     <h2 class="text-1xl font-semibold  cursor-pointer hover:underline"
-    @click="F01 = false,
-    F02 = false,
-    F03 = false,
-    F04 = false,
-    F05 = false,
-    F06 = false,
-    F07 = false,
-    F08 = ! F08,
-    F011 = false,
-    F012 = false,
-    F023 = false,
-    F021 = false,
-    F022 = false,
-    F031 = false,
-    F032 = false,
-    F033 = false,
-    F041 = false,
-    F051 = false,
-    F052 = false,
-    F061 = false,
-    F062 = false,
-    F063 = false,
-    F071 = false,
-    F081 = false,
-    F082 = false,
-    window.scrollTo({
-        top: 335,
-        left: 1400,
-        behavior: 'smooth'
-      })
-    "
+    @click="toogleF08"
     >F.08 {{__('Emergency Preparedness')}}</h2>
     <div x-show="F08" x-transition x-cloak style="display: none !important" class=" border-b border-t border-gray-400 py-2 mb-4">
         <p class="mb-4">{{__('Large-scale mines carry significant operational risks. The release or spill of hazardous chemicals, tailings dam failures, explosions, fires and a range of other possible accidents pose risks to mineworkers and nearby communities. Accidents may be related to human errors, equipment failure, or poor management of mine wastes or hazardous materials. Natural forces, such as earthquakes, floods, cyclones or forest fires mayalso cause or compound emergencies at mining operations.')}}
@@ -821,7 +556,7 @@ x-data="{
 
         {{-- detail --}}
 
-        <div class="flex border border-gray-300 mb-4">
+        <div class="flex border border-gray-400 mb-4">
             <div class="lg:w-1/12 w-2/12  inline-flex items-center justify-center text-white " style="background-color: #76b82a">
                 <a class="transform  -rotate-90">{{__('Action')}}</a>
             </div>
@@ -866,37 +601,7 @@ x-data="{
 
     {{-- F.01.1--}}
     <h2 class="text-1xl font-semibold  cursor-pointer hover:underline mb-2"
-    @click="F01 = false,
-    F02 = false,
-    F03 = false,
-    F04 = false,
-    F05 = false,
-    F06 = false,
-    F07 = false,
-    F08 = false,
-    F011 = ! F011,
-    F012 = false,
-    F023 = false,
-    F021 = false,
-    F022 = false,
-    F031 = false,
-    F032 = false,
-    F033 = false,
-    F041 = false,
-    F051 = false,
-    F052 = false,
-    F061 = false,
-    F062 = false,
-    F063 = false,
-    F071 = false,
-    F081 = false,
-    F082 = false,
-    window.scrollTo({
-        top: 370,
-        left: 1400,
-        behavior: 'smooth'
-      })
-    "
+    @click="toogleF011"
     >F.01.1 The company commits to manage its environmental impacts systematically, through the mitigation hierarchy approach.<a class="text-red-500">(/6.00)</a></h2>
     <div x-show="F011" x-transition x-cloak style="display: none !important" class=" border-b border-t border-gray-400 py-2 mb-4 ">
         <p class="italic mb-2">Can your company demonstrate at the corporate level that it has:</p>
@@ -987,37 +692,7 @@ x-data="{
 
      {{-- F.01.2--}}
      <h2 class="text-1xl font-semibold  cursor-pointer hover:underline mb-2"
-     @click="F01 = false,
-     F02 = false,
-     F03 = false,
-     F04 = false,
-     F05 = false,
-     F06 = false,
-     F07 = false,
-     F08 = false,
-     F011 = false,
-     F012 = ! F012,
-     F023 = false,
-     F021 = false,
-     F022 = false,
-     F031 = false,
-     F032 = false,
-     F033 = false,
-     F041 = false,
-     F051 = false,
-     F052 = false,
-     F061 = false,
-     F062 = false,
-     F063 = false,
-     F071 = false,
-     F081 = false,
-     F082 = false,
-     window.scrollTo({
-         top: 370,
-         left: 1400,
-         behavior: 'smooth'
-       })
-     "
+     @click="toogleF012"
      >F.01.2 The company has systems in place to ensure its operations conduct and disclose regular assessments of its environmental impacts through an integrated approach that considers the linkages between socio-economic and environmental impacts. <a class="text-red-500">(/6.00)</a></h2>
      <div x-show="F012" x-transition x-cloak style="display: none !important" class=" border-b border-t border-gray-400 py-2 mb-4">
         <p class="italic mb-2">Can your company demonstrate at the corporate level that it has systems in place to ensure its operations:</p>
@@ -1103,37 +778,7 @@ x-data="{
 
     {{-- F.02.1 --}}
     <h2 class="text-1xl font-semibold  cursor-pointer hover:underline mb-2"
-    @click="F01 = false,
-    F02 = false,
-    F03 = false,
-    F04 = false,
-    F05 = false,
-    F06 = false,
-    F07 = false,
-    F08 = false,
-    F011 = false,
-    F012 = false,
-    F023 = false,
-    F021 = ! F021,
-    F022 = false,
-    F031 = false,
-    F032 = false,
-    F033 = false,
-    F041 = false,
-    F051 = false,
-    F052 = false,
-    F061 = false,
-    F062 = false,
-    F063 = false,
-    F071 = false,
-    F081 = false,
-    F082 = false,
-    window.scrollTo({
-        top: 370,
-        left: 1400,
-        behavior: 'smooth'
-      })
-    "
+    @click="toogleF021"
     >F.02.1 The company commits to not use riverine, lake or marine disposal of tailings. <a class="text-red-500">(/6.00)</a></h2>
     <div x-show="F021" x-transition x-cloak style="display: none !important" class=" border-b border-t border-gray-400 py-2 mb-4">
         <p class="italic mb-2">Can your company demonstrate at the corporate level that it has:</p>
@@ -1220,37 +865,7 @@ x-data="{
 
     {{-- F.02.2 --}}
     <h2 class="text-1xl font-semibold  cursor-pointer hover:underline mb-2"
-    @click="F01 = false,
-    F02 = false,
-    F03 = false,
-    F04 = false,
-    F05 = false,
-    F06 = false,
-    F07 = false,
-    F08 = false,
-    F011 = false,
-    F012 = false,
-    F023 = false,
-    F021 = false,
-    F022 = ! F022,
-    F031 = false,
-    F032 = false,
-    F033 = false,
-    F041 = false,
-    F051 = false,
-    F052 = false,
-    F061 = false,
-    F062 = false,
-    F063 = false,
-    F071 = false,
-    F081 = false,
-    F082 = false,
-    window.scrollTo({
-        top: 370,
-        left: 1400,
-        behavior: 'smooth'
-      })
-    "
+    @click="toogleF022"
     >F.02.2 Where applicable, the company publicly discloses information about the location and safety of all its tailings storage facilities. <a class="text-red-500">(/6.00)</a></h2>
     <div x-show="F022" x-transition x-cloak style="display: none !important" class=" border-b border-t border-gray-400 py-2 mb-4">
         <p class="italic mb-2">Can your company demonstrate at the corporate level that it:</p>
@@ -1329,37 +944,7 @@ x-data="{
 
 {{-- F.02.3 --}}
     <h2 class="text-1xl font-semibold  cursor-pointer hover:underline mb-2"
-    @click="F01 = false,
-    F02 = false,
-    F03 = false,
-    F04 = false,
-    F05 = false,
-    F06 = false,
-    F07 = false,
-    F08 = false,
-    F011 = false,
-    F012 = false,
-    F023 = ! F023,
-    F021 = false,
-    F022 = false,
-    F031 = false,
-    F032 = false,
-    F033 = false,
-    F041 = false,
-    F051 = false,
-    F052 = false,
-    F061 = false,
-    F062 = false,
-    F063 = false,
-    F071 = false,
-    F081 = false,
-    F082 = false,
-    window.scrollTo({
-        top: 370,
-        left: 1400,
-        behavior: 'smooth'
-      })
-    "
+    @click="toogleF023"
     >F.02.3 Where applicable, the company tracks, reviews and acts to improve its performance on addressing potential risks related to its tailings facilities, including seepage and tailings dam failure. <a class="text-red-500">(/6.00)</a></h2>
     <div x-show="F023" x-transition x-cloak style="display: none !important" class=" border-b border-t border-gray-400 py-2 mb-4">
         <p class="italic mb-2">Where applicable, can your company demonstrate that it systematically:</p>
@@ -1434,37 +1019,7 @@ x-data="{
 
     {{-- F.03.1 --}}
     <h2 class="text-1xl font-semibold  cursor-pointer hover:underline mb-2"
-    @click="F01 = false,
-    F02 = false,
-    F03 = false,
-    F04 = false,
-    F05 = false,
-    F06 = false,
-    F07 = false,
-    F08 = false,
-    F011 = false,
-    F012 = false,
-    F023 = false,
-    F021 = false,
-    F022 = false,
-    F031 = ! F031,
-    F032 = false,
-    F033 = false,
-    F041 = false,
-    F051 = false,
-    F052 = false,
-    F061 = false,
-    F062 = false,
-    F063 = false,
-    F071 = false,
-    F081 = false,
-    F082 = false,
-    window.scrollTo({
-        top: 370,
-        left: 1400,
-        behavior: 'smooth'
-      })
-    "
+    @click="toogleF031"
     >F.03.1 The company has systems in place to ensure its operations design and implement water stewardship strategies and plans, based on a catchment-level approach, to address water security in the affected area for current and future water users and the environment. <a class="text-red-500">(/6.00)</a></h2>
     <div x-show="F031" x-transition x-cloak style="display: none !important" class=" border-b border-t border-gray-400 py-2 mb-4">
         <p class="italic mb-2">Can your company demonstrate at the corporate level that it: </p>
@@ -1549,37 +1104,7 @@ x-data="{
 
 {{-- F.03.2 --}}
     <h2 class="text-1xl font-semibold  cursor-pointer hover:underline mb-2"
-    @click="F01 = false,
-    F02 = false,
-    F03 = false,
-    F04 = false,
-    F05 = false,
-    F06 = false,
-    F07 = false,
-    F08 = false,
-    F011 = false,
-    F012 = false,
-    F023 = false,
-    F021 = false,
-    F022 = false,
-    F031 = false,
-    F032 = ! F032,
-    F033 = false,
-    F041 = false,
-    F051 = false,
-    F052 = false,
-    F061 = false,
-    F062 = false,
-    F063 = false,
-    F071 = false,
-    F081 = false,
-    F082 = false,
-    window.scrollTo({
-        top: 370,
-        left: 1400,
-        behavior: 'smooth'
-      })
-    "
+    @click="toogleF032"
     >F.03.2 The company tracks, reviews and acts to improve its performance on reducing its water consumption. <a class="text-red-500">(/6.00)</a></h2>
     <div x-show="F032" x-transition x-cloak style="display: none !important" class=" border-b border-t border-gray-400 py-2 mb-4">
         <p class="italic mb-2">Can your company demonstrate that it systematically:</p>
@@ -1673,37 +1198,7 @@ x-data="{
 
     {{-- F.03.3 --}}
     <h2 class="text-1xl font-semibold  cursor-pointer hover:underline mb-2"
-    @click="F01 = false,
-    F02 = false,
-    F03 = false,
-    F04 = false,
-    F05 = false,
-    F06 = false,
-    F07 = false,
-    F08 = false,
-    F011 = false,
-    F012 = false,
-    F023 = false,
-    F021 = false,
-    F022 = false,
-    F031 = false,
-    F032 = false,
-    F033 = ! F033,
-    F041 = false,
-    F051 = false,
-    F052 = false,
-    F061 = false,
-    F062 = false,
-    F063 = false,
-    F071 = false,
-    F081 = false,
-    F082 = false,
-    window.scrollTo({
-        top: 370,
-        left: 1400,
-        behavior: 'smooth'
-      })
-    "
+    @click="toogleF033"
     >F.03.3 The company tracks, reviews and acts to improve its performance on reducing its adverse impacts on water quality. <a class="text-red-500">(/6.00)</a></h2>
     <div x-show="F033" x-transition x-cloak style="display: none !important" class=" border-b border-t border-gray-400 py-2 mb-4">
         <p class="italic mb-2">Can your company demonstrate that it systematically:</p>
@@ -1794,37 +1289,7 @@ x-data="{
 
     {{-- F.04.1 --}}
     <h2 class="text-1xl font-semibold  cursor-pointer hover:underline mb-2"
-    @click="F01 = false,
-    F02 = false,
-    F03 = false,
-    F04 = false,
-    F05 = false,
-    F06 = false,
-    F07 = false,
-    F08 = false,
-    F011 = false,
-    F012 = false,
-    F023 = false,
-    F021 = false,
-    F022 = false,
-    F031 = false,
-    F032 = false,
-    F033 = false,
-    F041 = ! F041,
-    F051 = false,
-    F052 = false,
-    F061 = false,
-    F062 = false,
-    F063 = false,
-    F071 = false,
-    F081 = false,
-    F082 = false,
-    window.scrollTo({
-        top: 405,
-        left: 1400,
-        behavior: 'smooth'
-      })
-    "
+    @click="toogleF041"
     >F.04.1 The company has systems in place to ensure its operations limit the impacts of noise and vibration on affected communities, structures, properties, and wildlife. <a class="text-red-500">(/6.00)</a></h2>
     <div x-show="F041" x-transition x-cloak style="display: none !important" class=" border-b border-t border-gray-400 py-2 mb-4">
         <p class="italic mb-2">Can your company demonstrate at the corporate level that it has systems in place to ensure its operations:</p>
@@ -1911,39 +1376,9 @@ x-data="{
     </div>
 
 
-    {{-- F.05.2 --}}
+    {{-- F.05.1 --}}
     <h2 class="text-1xl font-semibold  cursor-pointer hover:underline mb-2"
-    @click="F01 = false,
-    F02 = false,
-    F03 = false,
-    F04 = false,
-    F05 = false,
-    F06 = false,
-    F07 = false,
-    F08 = false,
-    F011 = false,
-    F012 = false,
-    F023 = false,
-    F021 = false,
-    F022 = false,
-    F031 = false,
-    F032 = false,
-    F033 = false,
-    F041 = false,
-    F051 = ! F051,
-    F052 = false,
-    F061 = false,
-    F062 = false,
-    F063 = false,
-    F071 = false,
-    F081 = false,
-    F082 = false,
-    window.scrollTo({
-        top: 405,
-        left: 1400,
-        behavior: 'smooth'
-      })
-    "
+    @click="toogleF051"
     >F.05.1 The company commits to not explore or mine in World Heritage Sites and to respect other terrestrial and marine protected areas that are designated to conserve cultural or natural heritage. <a class="text-red-500">(/6.00)</a></h2>
     <div x-show="F051" x-transition x-cloak style="display: none !important" class=" border-b border-t border-gray-400 py-2 mb-4">
         <p class="italic mb-2">Can your company demonstrate at the corporate level that it has:</p>
@@ -2032,37 +1467,7 @@ x-data="{
 
     {{-- F.05.2 --}}
     <h2 class="text-1xl font-semibold  cursor-pointer hover:underline mb-2"
-    @click="F01 = false,
-    F02 = false,
-    F03 = false,
-    F04 = false,
-    F05 = false,
-    F06 = false,
-    F07 = false,
-    F08 = false,
-    F011 = false,
-    F012 = false,
-    F023 = false,
-    F021 = false,
-    F022 = false,
-    F031 = false,
-    F032 = false,
-    F033 = false,
-    F041 = false,
-    F051 = false,
-    F052 = ! F052,
-    F061 = false,
-    F062 = false,
-    F063 = false,
-    F071 = false,
-    F081 = false,
-    F082 = false,
-    window.scrollTo({
-        top: 405,
-        left: 1400,
-        behavior: 'smooth'
-      })
-    "
+    @click="toogleF052"
     >F.05.2 The company tracks, reviews and acts to improve its performance on biodiversity and ecosystem services management. <a class="text-red-500">(/6.00)</a></h2>
     <div x-show="F052" x-transition x-cloak style="display: none !important" class=" border-b border-t border-gray-400 py-2 mb-4">
         <p class="italic mb-2">Can your company demonstrate that it systematically:</p>
@@ -2134,37 +1539,7 @@ x-data="{
 
     {{-- F.06.1 --}}
     <h2 class="text-1xl font-semibold  cursor-pointer hover:underline mb-2"
-    @click="F01 = false,
-    F02 = false,
-    F03 = false,
-    F04 = false,
-    F05 = false,
-    F06 = false,
-    F07 = false,
-    F08 = false,
-    F011 = false,
-    F012 = false,
-    F023 = false,
-    F021 = false,
-    F022 = false,
-    F031 = false,
-    F032 = false,
-    F033 = false,
-    F041 = false,
-    F051 = false,
-    F052 = false,
-    F061 = ! F061,
-    F062 = false,
-    F063 = false,
-    F071 = false,
-    F081 = false,
-    F082 = false,
-    window.scrollTo({
-        top: 405,
-        left: 1400,
-        behavior: 'smooth'
-      })
-    "
+    @click="toogleF061"
     >F.06.1 The company has systems in place to identify and report on the potential implications of climate change on its current and future  operations’ impacts on communities, workers and the environment, and to design and implement appropriate adaptation and transition strategies. <a class="text-red-500">(/6.00)</a></h2>
     <div x-show="F061" x-transition x-cloak style="display: none !important" class=" border-b border-t border-gray-400 py-2 mb-4">
         <p class="italic mb-2">Can your company demonstrate at the corporate level that it:</p>
@@ -2239,37 +1614,7 @@ x-data="{
 
     {{-- F.06.2--}}
     <h2 class="text-1xl font-semibold  cursor-pointer hover:underline mb-2"
-    @click="F01 = false,
-    F02 = false,
-    F03 = false,
-    F04 = false,
-    F05 = false,
-    F06 = false,
-    F07 = false,
-    F08 = false,
-    F011 = false,
-    F012 = false,
-    F023 = false,
-    F021 = false,
-    F022 = false,
-    F031 = false,
-    F032 = false,
-    F033 = false,
-    F041 = false,
-    F051 = false,
-    F052 = false,
-    F061 = false,
-    F062 = ! F062,
-    F063 = false,
-    F071 = false,
-    F081 = false,
-    F082 = false,
-    window.scrollTo({
-        top: 405,
-        left: 1400,
-        behavior: 'smooth'
-      })
-    "
+    @click="toogleF062"
     >F.06.2 The company tracks, reviews and acts to improve its performance on managing the     greenhouse gas (GHG) emissions generated by its activities and its energy use. <a class="text-red-500">(/6.00)</a></h2>
     <div x-show="F062" x-transition x-cloak style="display: none !important" class=" border-b border-t border-gray-400 py-2 mb-4">
         <p class="italic mb-2">Can your company demonstrate that it systematically:</p>
@@ -2348,37 +1693,7 @@ x-data="{
 
     {{-- F.06.3--}}
     <h2 class="text-1xl font-semibold  cursor-pointer hover:underline mb-2"
-    @click="F01 = false,
-    F02 = false,
-    F03 = false,
-    F04 = false,
-    F05 = false,
-    F06 = false,
-    F07 = false,
-    F08 = false,
-    F011 = false,
-    F012 = false,
-    F023 = false,
-    F021 = false,
-    F022 = false,
-    F031 = false,
-    F032 = false,
-    F033 = false,
-    F041 = false,
-    F051 = false,
-    F052 = false,
-    F061 = false,
-    F062 = false,
-    F063 = ! F063,
-    F071 = false,
-    F081 = false,
-    F082 = false,
-    window.scrollTo({
-        top: 405,
-        left: 1400,
-        behavior: 'smooth'
-      })
-    "
+    @click="toogleF063"
     >F.06.3 The company tracks, reviews and acts to improve its performance on managing energy consumption throughout its operations. <a class="text-red-500">(/6.00)</a></h2>
     <div x-show="F063" x-transition x-cloak style="display: none !important" class=" border-b border-t border-gray-400 py-2 mb-4">
         <p class="italic mb-2">Can your company demonstrate that it systematically:</p>
@@ -2450,37 +1765,7 @@ x-data="{
 
     {{-- F.07.1 --}}
     <h2 class="text-1xl font-semibold  cursor-pointer hover:underline mb-2"
-    @click="F01 = false,
-    F02 = false,
-    F03 = false,
-    F04 = false,
-    F05 = false,
-    F06 = false,
-    F07 = false,
-    F08 = false,
-    F011 = false,
-    F012 = false,
-    F023 = false,
-    F021 = false,
-    F022 = false,
-    F031 = false,
-    F032 = false,
-    F033 = false,
-    F041 = false,
-    F051 = false,
-    F052 = false,
-    F061 = false,
-    F062 = false,
-    F063 = false,
-    F071 = ! F071,
-    F081 = false,
-    F082 = false,
-    window.scrollTo({
-        top: 605,
-        left: 1400,
-        behavior: 'smooth'
-      })
-    "
+    @click="toogleF071"
     >F.07.1 The company has systems in place to ensure its operations identify and assess potential risks related to the transportation, handling, storage, emission and disposal of hazardous materials, and to design and implement strategies and plans to address identified risks. <a class="text-red-500">(/6.00)</a></h2>
     <div x-show="F071" x-transition x-cloak style="display: none !important" class=" border-b border-t border-gray-400 py-2 mb-4">
         <p class="italic mb-2">Can your company demonstrate at the corporate level that it:</p>
@@ -2565,37 +1850,7 @@ x-data="{
 
     {{-- F.08.1 --}}
     <h2 class="text-1xl font-semibold  cursor-pointer hover:underline mb-2"
-    @click="F01 = false,
-    F02 = false,
-    F03 = false,
-    F04 = false,
-    F05 = false,
-    F06 = false,
-    F07 = false,
-    F08 = false,
-    F011 = false,
-    F012 = false,
-    F023 = false,
-    F021 = false,
-    F022 = false,
-    F031 = false,
-    F032 = false,
-    F033 = false,
-    F041 = false,
-    F051 = false,
-    F052 = false,
-    F061 = false,
-    F062 = false,
-    F063 = false,
-    F071 = false,
-    F081 = ! F081,
-    F082 = false,
-    window.scrollTo({
-        top: 605,
-        left: 1400,
-        behavior: 'smooth'
-      })
-    "
+    @click="toogleF081"
     >F.08.1 The company has systems in place to ensure its operations engage local authorities, workers and communities in developing, communicating and testing emergency preparedness and response plans. <a class="text-red-500">(/6.00)</a></h2>
     <div x-show="F081" x-transition x-cloak style="display: none !important" class=" border-b border-t border-gray-400 py-2 mb-4">
         <p class="italic mb-2">Can your company demonstrate at the corporate level that it has systems in place to ensure its operations:</p>
@@ -2679,37 +1934,7 @@ x-data="{
 
     {{-- F.08.2 --}}
     <h2 class="text-1xl font-semibold  cursor-pointer hover:underline mb-2"
-    @click="F01 = false,
-    F02 = false,
-    F03 = false,
-    F04 = false,
-    F05 = false,
-    F06 = false,
-    F07 = false,
-    F08 = false,
-    F011 = false,
-    F012 = false,
-    F023 = false,
-    F021 = false,
-    F022 = false,
-    F031 = false,
-    F032 = false,
-    F033 = false,
-    F041 = false,
-    F051 = false,
-    F052 = false,
-    F061 = false,
-    F062 = false,
-    F063 = false,
-    F071 = false,
-    F081 = false,
-    F082 = ! F082,
-    window.scrollTo({
-        top: 605,
-        left: 1400,
-        behavior: 'smooth'
-      })
-    "
+    @click="toogleF082"
     >F.08.2 The company publicly discloses all relevant information about financial assurance that is provided for disaster management and recovery, throughout its operations. <a class="text-red-500">(/6.00)</a></h2>
     <div x-show="F082" x-transition x-cloak style="display: none !important" class=" border-b border-t border-gray-400 py-2 mb-4">
         <p class="italic mb-2">Can your company demonstrate at the corporate level that it:</p>

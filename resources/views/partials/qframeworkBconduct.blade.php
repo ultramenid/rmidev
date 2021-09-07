@@ -1,54 +1,11 @@
 {{-- qframework2 --}}
 <div class="w-full border border-gray-200 dark:border-opacity-20 rounded h-screen bg-gray-300 px-4 py-4 overflow-y-auto" x-show="qframework2" x-transition x-cloak style="display: none !important"
-x-data="{
-    B01 : false,
-    B02 : false,
-    B03 : false,
-    B04 : false,
-    B05 : false,
-    B06 : false,
-    B07 : false,
-    B08 : false,
-    B011 : false,
-    B012 : false,
-    B013 : false,
-    B021 : false,
-    B022 : false,
-    B031 : false,
-    B041 : false,
-    B051 : false,
-    B061 : false,
-    B071 : false,
-    B081 : false
-}">
+x-data="qframework2">
     <h1 class="text-2xl font-semibold mb-4">{{__('Business Conduct')}}</h1>
 
     {{-- B.01 --}}
     <h2 class="text-1xl font-semibold cursor-pointer hover:underline "
-    @click="B01 = ! B01,
-    B02 = false,
-    B03 = false,
-    B04 = false,
-    B05 = false,
-    B06 = false,
-    B07 = false,
-    B08 = false,
-    B011 = false,
-    B012 = false,
-    B013 = false,
-    B021 = false,
-    B022 = false,
-    B031 = false,
-    B041 = false,
-    B051 = false,
-    B061 = false,
-    B071 = false,
-    B081 = false,
-    window.scrollTo({
-        top: 400,
-        left: 1500,
-        behavior: 'smooth'
-      })"
+    @click="toogleB01"
     >B.01 {{__('Business Ethics and Anti-Bribery and Corruption')}}</h2>
     <div x-show="B01" x-transition x-cloak style="display: none !important" class=" border-b border-t border-gray-400 py-2 ">
         <p class="mb-4">
@@ -137,31 +94,7 @@ x-data="{
 
     {{-- B.02 --}}
     <h2 class="text-1xl font-semibold  cursor-pointer hover:underline"
-    @click="B01 = false,
-    B02 = ! B02,
-    B03 = false,
-    B04 = false,
-    B05 = false,
-    B06 = false,
-    B07 = false,
-    B08 = false,
-    B011 = false,
-    B012 = false,
-    B013 = false,
-    B021 = false,
-    B022 = false,
-    B031 = false,
-    B041 = false,
-    B051 = false,
-    B061 = false,
-    B071 = false,
-    B081 = false,
-    window.scrollTo({
-        top: 400,
-        left: 1500,
-        behavior: 'smooth'
-      })
-    "
+    @click="toogleB02"
     >B.02 {{__('Board and Senior Management Accountability and Diversity')}}</h2>
     <div x-show="B02" x-transition x-cloak style="display: none !important" class=" border-b border-t border-gray-400 py-2 mb-4">
         <p class="mb-4">
@@ -227,31 +160,7 @@ x-data="{
 
     {{-- B.03 --}}
     <h2 class="text-1xl font-semibold  cursor-pointer hover:underline"
-    @click="B01 = false,
-    B02 = false,
-    B03 = ! B03,
-    B04 = false,
-    B05 = false,
-    B06 = false,
-    B07 = false,
-    B08 = false,
-    B011 = false,
-    B012 = false,
-    B013 = false,
-    B021 = false,
-    B022 = false,
-    B031 = false,
-    B041 = false,
-    B051 = false,
-    B061 = false,
-    B071 = false,
-    B081 = false,
-    window.scrollTo({
-        top: 435,
-        left: 1500,
-        behavior: 'smooth'
-      })
-    "
+    @click="toogleB03"
     >B.03 {{__('Contracts Disclosure')}}</h2>
     <div x-show="B03" x-transition x-cloak style="display: none !important" class=" border-b border-t border-gray-400 py-2 mb-4">
         <p class="mb-4">{{__('Producing countries issue licenses and develop agreements with companies to explore or exploit mineral resources (e.g., through bids, leases, permits, concession agreements, exploration and exploitation agreements, development agreements). Governments also sign contracts or negotiate agreements with companies to establish various terms and conditions related to mineral development, such as the financial benefits that a country will receive from taxes, production-sharing, profit-sharing and royalties; provisions related to critical infrastructure or other investments; and terms that can have implications for citizens such as environmental protection measures or rights related to land use or the displacement of local communities.')}}
@@ -296,31 +205,7 @@ x-data="{
 
     {{-- B.04 --}}
     <h2 class="text-1xl font-semibold  cursor-pointer hover:underline"
-    @click="B01 = false,
-    B02 = false,
-    B03 = false,
-    B04 = ! B04,
-    B05 = false,
-    B06 = false,
-    B07 = false,
-    B08 = false,
-    B011 = false,
-    B012 = false,
-    B013 = false,
-    B021 = false,
-    B022 = false,
-    B031 = false,
-    B041 = false,
-    B051 = false,
-    B061 = false,
-    B071 = false,
-    B081 = false,
-    window.scrollTo({
-        top: 470,
-        left: 1500,
-        behavior: 'smooth'
-      })
-    "
+    @click="toogleB04"
     >B.04 {{__('Tax Transparency')}}</h2>
     <div x-show="B04" x-transition x-cloak style="display: none !important" class=" border-b border-t border-gray-400 py-2 mb-4">
         <p class="mb-4">{{__('Mining-related taxes are a significant and critically important source of income for mineral-rich countries. Revenues from taxes allow countries to pay for essential public services and infrastructure. In the case of developing countries, a solid tax base can reduce reliance on foreign aid, enabling countries to have a greater say in their own development. If managed carefully, the taxes received over the lifecycle of a mine can fund economic and social development initiatives that will continue to generate benefits long after the mining operations have ceased.')}}
@@ -364,31 +249,7 @@ x-data="{
 
     {{-- B.05--}}
     <h2 class="text-1xl font-semibold  cursor-pointer hover:underline"
-    @click="B01 = false,
-    B02 = false,
-    B03 = false,
-    B04 = false,
-    B05 = ! B05,
-    B06 = false,
-    B07 = false,
-    B08 = false,
-    B011 = false,
-    B012 = false,
-    B013 = false,
-    B021 = false,
-    B022 = false,
-    B031 = false,
-    B041 = false,
-    B051 = false,
-    B061 = false,
-    B071 = false,
-    B081 = false,
-    window.scrollTo({
-        top: 505,
-        left: 1400,
-        behavior: 'smooth'
-      })
-    "
+    @click="toogleB05"
     >B.05 {{__('Beneficial Ownership')}}</h2>
     <div x-show="B05" x-transition x-cloak style="display: none !important" class=" border-b border-t border-gray-400 py-2 mb-4">
         <p class="mb-4">{{__('The identities of the people who ultimately own, control and reap the profits from a mining company’s activities - the beneficial owners - are not always disclosed. In some cases they are hidden behind a chain of corporate or private entities that spans multiple countries.')}}
@@ -429,31 +290,7 @@ x-data="{
 
     {{-- B.06--}}
     <h2 class="text-1xl font-semibold  cursor-pointer hover:underline"
-    @click="B01 = false,
-    B02 = false,
-    B03 = false,
-    B04 = false,
-    B05 = false,
-    B06 = ! B06,
-    B07 = false,
-    B08 = false,
-    B011 = false,
-    B012 = false,
-    B013 = false,
-    B021 = false,
-    B022 = false,
-    B031 = false,
-    B041 = false,
-    B051 = false,
-    B061 = false,
-    B071 = false,
-    B081 = false,
-    window.scrollTo({
-        top: 300,
-        left: 1400,
-        behavior: 'smooth'
-      })
-    "
+    @click="toogleB06"
     >B.06 {{__('Payments to Producing Countries')}}</h2>
     <div x-show="B06" x-transition x-cloak style="display: none !important" class=" border-b border-t border-gray-400 py-2 mb-4">
         <p class="mb-4">{{__('Governments grant mining companies the right to explore and exploit mineral resources, and, in exchange, companies pay taxes, royalties, license fees, bonuses, or make other contributions to compensate a country for the minerals being extracted. The payments made by mining companies can be a significant source of revenue for developing countries, and have the potential to fuel economic growth and social development.')}}
@@ -505,31 +342,7 @@ x-data="{
 
     {{-- B.07--}}
     <h2 class="text-1xl font-semibold  cursor-pointer hover:underline"
-    @click="B01 = false,
-    B02 = false,
-    B03 = false,
-    B04 = false,
-    B05 = false,
-    B06 = false,
-    B07 = ! B07,
-    B08 = false,
-    B011 = false,
-    B012 = false,
-    B013 = false,
-    B021 = false,
-    B022 = false,
-    B031 = false,
-    B041 = false,
-    B051 = false,
-    B061 = false,
-    B071 = false,
-    B081 = false,
-    window.scrollTo({
-        top: 335,
-        left: 1400,
-        behavior: 'smooth'
-      })
-    "
+    @click="toogleB07"
     >B.07 {{__('Lobbying Practices')}}</h2>
     <div x-show="B07" x-transition x-cloak style="display: none !important" class=" border-b border-t border-gray-400 py-2 mb-4">
         <p class="mb-4">{{__('In many countries lobbying plays a prominent role in policy making. Private lobbyists, industry groups and civil society organisations work in a variety of ways to influence politicians and decision-makers. Lobbying, however, is often highly unregulated, creating the potential for powerful interests to exert undue influence through corrupt or otherwise questionable practices. The general lack of transparency and accountability around lobbying creates suspicion that companies, either independently or through industry bodies, are advocating for rules that are not in society’s best interest.')}}
@@ -571,31 +384,7 @@ x-data="{
 
     {{-- B.08--}}
     <h2 class="text-1xl font-semibold  cursor-pointer hover:underline"
-    @click="B01 = false,
-    B02 = false,
-    B03 = false,
-    B04 = false,
-    B05 = false,
-    B06 = false,
-    B07 = false,
-    B08 = ! B08,
-    B011 = false,
-    B012 = false,
-    B013 = false,
-    B021 = false,
-    B022 = false,
-    B031 = false,
-    B041 = false,
-    B051 = false,
-    B061 = false,
-    B071 = false,
-    B081 = false,
-    window.scrollTo({
-        top: 335,
-        left: 1400,
-        behavior: 'smooth'
-      })
-    "
+    @click="toogleB08"
     >B.08 {{__('Responsible Contracting and Sourcing')}}</h2>
     <div x-show="B08" x-transition x-cloak style="display: none !important" class=" border-b border-t border-gray-400 py-2 mb-4">
         <p class="mb-4">{{__('Increasingly, there is a global expectation that businesses not only demonstrate a high level of human rights, social and environmental responsibility in their own actions, but also demand the same of their business partners and supply chains.')}}
@@ -651,31 +440,7 @@ x-data="{
 
     {{-- B.01.1--}}
     <h2 class="text-1xl font-semibold  cursor-pointer hover:underline mb-2"
-    @click="B01 = false,
-    B02 = false,
-    B03 = false,
-    B04 = false,
-    B05 = false,
-    B06 = false,
-    B07 = false,
-    B08 = false,
-    B011 = ! B011,
-    B012 = false,
-    B013 = false,
-    B021 = false,
-    B022 = false,
-    B031 = false,
-    B041 = false,
-    B051 = false,
-    B061 = false,
-    B071 = false,
-    B081 = false,
-    window.scrollTo({
-        top: 370,
-        left: 1400,
-        behavior: 'smooth'
-      })
-    "
+    @click="toogleB011"
     >B.01.1 The company commits to prevent all direct and indirect forms of bribery and corruption. <a class="text-red-500">(/6.00)</a></h2>
     <div x-show="B011" x-transition x-cloak style="display: none !important" class=" border-b border-t border-gray-400 py-2 mb-4 ">
         <p class="italic mb-2">Can your company demonstrate at the corporate level that it has:</p>
@@ -766,31 +531,7 @@ x-data="{
 
      {{-- B.01.2--}}
      <h2 class="text-1xl font-semibold  cursor-pointer hover:underline mb-2"
-     @click="B01 = false,
-     B02 = false,
-     B03 = false,
-     B04 = false,
-     B05 = false,
-     B06 = false,
-     B07 = false,
-     B08 = false,
-     B011 = false,
-     B012 = ! B012,
-     B013 = false,
-     B021 = false,
-     B022 = false,
-     B031 = false,
-     B041 = false,
-     B051 = false,
-     B061 = false,
-     B071 = false,
-     B081 = false,
-     window.scrollTo({
-         top: 370,
-         left: 1400,
-         behavior: 'smooth'
-       })
-     "
+     @click="toogleB012"
      >B.01.2 The company tracks, reviews and acts to improve its performance on anti-bribery and corruption. <a class="text-red-500">(/6.00)</a></h2>
      <div x-show="B012" x-transition x-cloak style="display: none !important" class=" border-b border-t border-gray-400 py-2 mb-4">
         <p class="italic mb-2">Can your company demonstrate that it systematically:</p>
@@ -868,31 +609,7 @@ x-data="{
 
     {{-- B.01.3 --}}
     <h2 class="text-1xl font-semibold  cursor-pointer hover:underline mb-2"
-    @click="B01 = false,
-    B02 = false,
-    B03 = false,
-    B04 = false,
-    B05 = false,
-    B06 = false,
-    B07 = false,
-    B08 = false,
-    B011 = false,
-    B012 = false,
-    B013 = ! B013,
-    B021 = false,
-    B022 = false,
-    B031 = false,
-    B041 = false,
-    B051 = false,
-    B061 = false,
-    B071 = false,
-    B081 = false,
-    window.scrollTo({
-        top: 370,
-        left: 1400,
-        behavior: 'smooth'
-      })
-    "
+    @click="toogleB013"
     >B.01.3 The company tracks, reviews and acts to improve the effectiveness of its whistleblowing mechanisms for reporting concerns about unethical behaviour. <a class="text-red-500">(/6.00)</a></h2>
     <div x-show="B013" x-transition x-cloak style="display: none !important" class=" border-b border-t border-gray-400 py-2 mb-4">
         <p class="italic mb-2">Can your company demonstrate that it systematically:</p>
@@ -984,31 +701,7 @@ x-data="{
 
     {{-- B.02.1 --}}
     <h2 class="text-1xl font-semibold  cursor-pointer hover:underline mb-2"
-    @click="B01 = false,
-    B02 = false,
-    B03 = false,
-    B04 = false,
-    B05 = false,
-    B06 = false,
-    B07 = false,
-    B08 = false,
-    B011 = false,
-    B012 = false,
-    B013 = false,
-    B021 = ! B021,
-    B022 = false,
-    B031 = false,
-    B041 = false,
-    B051 = false,
-    B061 = false,
-    B071 = false,
-    B081 = false,
-    window.scrollTo({
-        top: 370,
-        left: 1400,
-        behavior: 'smooth'
-      })
-    "
+    @click="toogleB021"
     >B.02.1 The company has systems in place to hold individual board directors and senior managers accountable for responsible business conduct on ESG issues. <a class="text-red-500">(/6.00)</a></h2>
     <div x-show="B021" x-transition x-cloak style="display: none !important" class=" border-b border-t border-gray-400 py-2 mb-4">
         <p class="italic mb-2">Can your company demonstrate at the corporate level that it has taken specific measures to ensure that:</p>
@@ -1071,31 +764,7 @@ x-data="{
 
     {{-- B.02.2 --}}
     <h2 class="text-1xl font-semibold  cursor-pointer hover:underline mb-2"
-    @click="B01 = false,
-    B02 = false,
-    B03 = false,
-    B04 = false,
-    B05 = false,
-    B06 = false,
-    B07 = false,
-    B08 = false,
-    B011 = false,
-    B012 = false,
-    B013 = false,
-    B021 = false,
-    B022 = ! B022,
-    B031 = false,
-    B041 = false,
-    B051 = false,
-    B061 = false,
-    B071 = false,
-    B081 = false,
-    window.scrollTo({
-        top: 370,
-        left: 1400,
-        behavior: 'smooth'
-      })
-    "
+    @click="toogleB022"
     >B.02.2 The company tracks, reviews and acts to improve its gender balance at board and
     senior management levels. <a class="text-red-500">(/6.00)</a></h2>
     <div x-show="B022" x-transition x-cloak style="display: none !important" class=" border-b border-t border-gray-400 py-2 mb-4">
@@ -1170,31 +839,7 @@ x-data="{
 
     {{-- B.03.1 --}}
     <h2 class="text-1xl font-semibold  cursor-pointer hover:underline mb-2"
-    @click="B01 = false,
-    B02 = false,
-    B03 = false,
-    B04 = false,
-    B05 = false,
-    B06 = false,
-    B07 = false,
-    B08 = false,
-    B011 = false,
-    B012 = false,
-    B013 = false,
-    B021 = false,
-    B022 = false,
-    B031 = ! B031,
-    B041 = false,
-    B051 = false,
-    B061 = false,
-    B071 = false,
-    B081 = false,
-    window.scrollTo({
-        top: 370,
-        left: 1400,
-        behavior: 'smooth'
-      })
-    "
+    @click="toogleB031"
     >B.03.1 The company publicly discloses all the legal titles that grant it the rights to extract mineral resources on its mine sites. <a class="text-red-500">(/6.00)</a></h2>
     <div x-show="B031" x-transition x-cloak style="display: none !important" class=" border-b border-t border-gray-400 py-2 mb-4">
         <p class="italic mb-2">Can your company demonstrate at the corporate level that it:</p>
@@ -1257,31 +902,7 @@ x-data="{
 
     {{-- B.04.1 --}}
     <h2 class="text-1xl font-semibold  cursor-pointer hover:underline mb-2"
-    @click="B01 = false,
-    B02 = false,
-    B03 = false,
-    B04 = false,
-    B05 = false,
-    B06 = false,
-    B07 = false,
-    B08 = false,
-    B011 = false,
-    B012 = false,
-    B013 = false,
-    B021 = false,
-    B022 = false,
-    B031 = false,
-    B041 = ! B041,
-    B051 = false,
-    B061 = false,
-    B071 = false,
-    B081 = false,
-    window.scrollTo({
-        top: 405,
-        left: 1400,
-        behavior: 'smooth'
-      })
-    "
+    @click="toogleB041"
     >B.04.1 The company practices tax transparency in all its tax jurisdictions. <a class="text-red-500">(/6.00)</a></h2>
     <div x-show="B041" x-transition x-cloak style="display: none !important" class=" border-b border-t border-gray-400 py-2 mb-4">
         <p class="italic mb-2">Can your company demonstrate at the corporate level that it publicly:</p>
@@ -1345,31 +966,7 @@ x-data="{
 
     {{-- B.05.1 --}}
     <h2 class="text-1xl font-semibold  cursor-pointer hover:underline mb-2"
-    @click="B01 = false,
-    B02 = false,
-    B03 = false,
-    B04 = false,
-    B05 = false,
-    B06 = false,
-    B07 = false,
-    B08 = false,
-    B011 = false,
-    B012 = false,
-    B013 = false,
-    B021 = false,
-    B022 = false,
-    B031 = false,
-    B041 = false,
-    B051 = ! B051,
-    B061 = false,
-    B071 = false,
-    B081 = false,
-    window.scrollTo({
-        top: 405,
-        left: 1400,
-        behavior: 'smooth'
-      })
-    "
+    @click="toogleB051"
     >B.05.1 The company publicly discloses its ultimate beneficial owners. <a class="text-red-500">(/6.00)</a></h2>
     <div x-show="B051" x-transition x-cloak style="display: none !important" class=" border-b border-t border-gray-400 py-2 mb-4">
         <p class="italic mb-2">Can your company demonstrate at the corporate level that it publicly:</p>
@@ -1429,31 +1026,7 @@ x-data="{
 
     {{-- B.06.1 --}}
     <h2 class="text-1xl font-semibold  cursor-pointer hover:underline mb-2"
-    @click="B01 = false,
-    B02 = false,
-    B03 = false,
-    B04 = false,
-    B05 = false,
-    B06 = false,
-    B07 = false,
-    B08 = false,
-    B011 = false,
-    B012 = false,
-    B013 = false,
-    B021 = false,
-    B022 = false,
-    B031 = false,
-    B041 = false,
-    B051 = false,
-    B061 = ! B061,
-    B071 = false,
-    B081 = false,
-    window.scrollTo({
-        top: 405,
-        left: 1400,
-        behavior: 'smooth'
-      })
-    "
+    @click="toogleB061"
     >B.06.1 The company publicly discloses all payments it makes to sub-national and national governments, providing disaggregated data on a project-level basis. <a class="text-red-500">(/6.00)</a></h2>
     <div x-show="B061" x-transition x-cloak style="display: none !important" class=" border-b border-t border-gray-400 py-2 mb-4">
         <p class="italic mb-2">Can your company demonstrate at the corporate level that it:</p>
@@ -1535,31 +1108,7 @@ x-data="{
 
     {{-- B.07.1 --}}
     <h2 class="text-1xl font-semibold  cursor-pointer hover:underline mb-2"
-    @click="B01 = false,
-    B02 = false,
-    B03 = false,
-    B04 = false,
-    B05 = false,
-    B06 = false,
-    B07 = false,
-    B08 = false,
-    B011 = false,
-    B012 = false,
-    B013 = false,
-    B021 = false,
-    B022 = false,
-    B031 = false,
-    B041 = false,
-    B051 = false,
-    B061 = false,
-    B071 = ! B071,
-    B081 = false,
-    window.scrollTo({
-        top: 405,
-        left: 1400,
-        behavior: 'smooth'
-      })
-    "
+    @click="toogleB071"
     >B.07.1 Where applicable, the company publicly discloses its lobbying practices and positions in all jurisdictions. <a class="text-red-500">(/6.00)</a></h2>
     <div x-show="B071" x-transition x-cloak style="display: none !important" class=" border-b border-t border-gray-400 py-2 mb-4">
         <p class="italic mb-2">Can your company demonstrate at the corporate level that it publicly:</p>
@@ -1626,31 +1175,7 @@ x-data="{
 
     {{-- B.08.1 --}}
     <h2 class="text-1xl font-semibold  cursor-pointer hover:underline mb-2"
-    @click="B01 = false,
-    B02 = false,
-    B03 = false,
-    B04 = false,
-    B05 = false,
-    B06 = false,
-    B07 = false,
-    B08 = false,
-    B011 = false,
-    B012 = false,
-    B013 = false,
-    B021 = false,
-    B022 = false,
-    B031 = false,
-    B041 = false,
-    B051 = false,
-    B061 = false,
-    B071 = false,
-    B081 = ! B081,
-    window.scrollTo({
-        top: 405,
-        left: 1400,
-        behavior: 'smooth'
-      })
-    "
+    @click="toogleB081"
     >B.08.1 The company has systems in place to identify and assess any human rights, labour and environmental risks associated with its suppliers and contractors. <a class="text-red-500">(/6.00)</a></h2>
     <div x-show="B081" x-transition x-cloak style="display: none !important" class=" border-b border-t border-gray-400 py-2 mb-4">
         <p class="italic mb-2">Can your company demonstrate at the corporate level that it has systems in place to identify and assess risks related to its suppliers and contractors on:</p>

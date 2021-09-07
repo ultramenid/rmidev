@@ -1,135 +1,48 @@
-<div class="grid grid-cols-12" x-data="{
-    intro : true,
-    economicdev : false,
-    qframework1 : false,
-    bConduct : false,
-    qframework2 : false,
-    lManagement : false,
-    qframework3 : false,
-    cWellbeing : false,
-    qframework4 : false,
-    wCondition : false,
-    qframework5 : false,
-    eResponsibility : false,
-    qframework6 : false
-}" >
+<div class="grid grid-cols-12" x-data="methodology" >
+    @include('partials.skeletonMethodology')
     <ul class=" sm:space-y-2  space-y-0 sm:space-x-0 mb-6 space-x-3 sm:col-span-4 col-span-12 subpixel-antialiased sm:flex sm:flex-col flex flex-row ">
         <li class="">
             <template x-if="intro">
                 <a  class=" font-bold  text-white underline  uppercase cursor-pointer"
-                @click="intro = true,
-                economicdev = false,
-                qframework1 = false,
-                qframework2 = false,
-                bConduct = false,
-                lManagement = false,
-                qframework3 = false,
-                cWellbeing = false,
-                qframework4 = false,
-                wCondition = false,
-                qframework5 = false,
-                eResponsibility = false,
-                qframework6 = false"
-                >
+                @click="toogleIntro">
                     Introduction
                 </a>
             </template>
             <template x-if="!intro">
                 <a  class=" font-bold  text-gray-300 hover:underline  uppercase cursor-pointer"
-                @click="intro = true,
-                economicdev = false,
-                qframework1 = false,
-                qframework2 = false,
-                bConduct = false,
-                lManagement = false,
-                qframework3 = false,
-                cWellbeing = false,
-                qframework4 = false,
-                wCondition = false,
-                qframework5 = false,
-                eResponsibility = false,
-                qframework6 = false"
-                >
+                @click="toogleIntro">
                     Introduction
                 </a>
             </template>
 
         </li>
-        <li class="">
 
-            <a  class=" font-bold  text-gray-300   uppercase " >
+        {{-- thematic desktop --}}
+        <li class="sm:block hidden">
+            <a x-show="thematic"  x-cloak style="display: none !important"  class=" font-bold  text-gray-300   uppercase " >
                 {{__('Thematic')}}
             </a>
-
-            <ul class="pl-6  mt-2">
+            <ul class="pl-6  mt-2 ">
                 <li class= "text-sm  ">
                     <template x-if="economicdev">
                         <a class="uppercase underline text-white  cursor-pointer"
-                        @click="intro = false,
-                        economicdev =  true,
-                        qframework1 = false,
-                        qframework2 = false,
-                        bConduct = false,
-                        lManagement = false,
-                        qframework3 = false,
-                        cWellbeing = false,
-                        qframework4 = false,
-                        wCondition = false,
-                        qframework5 = false,
-                        eResponsibility = false,
-                        qframework6 = false"
+                        @click="toogleEconomicdev"
                         >a. {{__('Economic Development')}}</a>
                     </template>
                     <template x-if="!economicdev">
                         <a class="uppercase hover:underline text-gray-300  cursor-pointer"
-                        @click="intro = false,
-                        economicdev =  true,
-                        qframework1 = false,
-                        qframework2 = false,
-                        bConduct = false,
-                        lManagement = false,
-                        qframework3 = false,
-                        cWellbeing = false,
-                        qframework4 = false,
-                        wCondition = false,
-                        qframework5 = false,
-                        eResponsibility = false,
-                        qframework6 = false"
+                        @click="toogleEconomicdev"
                         >a. {{__('Economic Development')}}</a>
                     </template>
                     <template x-if="qframework1">
                         <p class="pl-6 text-white text-sm mb-3 underline cursor-pointer"
-                        @click="intro = false,
-                        economicdev =  false,
-                        qframework1 = true,
-                        qframework2 = false,
-                        bConduct = false,
-                        lManagement = false,
-                        qframework3 = false,
-                        cWellbeing = false,
-                        qframework4 = false,
-                        wCondition = false,
-                        qframework5 = false,
-                        eResponsibility = false,
-                        qframework6 = false"
+                        @click="toogleqFramework1"
                         >Criteria, metric question, and scoring framework
                         </p>
                     </template>
                     <template x-if="!qframework1">
                         <p class="pl-6 text-gray-300 text-sm mb-3 hover:underline cursor-pointer"
-                        @click="intro = false,
-                        economicdev =  false,
-                        qframework1 = true,
-                        qframework2 = false,
-                        bConduct = false,
-                        lManagement = false,
-                        qframework3 = false,
-                        cWellbeing = false,
-                        qframework4 = false,
-                        wCondition = false,
-                        qframework5 = false,
-                        eResponsibility = false,
-                        qframework6 = false"
+                        @click="toogleqFramework1"
                         >Criteria, metric question, and scoring framework
                         </p>
                     </template>
@@ -139,71 +52,23 @@
                 <li class="text-sm  ">
                     <template x-if="bConduct">
                         <a class="uppercase underline text-white  cursor-pointer"
-                        @click="intro = false,
-                        economicdev =  false,
-                        qframework1 = false,
-                        qframework2 = false,
-                        bConduct = true,
-                        lManagement = false,
-                        qframework3 = false,
-                        cWellbeing = false,
-                        qframework4 = false,
-                        wCondition = false,
-                        qframework5 = false,
-                        eResponsibility = false,
-                        qframework6 = false"
+                        @click="tooglebConduct"
                         >b. {{__('Business Conduct')}}</a>
                     </template>
                     <template x-if="!bConduct">
                         <a class="uppercase hover:underline text-gray-300  cursor-pointer"
-                        @click="intro = false,
-                        economicdev =  false,
-                        qframework1 = false,
-                        qframework2 = false,
-                        bConduct = true,
-                        lManagement = false,
-                        qframework3 = false,
-                        cWellbeing = false,
-                        qframework4 = false,
-                        wCondition = false,
-                        qframework5 = false,
-                        eResponsibility = false,
-                        qframework6 = false"
+                        @click="tooglebConduct"
                         >b. {{__('Business Conduct')}}</a>
                     </template>
                     <template x-if="qframework2">
                         <p class="pl-6 text-white text-sm mb-3 underline cursor-pointer"
-                        @click="intro = false,
-                        economicdev =  false,
-                        qframework1 = false,
-                        qframework2 = true,
-                        bConduct = false,
-                        lManagement = false,
-                        qframework3 = false,
-                        cWellbeing = false,
-                        qframework4 = false,
-                        wCondition = false,
-                        qframework5 = false,
-                        eResponsibility = false,
-                        qframework6 = false"
+                        @click="toogleqFramework2"
                         >Criteria, metric question, and scoring framework
                         </p>
                     </template>
                     <template x-if="!qframework2">
                         <p class="pl-6 text-gray-300 text-sm mb-3 hover:underline cursor-pointer"
-                        @click="intro = false,
-                        economicdev =  false,
-                        qframework1 = false,
-                        qframework2 = true,
-                        bConduct = false,
-                        lManagement = false,
-                        qframework3 = false,
-                        cWellbeing = false,
-                        qframework4 = false,
-                        wCondition = false,
-                        qframework5 = false,
-                        eResponsibility = false,
-                        qframework6 = false"
+                        @click="toogleqFramework2"
                         >Criteria, metric question, and scoring framework
                         </p>
                     </template>
@@ -214,71 +79,23 @@
                 <li class="text-gray-300 text-sm  ">
                     <template x-if="lManagement">
                         <a class="uppercase underline text-white  cursor-pointer"
-                        @click="intro = false,
-                        economicdev =  false,
-                        qframework1 = false,
-                        qframework2 = false,
-                        bConduct = false,
-                        lManagement = true,
-                        qframework3 = false,
-                        cWellbeing = false,
-                        qframework4 = false,
-                        wCondition = false,
-                        qframework5 = false,
-                        eResponsibility = false,
-                        qframework6 = false"
+                        @click="tooglelManagement"
                         >c. {{__('Lifecycle Management')}}</a>
                     </template>
                     <template x-if="!lManagement">
                         <a class="uppercase hover:underline text-gray-300  cursor-pointer"
-                        @click="intro = false,
-                        economicdev =  false,
-                        qframework1 = false,
-                        qframework2 = false,
-                        bConduct = false,
-                        lManagement = true,
-                        qframework3 = false,
-                        cWellbeing = false,
-                        qframework4 = false,
-                        wCondition = false,
-                        qframework5 = false,
-                        eResponsibility = false,
-                        qframework6 = false"
+                        @click="tooglelManagement"
                         >c. {{__('Lifecycle Management')}}</a>
                     </template>
                     <template x-if="qframework3">
                         <p class="pl-6 text-white text-sm mb-3 underline cursor-pointer"
-                        @click="intro = false,
-                        economicdev =  false,
-                        qframework1 = false,
-                        qframework2 = false,
-                        bConduct = false,
-                        lManagement = false,
-                        qframework3 = true,
-                        cWellbeing = false,
-                        qframework4 = false,
-                        wCondition = false,
-                        qframework5 = false,
-                        eResponsibility = false,
-                        qframework6 = false"
+                        @click="toogleqFramework3"
                         >Criteria, metric question, and scoring framework
                         </p>
                     </template>
                     <template x-if="!qframework3">
                         <p class="pl-6 text-gray-300 text-sm mb-3 hover:underline cursor-pointer"
-                        @click="intro = false,
-                        economicdev =  false,
-                        qframework1 = false,
-                        qframework2 = false,
-                        bConduct = false,
-                        lManagement = false,
-                        qframework3 = true,
-                        cWellbeing = false,
-                        qframework4 = false,
-                        wCondition = false,
-                        qframework5 = false,
-                        eResponsibility = false,
-                        qframework6 = false"
+                        @click="toogleqFramework3"
                         >Criteria, metric question, and scoring framework
                         </p>
                     </template>
@@ -286,71 +103,23 @@
                 <li class="text-gray-300 text-sm  ">
                     <template x-if="cWellbeing">
                         <a class="uppercase underline text-white  cursor-pointer"
-                        @click="intro = false,
-                        economicdev =  false,
-                        qframework1 = false,
-                        qframework2 = false,
-                        bConduct = false,
-                        lManagement = false,
-                        qframework3 = false,
-                        cWellbeing = true,
-                        qframework4 = false,
-                        wCondition = false,
-                        qframework5 = false,
-                        eResponsibility = false,
-                        qframework6 = false"
+                        @click="tooglecWellbeing"
                         >d. {{__('Community Wellbeing')}}</a>
                     </template>
                     <template x-if="!cWellbeing">
                         <a class="uppercase hover:underline text-gray-300  cursor-pointer"
-                        @click="intro = false,
-                        economicdev =  false,
-                        qframework1 = false,
-                        qframework2 = false,
-                        bConduct = false,
-                        lManagement = false,
-                        qframework3 = false,
-                        cWellbeing = true,
-                        qframework4 = false,
-                        wCondition = false,
-                        qframework5 = false,
-                        eResponsibility = false,
-                        qframework6 = false"
+                        @click="tooglecWellbeing"
                         >d. {{__('Community Wellbeing')}}</a>
                     </template>
                     <template x-if="qframework4">
                         <p class="pl-6 text-white text-sm mb-3 underline cursor-pointer"
-                        @click="intro = false,
-                        economicdev =  false,
-                        qframework1 = false,
-                        qframework2 = false,
-                        bConduct = false,
-                        lManagement = false,
-                        qframework3 = false,
-                        cWellbeing = false,
-                        qframework4 = true,
-                        wCondition = false,
-                        qframework5 = false,
-                        eResponsibility = false,
-                        qframework6 = false"
+                        @click="toogleqFramework4"
                         >Criteria, metric question, and scoring framework
                         </p>
                     </template>
                     <template x-if="!qframework4">
                         <p class="pl-6 text-gray-300 text-sm mb-3 hover:underline cursor-pointer"
-                        @click="intro = false,
-                        economicdev =  false,
-                        qframework1 = false,
-                        qframework2 = false,
-                        bConduct = false,
-                        lManagement = false,
-                        qframework3 = false,
-                        cWellbeing = false,
-                        qframework4 = true,
-                        wCondition = false,
-                        qframework5 = false,
-                        eResponsibility = false,
-                        qframework6 = false"
+                        @click="toogleqFramework4"
                         >Criteria, metric question, and scoring framework
                         </p>
                     </template>
@@ -358,71 +127,23 @@
                 <li class="text-gray-300 text-sm  ">
                     <template x-if="wCondition">
                         <a class="uppercase underline text-white  cursor-pointer"
-                        @click="intro = false,
-                        economicdev =  false,
-                        qframework1 = false,
-                        qframework2 = false,
-                        bConduct = false,
-                        lManagement = false,
-                        qframework3 = false,
-                        cWellbeing = false,
-                        qframework4 = false,
-                        wCondition = true,
-                        qframework5 = false,
-                        eResponsibility = false,
-                        qframework6 = false"
+                        @click="tooglewCondition"
                         >e. {{__('Working Conditions')}}</a>
                     </template>
                     <template x-if="!wCondition">
                         <a class="uppercase hover:underline text-gray-300  cursor-pointer"
-                        @click="intro = false,
-                        economicdev =  false,
-                        qframework1 = false,
-                        qframework2 = false,
-                        bConduct = false,
-                        lManagement = false,
-                        qframework3 = false,
-                        cWellbeing = false,
-                        qframework4 = false,
-                        wCondition = true,
-                        qframework5 = false,
-                        eResponsibility = false,
-                        qframework6 = false"
+                        @click="tooglewCondition"
                         >e. {{__('Working Conditions')}}</a>
                     </template>
                     <template x-if="qframework5">
                         <p class="pl-6 text-white text-sm mb-3 underline cursor-pointer"
-                        @click="intro = false,
-                        economicdev =  false,
-                        qframework1 = false,
-                        qframework2 = false,
-                        bConduct = false,
-                        lManagement = false,
-                        qframework3 = false,
-                        cWellbeing = false,
-                        qframework4 = false,
-                        wCondition = false,
-                        qframework5 = true,
-                        eResponsibility = false,
-                        qframework6 = false"
+                        @click="toogleqFramework5"
                         >Criteria, metric question, and scoring framework
                         </p>
                     </template>
                     <template x-if="!qframework5">
                         <p class="pl-6 text-gray-300 text-sm mb-3 hover:underline cursor-pointer"
-                        @click="intro = false,
-                        economicdev =  false,
-                        qframework1 = false,
-                        qframework2 = false,
-                        bConduct = false,
-                        lManagement = false,
-                        qframework3 = false,
-                        cWellbeing = false,
-                        qframework4 = false,
-                        wCondition = false,
-                        qframework5 = true,
-                        eResponsibility = false,
-                        qframework6 = false"
+                        @click="toogleqFramework5"
                         >Criteria, metric question, and scoring framework
                         </p>
                     </template>
@@ -430,71 +151,23 @@
                 <li class="text-gray-300 text-sm  ">
                     <template x-if="eResponsibility">
                         <a class="uppercase underline text-white  cursor-pointer"
-                        @click="intro = false,
-                        economicdev =  false,
-                        qframework1 = false,
-                        qframework2 = false,
-                        bConduct = false,
-                        lManagement = false,
-                        qframework3 = false,
-                        cWellbeing = false,
-                        qframework4 = false,
-                        wCondition = false,
-                        qframework5 = false,
-                        eResponsibility = true,
-                        qframework6 = false"
+                        @click="toogleeResponsibility"
                         >f. {{__('Environmental Responsibility')}}</a>
                     </template>
                     <template x-if="!eResponsibility">
                         <a class="uppercase hover:underline text-gray-300  cursor-pointer"
-                        @click="intro = false,
-                        economicdev =  false,
-                        qframework1 = false,
-                        qframework2 = false,
-                        bConduct = false,
-                        lManagement = false,
-                        qframework3 = false,
-                        cWellbeing = false,
-                        qframework4 = false,
-                        wCondition = false,
-                        qframework5 = false,
-                        eResponsibility = true,
-                        qframework6 = false"
+                        @click="toogleeResponsibility"
                         >f. {{__('Environmental Responsibility')}}</a>
                     </template>
                     <template x-if="qframework6">
                         <p class="pl-6 text-white text-sm mb-3 underline cursor-pointer"
-                        @click="intro = false,
-                        economicdev =  false,
-                        qframework1 = false,
-                        qframework2 = false,
-                        bConduct = false,
-                        lManagement = false,
-                        qframework3 = false,
-                        cWellbeing = false,
-                        qframework4 = false,
-                        wCondition = false,
-                        qframework5 = false,
-                        eResponsibility = false,
-                        qframework6 = true"
+                        @click="toogleqFramework6"
                         >Criteria, metric question, and scoring framework
                         </p>
                     </template>
                     <template x-if="!qframework6">
                         <p class="pl-6 text-gray-300 text-sm mb-3 hover:underline cursor-pointer"
-                        @click="intro = false,
-                        economicdev =  false,
-                        qframework1 = false,
-                        qframework2 = false,
-                        bConduct = false,
-                        lManagement = false,
-                        qframework3 = false,
-                        cWellbeing = false,
-                        qframework4 = false,
-                        wCondition = false,
-                        qframework5 = false,
-                        eResponsibility = false,
-                        qframework6 = true"
+                        @click="toogleqFramework6"
                         >Criteria, metric question, and scoring framework
                         </p>
                     </template>
@@ -503,7 +176,174 @@
 
             </ul>
         </li>
+
+        {{-- toogle thematic mobile --}}
+            <div class="flex">
+                <a x-show="thematic" @click="thematicDropdown = ! thematicDropdown"  class=" font-bold  text-gray-300   uppercase  items-center sm:hidden inline-flex" >
+                    {{__('Thematic')}}
+                    <svg xmlns="http://www.w3.org/2000/svg" class="w-4 ml-1" viewBox="0 0 20 20" fill="currentColor">
+                        <path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd" />
+                      </svg>
+                </a>
+            </div>
     </ul>
+
+    {{-- thematic mobile --}}
+    <div class="w-full bg-black col-span-12 -mt-6 mb-2 rounded sm:hidden block" x-show="thematicDropdown" x-transition @click.away="thematicDropdown = false">
+        <ul class="pl-6  mt-2 ">
+            <li class= "text-sm  ">
+                <template x-if="economicdev">
+                    <a class="uppercase underline text-white  cursor-pointer"
+                    @click="toogleEconomicdev"
+                    >a. {{__('Economic Development')}}</a>
+                </template>
+                <template x-if="!economicdev">
+                    <a class="uppercase hover:underline text-gray-300  cursor-pointer"
+                    @click="toogleEconomicdev"
+                    >a. {{__('Economic Development')}}</a>
+                </template>
+                <template x-if="qframework1">
+                    <p class="pl-6 text-white text-sm mb-3 underline cursor-pointer"
+                    @click="toogleqFramework1"
+                    >Criteria, metric question, and scoring framework
+                    </p>
+                </template>
+                <template x-if="!qframework1">
+                    <p class="pl-6 text-gray-300 text-sm mb-3 hover:underline cursor-pointer"
+                    @click="toogleqFramework1"
+                    >Criteria, metric question, and scoring framework
+                    </p>
+                </template>
+
+            </li>
+
+            <li class="text-sm  ">
+                <template x-if="bConduct">
+                    <a class="uppercase underline text-white  cursor-pointer"
+                    @click="tooglebConduct"
+                    >b. {{__('Business Conduct')}}</a>
+                </template>
+                <template x-if="!bConduct">
+                    <a class="uppercase hover:underline text-gray-300  cursor-pointer"
+                    @click="tooglebConduct"
+                    >b. {{__('Business Conduct')}}</a>
+                </template>
+                <template x-if="qframework2">
+                    <p class="pl-6 text-white text-sm mb-3 underline cursor-pointer"
+                    @click="toogleqFramework2"
+                    >Criteria, metric question, and scoring framework
+                    </p>
+                </template>
+                <template x-if="!qframework2">
+                    <p class="pl-6 text-gray-300 text-sm mb-3 hover:underline cursor-pointer"
+                    @click="toogleqFramework2"
+                    >Criteria, metric question, and scoring framework
+                    </p>
+                </template>
+
+                {{-- <a class="uppercase">b. </a> --}}
+                {{-- <p class="pl-6 text-gray-300 text-sm mb-3">Criteria, metric question, and scoring framework</p> --}}
+            </li>
+            <li class="text-gray-300 text-sm  ">
+                <template x-if="lManagement">
+                    <a class="uppercase underline text-white  cursor-pointer"
+                    @click="tooglelManagement"
+                    >c. {{__('Lifecycle Management')}}</a>
+                </template>
+                <template x-if="!lManagement">
+                    <a class="uppercase hover:underline text-gray-300  cursor-pointer"
+                    @click="tooglelManagement"
+                    >c. {{__('Lifecycle Management')}}</a>
+                </template>
+                <template x-if="qframework3">
+                    <p class="pl-6 text-white text-sm mb-3 underline cursor-pointer"
+                    @click="toogleqFramework3"
+                    >Criteria, metric question, and scoring framework
+                    </p>
+                </template>
+                <template x-if="!qframework3">
+                    <p class="pl-6 text-gray-300 text-sm mb-3 hover:underline cursor-pointer"
+                    @click="toogleqFramework3"
+                    >Criteria, metric question, and scoring framework
+                    </p>
+                </template>
+            </li>
+            <li class="text-gray-300 text-sm  ">
+                <template x-if="cWellbeing">
+                    <a class="uppercase underline text-white  cursor-pointer"
+                    @click="tooglecWellbeing"
+                    >d. {{__('Community Wellbeing')}}</a>
+                </template>
+                <template x-if="!cWellbeing">
+                    <a class="uppercase hover:underline text-gray-300  cursor-pointer"
+                    @click="tooglecWellbeing"
+                    >d. {{__('Community Wellbeing')}}</a>
+                </template>
+                <template x-if="qframework4">
+                    <p class="pl-6 text-white text-sm mb-3 underline cursor-pointer"
+                    @click="toogleqFramework4"
+                    >Criteria, metric question, and scoring framework
+                    </p>
+                </template>
+                <template x-if="!qframework4">
+                    <p class="pl-6 text-gray-300 text-sm mb-3 hover:underline cursor-pointer"
+                    @click="toogleqFramework4"
+                    >Criteria, metric question, and scoring framework
+                    </p>
+                </template>
+            </li>
+            <li class="text-gray-300 text-sm  ">
+                <template x-if="wCondition">
+                    <a class="uppercase underline text-white  cursor-pointer"
+                    @click="tooglewCondition"
+                    >e. {{__('Working Conditions')}}</a>
+                </template>
+                <template x-if="!wCondition">
+                    <a class="uppercase hover:underline text-gray-300  cursor-pointer"
+                    @click="tooglewCondition"
+                    >e. {{__('Working Conditions')}}</a>
+                </template>
+                <template x-if="qframework5">
+                    <p class="pl-6 text-white text-sm mb-3 underline cursor-pointer"
+                    @click="toogleqFramework5"
+                    >Criteria, metric question, and scoring framework
+                    </p>
+                </template>
+                <template x-if="!qframework5">
+                    <p class="pl-6 text-gray-300 text-sm mb-3 hover:underline cursor-pointer"
+                    @click="toogleqFramework5"
+                    >Criteria, metric question, and scoring framework
+                    </p>
+                </template>
+            </li>
+            <li class="text-gray-300 text-sm  ">
+                <template x-if="eResponsibility">
+                    <a class="uppercase underline text-white  cursor-pointer"
+                    @click="toogleeResponsibility"
+                    >f. {{__('Environmental Responsibility')}}</a>
+                </template>
+                <template x-if="!eResponsibility">
+                    <a class="uppercase hover:underline text-gray-300  cursor-pointer"
+                    @click="toogleeResponsibility"
+                    >f. {{__('Environmental Responsibility')}}</a>
+                </template>
+                <template x-if="qframework6">
+                    <p class="pl-6 text-white text-sm mb-3 underline cursor-pointer"
+                    @click="toogleqFramework6"
+                    >Criteria, metric question, and scoring framework
+                    </p>
+                </template>
+                <template x-if="!qframework6">
+                    <p class="pl-6 text-gray-300 text-sm mb-3 hover:underline cursor-pointer"
+                    @click="toogleqFramework6"
+                    >Criteria, metric question, and scoring framework
+                    </p>
+                </template>
+            </li>
+
+
+        </ul>
+    </div>
     <div class="sm:col-span-8 col-span-12 space-y-1">
         {{-- intro --}}
         <div class="w-full border border-gray-200 dark:border-opacity-20 rounded h-screen bg-gray-300 px-4 py-4 overflow-y-auto" x-show="intro" x-transition x-cloak style="display: none !important">
