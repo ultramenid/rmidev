@@ -22,7 +22,7 @@
         </div>
 
         {{-- modal --}}
-        @include('partials.modalMethodology')
+        {{-- @include('partials.modalMethodology') --}}
 
 
     </main>
