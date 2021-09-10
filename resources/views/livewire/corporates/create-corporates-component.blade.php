@@ -236,6 +236,7 @@
 
     </div>
     <script src="{{ asset('assets/richeditor/ckeditor.js') }}"></script>
+
     <script>
             const overviewenglish= CKEDITOR.replace('overviewenglish',{
                             height: 400,
