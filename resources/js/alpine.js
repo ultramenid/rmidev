@@ -915,8 +915,8 @@
                 this.F081 = false,
                 this.F082 = false,
                 window.scrollTo({
-                    top: 1144,
-                    left: 1488,
+                    top: 1300,
+                    left: 1159,
                     behavior: 'smooth'
                   })
             },
@@ -947,8 +947,8 @@
                 this.F081 = false,
                 this.F082 = false,
                 window.scrollTo({
-                    top: 1144,
-                    left: 1488,
+                    top: 1400,
+                    left: 1159,
                     behavior: 'smooth'
                   })
             },
@@ -979,8 +979,8 @@
                 this.F081 = false,
                 this.F082 = false,
                 window.scrollTo({
-                    top: 1144,
-                    left: 1488,
+                    top: 1500,
+                    left: 1159,
                     behavior: 'smooth'
                   })
             },
@@ -1011,8 +1011,8 @@
                 this.F081 = false,
                 this.F082 = false,
                 window.scrollTo({
-                    top: 1144,
-                    left: 1488,
+                    top: 1600,
+                    left: 1159,
                     behavior: 'smooth'
                   })
             },
@@ -1043,8 +1043,8 @@
                 this.F081 = ! this.F081,
                 this.F082 = false,
                 window.scrollTo({
-                    top: 1144,
-                    left: 1488,
+                    top: 1600,
+                    left: 1159,
                     behavior: 'smooth'
                   })
             },
@@ -1075,8 +1075,8 @@
                 this.F081 = false,
                 this.F082 = ! this.F082,
                 window.scrollTo({
-                    top: 1144,
-                    left: 1488,
+                    top: 1700,
+                    left: 1159,
                     behavior: 'smooth'
                   })
             },
