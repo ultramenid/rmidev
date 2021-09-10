@@ -346,7 +346,7 @@
     </div>
     <div class="sm:col-span-8 col-span-12 space-y-1">
         {{-- intro --}}
-        <div class="w-full border border-gray-200 dark:border-opacity-20 rounded h-screen bg-gray-300 px-4 py-4 overflow-y-auto" x-show="intro" x-transition x-cloak style="display: none !important">
+        <div class="w-full border border-gray-200 dark:border-opacity-20 rounded min-h-screen bg-gray-300 px-4 py-4" x-show="intro" x-transition x-cloak style="display: none !important">
             <h1 class="text-2xl font-semibold mb-4">Introduction</h1>
             <h1 class="text-1xl font-semibold ">The RMI Framework 2020</h1>
             <p class="mb-4">This Framework document sets out the core content ofthe Responsible Mining Index (RMI) 2020. It provides acomprehensive reference of the major aspects of responsiblemining, based on society expectations of large-scale miningcompanies. As an extract of the RMI Methodology 2020, theframework includes information on a set of 43 topics, providingbrief overviews of each topic as well as the indicators andmetrics used in the RMI assessment to measure miningcompany policies and practices on these topics.</p>
@@ -379,19 +379,19 @@
         </div>
 
         {{-- economicdev --}}
-        <div class="w-full border border-gray-200 dark:border-opacity-20 rounded h-screen bg-gray-300 px-4 py-4 overflow-y-auto" x-show="economicdev" x-transition x-cloak style="display: none !important">
+        <div class="w-full border border-gray-200 dark:border-opacity-20 rounded min-h-screen bg-gray-300 px-4 py-4" x-show="economicdev" x-transition x-cloak style="display: none !important">
             <h1 class="text-2xl font-semibold mb-4">{{__('Economic Development')}}</h1>
             <p>Not available for 2021</p>
         </div>
 
         {{-- qframework1 --}}
-        <div class="w-full border border-gray-200 dark:border-opacity-20 rounded h-screen bg-gray-300 px-4 py-4 overflow-y-auto" x-show="qframework1" x-transition x-cloak style="display: none !important">
+        <div class="w-full border border-gray-200 dark:border-opacity-20 rounded min-h-screen bg-gray-300 px-4 py-4" x-show="qframework1" x-transition x-cloak style="display: none !important">
             <h1 class="text-2xl font-semibold mb-4">{{__('Economic Development')}}</h1>
             <p>Not available for 2021</p>
         </div>
 
         {{-- bconduct --}}
-        <div class="w-full border border-gray-200 dark:border-opacity-20 rounded h-screen bg-gray-300 px-4 py-4 overflow-y-auto" x-show="bConduct" x-transition x-cloak style="display: none !important" >
+        <div class="w-full border border-gray-200 dark:border-opacity-20 rounded min-h-screen bg-gray-300 px-4 py-4" x-show="bConduct" x-transition x-cloak style="display: none !important" >
             <h1 class="text-2xl font-semibold mb-4">{{__('Business Conduct')}}</h1>
             <p class="mb-4">Mining companies, like other global businesses, areanswerable to their owners and shareholders, whetherthese be private individuals, corporations, governmentsor taxpayers. They are also increasingly being held toaccount by stakeholders and the global marketplace,which expect companies to apply ethical businesspractices and sound systems of corporate governanceand transparency to their operations. In response to thisdemand some mining companies have made commitmentsto more responsibly manage the economic, environmental,social and governance (EESG) aspects of their operations.</p>
             <p class="mb-4">Just as a mining company’s economic developmentefforts can contribute to the achievement of the UN’sSustainable Development Goals (SDG) (See Section A) ,responsible business conduct by mining companies can help producing countries progress toward these goals. For example, transparency of mining business practices, especially in countries with weak governance or corruption, not only helps to showcase a company’s good practices, but also can contribute to greater producingcountry accountability (SDG 16) and a higher potential for mineral wealth to reduce poverty (SDG 1) and provide benefits to the whole population.</p>
@@ -402,43 +402,43 @@
         @include('partials.qframeworkBconduct')
 
         {{-- lManagement --}}
-        <div class="w-full border border-gray-200 dark:border-opacity-20 rounded h-screen bg-gray-300 px-4 py-4 overflow-y-auto" x-show="lManagement" x-transition x-cloak style="display: none !important">
+        <div class="w-full border border-gray-200 dark:border-opacity-20 rounded min-h-screen bg-gray-300 px-4 py-4" x-show="lManagement" x-transition x-cloak style="display: none !important">
             <h1 class="text-2xl font-semibold mb-4">{{__('Lifecycle Management')}}</h1>
             <p>Not available for 2021</p>
         </div>
 
         {{-- qframework3 --}}
-        <div class="w-full border border-gray-200 dark:border-opacity-20 rounded h-screen bg-gray-300 px-4 py-4 overflow-y-auto" x-show="qframework3" x-transition x-cloak style="display: none !important">
+        <div class="w-full border border-gray-200 dark:border-opacity-20 rounded min-h-screen bg-gray-300 px-4 py-4" x-show="qframework3" x-transition x-cloak style="display: none !important">
             <h1 class="text-2xl font-semibold mb-4">{{__('Lifecycle Management')}}</h1>
             <p>Not available for 2021</p>
         </div>
 
         {{-- cWellbeing --}}
-        <div class="w-full border border-gray-200 dark:border-opacity-20 rounded h-screen bg-gray-300 px-4 py-4 overflow-y-auto" x-show="cWellbeing" x-transition x-cloak style="display: none !important">
+        <div class="w-full border border-gray-200 dark:border-opacity-20 rounded min-h-screen bg-gray-300 px-4 py-4" x-show="cWellbeing" x-transition x-cloak style="display: none !important">
             <h1 class="text-2xl font-semibold mb-4">{{__('Community Wellbeing')}}</h1>
             <p>Not available for 2021</p>
         </div>
 
         {{-- qframework4 --}}
-        <div class="w-full border border-gray-200 dark:border-opacity-20 rounded h-screen bg-gray-300 px-4 py-4 overflow-y-auto" x-show="qframework4" x-transition x-cloak style="display: none !important">
+        <div class="w-full border border-gray-200 dark:border-opacity-20 rounded min-h-screen bg-gray-300 px-4 py-4" x-show="qframework4" x-transition x-cloak style="display: none !important">
             <h1 class="text-2xl font-semibold mb-4">{{__('Community Wellbeing')}}</h1>
             <p>Not available for 2021</p>
         </div>
 
         {{-- wCondition --}}
-        <div class="w-full border border-gray-200 dark:border-opacity-20 rounded h-screen bg-gray-300 px-4 py-4 overflow-y-auto" x-show="wCondition" x-transition x-cloak style="display: none !important">
+        <div class="w-full border border-gray-200 dark:border-opacity-20 rounded min-h-screen bg-gray-300 px-4 py-4" x-show="wCondition" x-transition x-cloak style="display: none !important">
             <h1 class="text-2xl font-semibold mb-4">{{__('Working Conditions')}}</h1>
             <p>Not available for 2021</p>
         </div>
 
          {{-- qframework5 --}}
-         <div class="w-full border border-gray-200 dark:border-opacity-20 rounded h-screen bg-gray-300 px-4 py-4 overflow-y-auto" x-show="qframework5" x-transition x-cloak style="display: none !important">
+         <div class="w-full border border-gray-200 dark:border-opacity-20 rounded min-h-screen bg-gray-300 px-4 py-4" x-show="qframework5" x-transition x-cloak style="display: none !important">
             <h1 class="text-2xl font-semibold mb-4">{{__('Working Conditions')}}</h1>
             <p>Not available for 2021</p>
         </div>
 
         {{-- eResponsibility --}}
-        <div class="w-full border border-gray-200 dark:border-opacity-20 rounded h-screen bg-gray-300 px-4 py-4 overflow-y-auto" x-show="eResponsibility" x-transition x-cloak style="display: none !important">
+        <div class="w-full border border-gray-200 dark:border-opacity-20 rounded min-h-screen bg-gray-300 px-4 py-4" x-show="eResponsibility" x-transition x-cloak style="display: none !important">
             <h1 class="text-2xl font-semibold mb-4">{{__('Environmental Responsibility')}}</h1>
             <p class="mb-4">Large-scale mining typically involves the removal ofvegetation and soil, the diversion of watercourses, and the movement of massive amounts of rock. These activities can permanently transform landscapes and ecosystems, and create temporary impacts such as noise, and water and air emissions, which in turn, may lead to impacts on community health (See D.06).</p>
             <p class="mb-4">When poorly managed, mining can have devastating impacts on the environment, through the catastrophic failures of waste facilities (see F.02), creation of pollution issues that can last hundreds of years, or permanent destruction of biodiversity and ecosystem services upon which communities depend (See F.05).</p>
