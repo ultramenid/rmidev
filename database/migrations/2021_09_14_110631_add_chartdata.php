@@ -14,12 +14,12 @@ class AddChartdata extends Migration
     public function up()
     {
         Schema::table('corporateprofilepages', function (Blueprint $table) {
-            $table->integer('bExecution');
-            $table->string('bAverage');
-            $table->string('bAll');
-            $table->integer('eResponsibility');
-            $table->string('eAverage');
-            $table->string('fAll');
+            $table->integer('bExecution')->nullable();
+            $table->string('bAverage')->nullable();
+            $table->string('bAll')->nullable();
+            $table->integer('eResponsibility')->nullable();
+            $table->string('eAverage')->nullable();
+            $table->string('fAll')->nullable();
         });
     }
 
