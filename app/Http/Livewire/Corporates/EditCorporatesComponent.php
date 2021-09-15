@@ -10,7 +10,7 @@ class EditCorporatesComponent extends Component{
     public $idcorporates;
     public $sidenav = 'overview';
     public $overview = true, $operationalrea = false, $financial = false, $corporatenetwork = false, $spotlight = false;
-    public $overviewenglish, $overviewindonesia, $operationenglish, $operationindonesia, $financialenglish, $financialindonesia, $corporatenetworkenglish, $corporatenetworkindonesia, $corporatename, $spotlightenglish, $spotlightindonesia;
+    public $overviewenglish, $overviewindonesia, $operationenglish, $operationindonesia, $financialenglish, $financialindonesia, $ownershipenglish, $ownershipindonesia, $corporatenetworkenglish, $corporatenetworkindonesia, $corporatename, $spotlightenglish, $spotlightindonesia, $execution, $bAverage, $bAll, $responsibility, $fAverage, $fAll;
 
     public function mount($idcorporates){
         $this->idcorporates = $idcorporates;
@@ -21,12 +21,20 @@ class EditCorporatesComponent extends Component{
         $this->overviewindonesia = $data->overviewindonesia;
         $this->operationenglish = $data->operationareaenglish;
         $this->operationindonesia = $data->operationareaindonesia;
-        $this->financialenglish = $data->financialownershipenglish;
-        $this->financialindonesia = $data->financialownershipindonesia;
+        $this->financialenglish = $data->financialenglish;
+        $this->financialindonesia = $data->financialindonesia;
+        $this->ownershipenglish = $data->ownershipenglish;
+        $this->ownershipindonesia = $data->ownershipindonesia;
         $this->corporatenetworkenglish = $data->corporatenetworkenglish;
         $this->corporatenetworkindonesia = $data->corporatenetworkindonesia;
         $this->spotlightenglish = $data->spotlightcasesenglish;
         $this->spotlightindonesia = $data->spotlightcasesindonesia;
+        $this->execution = $data->bExecution;
+        $this->bAverage = $data->bAverage;
+        $this->bAll = $data->bAll;
+        $this->responsibility = $data->eResponsibility;
+        $this->fAverage = $data->eAverage;
+        $this->fAll = $data->fAll;
     }
 
     public function updateCorporate(){
@@ -38,12 +46,20 @@ class EditCorporatesComponent extends Component{
             'overviewindonesia' => $this->overviewindonesia,
             'operationareaenglish' => $this->operationenglish,
             'operationareaindonesia' => $this->operationindonesia,
-            'financialownershipenglish' => $this->financialenglish,
-            'financialownershipindonesia' => $this->financialindonesia,
+            'financialenglish' => $this->financialenglish,
+            'financialindonesia' => $this->financialindonesia,
+            'ownershipenglish' => $this->ownershipenglish,
+            'ownershipindonesia' => $this->ownershipindonesia,
             'corporatenetworkenglish' => $this->corporatenetworkenglish,
             'corporatenetworkindonesia' => $this->corporatenetworkindonesia,
             'spotlightcasesenglish' => $this->spotlightenglish,
             'spotlightcasesindonesia' => $this->spotlightindonesia,
+            'bExecution' => $this->execution,
+            'bAverage' => $this->bAverage,
+            'bAll' => str_replace(",",".", $this->bAll),
+            'eResponsibility' => $this->responsibility,
+            'eAverage' => $this->fAverage,
+            'fAll' => $this->fAll,
             'updated_at' => Carbon::now('Asia/Jakarta')
         ]);
         $message = 'Successfully updating corporate content';
@@ -85,12 +101,22 @@ class EditCorporatesComponent extends Component{
             $this->emit('toast',$message, $type);
             return;
         }elseif($this->financialenglish == ''){
-            $message = 'Financial and Ownership content english is required';
+            $message = 'Financial content english is required';
             $type = 'error'; //error, success
             $this->emit('toast',$message, $type);
             return;
         }elseif($this->financialindonesia == ''){
-            $message = 'Financial and Ownership content indonesia is required';
+            $message = 'Financial content indonesia is required';
+            $type = 'error'; //error, success
+            $this->emit('toast',$message, $type);
+            return;
+        }elseif($this->ownershipenglish == ''){
+            $message = 'Ownership content english is required';
+            $type = 'error'; //error, success
+            $this->emit('toast',$message, $type);
+            return;
+        }elseif($this->ownershipindonesia == ''){
+            $message = 'Ownership content indonesia is required';
             $type = 'error'; //error, success
             $this->emit('toast',$message, $type);
             return;

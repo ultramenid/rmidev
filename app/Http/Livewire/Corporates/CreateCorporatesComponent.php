@@ -10,10 +10,11 @@ use phpDocumentor\Reflection\Types\This;
 class CreateCorporatesComponent extends Component{
     public $sidenav = 'overview';
     public $overview = true, $operationalrea = false, $financial = false, $corporatenetwork = false, $spotlight = false;
-    public $overviewenglish, $overviewindonesia, $operationenglish, $operationindonesia, $financialenglish, $financialindonesia, $corporatenetworkenglish, $corporatenetworkindonesia, $corporatename, $spotlightenglish, $spotlightindonesia;
+    public $overviewenglish, $overviewindonesia, $operationenglish, $operationindonesia, $financialenglish, $ownershipenglish, $ownershipindonesia, $financialindonesia, $corporatenetworkenglish, $corporatenetworkindonesia, $corporatename, $spotlightenglish, $spotlightindonesia, $execution, $bAverage, $bAll, $responsibility, $fAverage, $fAll;
 
 
     public function storeCorporate(){
+
         if($this->setValidation()){
             DB::table('corporateprofilepages')->insert([
                 'name'=> $this->corporatename,
@@ -21,19 +22,24 @@ class CreateCorporatesComponent extends Component{
                 'overviewindonesia' => $this->overviewindonesia,
                 'operationareaenglish' => $this->operationenglish,
                 'operationareaindonesia' => $this->operationindonesia,
-                'financialownershipenglish' => $this->financialenglish,
-                'financialownershipindonesia' => $this->financialindonesia,
+                'financialenglish' => $this->financialenglish,
+                'financialindonesia' => $this->financialindonesia,
+                'ownershipenglish' => $this->ownershipenglish,
+                'ownershipindonesia' => $this->ownershipindonesia,
                 'corporatenetworkenglish' => $this->corporatenetworkenglish,
                 'corporatenetworkindonesia' => $this->corporatenetworkindonesia,
                 'spotlightcasesenglish' => $this->spotlightenglish,
                 'spotlightcasesindonesia' => $this->spotlightindonesia,
+                'bExecution' => $this->execution,
+                'bAverage' => $this->bAverage,
+                'bAll' => $this->bAll,
+                'eResponsibility' => $this->responsibility,
+                'eAverage' => $this->fAverage,
+                'fAll' => $this->fAll,
                 'created_at' => Carbon::now('Asia/Jakarta')
             ]);
 
-            $message = 'Successfully submiting new corporate';
-            $type = 'success'; //error, success
-            $this->emit('toast',$message, $type);
-
+            redirect()->to('/cms/corporates');
         }
 
     }
@@ -73,12 +79,22 @@ class CreateCorporatesComponent extends Component{
             $this->emit('toast',$message, $type);
             return;
         }elseif($this->financialenglish == ''){
-            $message = 'Financial and Ownership content english is required';
+            $message = 'Financial content english is required';
             $type = 'error'; //error, success
             $this->emit('toast',$message, $type);
             return;
         }elseif($this->financialindonesia == ''){
-            $message = 'Financial and Ownership content indonesia is required';
+            $message = 'Financial content indonesia is required';
+            $type = 'error'; //error, success
+            $this->emit('toast',$message, $type);
+            return;
+        }elseif($this->ownershipenglish == ''){
+            $message = 'Ownership content english is required';
+            $type = 'error'; //error, success
+            $this->emit('toast',$message, $type);
+            return;
+        }elseif($this->ownershipindonesia == ''){
+            $message = 'Ownership content indonesia is required';
             $type = 'error'; //error, success
             $this->emit('toast',$message, $type);
             return;
@@ -99,6 +115,37 @@ class CreateCorporatesComponent extends Component{
             return;
         }elseif($this->spotlightindonesia == ''){
             $message = 'Spotlight Cases content indonesia is required';
+            $type = 'error'; //error, success
+            $this->emit('toast',$message, $type);
+            return;
+        }
+        elseif($this->execution == ''){
+            $message = 'Bussines Execution is required';
+            $type = 'error'; //error, success
+            $this->emit('toast',$message, $type);
+            return;
+        }elseif($this->bAverage == ''){
+            $message = 'Bussines Average is required';
+            $type = 'error'; //error, success
+            $this->emit('toast',$message, $type);
+            return;
+        }elseif($this->bAll == ''){
+            $message = 'Bussines Score is required';
+            $type = 'error'; //error, success
+            $this->emit('toast',$message, $type);
+            return;
+        }elseif($this->responsibility == ''){
+            $message = 'Environmental Responsibility is required';
+            $type = 'error'; //error, success
+            $this->emit('toast',$message, $type);
+            return;
+        }elseif($this->fAverage == ''){
+            $message = 'Average Responsibility is required';
+            $type = 'error'; //error, success
+            $this->emit('toast',$message, $type);
+            return;
+        }elseif($this->fAll == ''){
+            $message = 'Responsibility Score is required';
             $type = 'error'; //error, success
             $this->emit('toast',$message, $type);
             return;

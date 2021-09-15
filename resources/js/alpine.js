@@ -215,6 +215,98 @@
             }
         }))
 
+        Alpine.data('corporateProfiles', () => ({
+            Overview: true,
+            Operation: false,
+            Financial: false,
+            Ownership: false,
+            CorporateNetwork: false,
+            Spotlight: false,
+            dataBconduct: false,
+            eResponsibility: false,
+
+            toogleOverview(){
+                this.Overview = true,
+                this.Operation = false,
+                this.Financial = false,
+                this.Ownership = false,
+                this.CorporateNetwork= false,
+                this.Spotlight = false,
+                this.dataBconduct = false,
+                this.eResponsibility = false
+            },
+            toogleOperation(){
+                this.Overview = false,
+                this.Operation = true,
+                this.Financial = false,
+                this.Ownership = false,
+                this.CorporateNetwork= false,
+                this.Spotlight = false,
+                this.dataBconduct = false,
+                this.eResponsibility = false
+            },
+            toogleFinancial(){
+                this.Overview = false,
+                this.Operation = false,
+                this.Financial = true,
+                this.Ownership = false,
+                this.CorporateNetwork= false,
+                this.Spotlight = false,
+                this.dataBconduct = false,
+                this.eResponsibility = false
+            },
+            toogleOwnership(){
+                this.Overview = false,
+                this.Operation = false,
+                this.Financial = false,
+                this.Ownership = true,
+                this.CorporateNetwork= false,
+                this.Spotlight = false,
+                this.dataBconduct = false,
+                this.eResponsibility = false
+            },
+            toogleCorporateNetwork(){
+                this.Overview = false,
+                this.Operation = false,
+                this.Financial = false,
+                this.Ownership = false,
+                this.CorporateNetwork= true,
+                this.Spotlight = false,
+                this.dataBconduct = false,
+                this.eResponsibility = false
+            },
+            toogleSpotlight(){
+                this.Overview = false,
+                this.Operation = false,
+                this.Financial = false,
+                this.Ownership = false,
+                this.CorporateNetwork= false,
+                this.Spotlight = true,
+                this.dataBconduct = false,
+                this.eResponsibility = false
+            },
+            toogleDataBconduct(){
+                this.Overview = false,
+                this.Operation = false,
+                this.Financial = false,
+                this.Ownership = false,
+                this.CorporateNetwork= false,
+                this.Spotlight = false,
+                this.dataBconduct = true,
+                this.eResponsibility = false
+            },
+            toogleeResponsibility(){
+                this.Overview = false,
+                this.Operation = false,
+                this.Financial = false,
+                this.Ownership = false,
+                this.CorporateNetwork= false,
+                this.Spotlight = false,
+                this.dataBconduct = false,
+                this.eResponsibility = true
+            }
+
+        }))
 
         Alpine.data('qframework6', () => ({
             F01 : false,

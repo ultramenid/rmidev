@@ -11,7 +11,7 @@
 
     <main class="bgrmi h-min-screen">
 
-        {{-- flex select --}}
+        {{-- flex select
         <div class="max-w-6xl mx-auto px-6 md:px-8 sm:py-16 py-8">
             <div class="sm:flex flex-row lg:space-x-16 md:space-x-12 space-x-0 sm:space-y-0 space-y-2">
                 <div x-data="{ open: false }" class="relative py-1 sm:w-96 w-full">
@@ -55,26 +55,28 @@
                 </div>
             </div>
 
-        </div>
+        </div> --}}
+
+
 
         {{-- Overall text --}}
         <div class="max-w-6xl mx-auto sm:py-16 py-8">
+
+
             <h1 class="uppercase text-center text-gray-300 text-3xl font-bold mb-6">{{__('Overall Company Result')}}</h1>
-            <div class="lg:flex flex-row mt-12 justify-between ">
-                <div class=" w-full h-full mb-6">
-                    <iframe src='https://flo.uri.sh/visualisation/6897406/embed' title='Interactive or visual content' class='flourish-embed-iframe' frameborder='0' scrolling='no' style='width:100%;height:600px;' sandbox='allow-same-origin allow-forms allow-scripts allow-downloads allow-popups allow-popups-to-escape-sandbox allow-top-navigation-by-user-activation'></iframe><div style='width:100%!;margin-top:4px!important;text-align:right!important;'></div>
-                    <span class="inline-flex items-center space-x-3 px-4 ">
-                        <img src="{{ asset('assets/handshake.png') }}" alt="" class="h-10">
-                        <a href="#" class="text-gray-300 sm:text-2xl inline-flex underline  text-xl">{{__('Bussines Conduct')}}</a>
-                    </span>
-                </div>
-                <div class=" w-full h-full">
-                    <iframe src='https://flo.uri.sh/visualisation/6898146/embed' title='Interactive or visual content' class='flourish-embed-iframe' frameborder='0' scrolling='no' style='width:100%;height:600px;' sandbox='allow-same-origin allow-forms allow-scripts allow-downloads allow-popups allow-popups-to-escape-sandbox allow-top-navigation-by-user-activation'></iframe><div style='width:100%!;margin-top:4px!important;text-align:right!important;'></div>
-                    <span class="inline-flex items-center space-x-3 px-4  ">
-                        <img src="{{ asset('assets/leaf.png') }}" alt="" class="w-9">
-                        <a href="#" class="text-gray-300 sm:text-2xl inline-flex underline text-xl">Environmental Responsibility</a>
-                    </span>
-                </div>
+            <div class=" w-full h-full mb-6">
+                <span class="inline-flex items-center space-x-3 px-4 ">
+                    <img src="{{ asset('assets/handshake.png') }}" alt="" class="h-10">
+                    <a href="#" class="text-gray-300 sm:text-2xl inline-flex underline  text-xl">{{__('Bussines Conduct')}}</a>
+                </span>
+                <livewire:chart-bconduct />
+            </div>
+            <div class=" w-full h-full">
+                <span class="inline-flex items-center space-x-3 px-4  ">
+                    <img src="{{ asset('assets/leaf.png') }}" alt="" class="w-9">
+                    <a href="#" class="text-gray-300 sm:text-2xl inline-flex underline text-xl">Environmental Responsibility</a>
+                </span>
+                <livewire:chart-eresponsibility />
             </div>
         </div>
 

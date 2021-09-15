@@ -1,128 +1,87 @@
-<div class=" bg-gray-300" x-data="{ Overview: @entangle('overview').defer, Operation: @entangle('operationalrea').defer, Financial: @entangle('financial').defer, CorporateNetwork: @entangle('corporatenetwork').defer, Spotlight: @entangle('spotlight').defer }">
-    <div class="grid lg:grid-cols-5 md:grid-cols-2 grid-cols-1 py-6 sm:px-6 px-4 gap-4" >
+<div class=" bg-gray-300" x-data="corporateProfiles">
+    <div class="grid lg:grid-cols-6 md:grid-cols-2 grid-cols-1 py-6 sm:px-6 px-4 gap-4" >
         {{-- overview --}}
         <template x-if="Overview">
-                <button @click="
-                Overview = true,
-                Operation = false,
-                Financial = false,
-                CorporateNetwork= false,
-                Spotlight = false"
+                <button @click="toogleOverview"
                 class="border py-1 border-gray-700 col-span-1 uppercase text-sm bg-black text-gray-200">
                 Overview
             </button>
         </template>
         <template x-if="!Overview">
-            <button @click="
-            Overview = true,
-            Operation = false,
-            Financial = false,
-            CorporateNetwork= false,
-            Spotlight = false"
+            <button @click="toogleOverview"
             class="border py-1 border-gray-700 col-span-1 uppercase text-sm  text-gray-800 hover:bg-black hover:text-gray-200">
             Overview
             </button>
         </template>
 
-
-
-
         {{-- operationarea --}}
         <template x-if="Operation">
-            <button @click="
-            Overview = false,
-            Operation = true,
-            Financial = false,
-            CorporateNetwork= false,
-            Spotlight = false"
+            <button @click="toogleOperation"
             class="border py-1 border-gray-700 col-span-1 uppercase text-sm bg-black text-gray-200">
-            Operation Area
+            Area
         </button>
         </template>
         <template x-if="!Operation">
-            <button @click="
-            Overview = false,
-            Operation = true,
-            Financial = false,
-            CorporateNetwork= false,
-            Spotlight = false"
+            <button @click="toogleOperation"
             class="border py-1 border-gray-700 col-span-1 uppercase text-sm  text-gray-800 hover:bg-black hover:text-gray-200">
-            Operation Area
+            Area
             </button>
         </template>
-
-        {{-- financialandownership --}}
-        <template x-if="Financial">
-            <button @click="
-            Overview = false,
-            Operation = false,
-            Financial = true,
-            CorporateNetwork= false,
-            Spotlight = false"
-            class="border py-1 border-gray-700 col-span-1 uppercase text-sm bg-black text-gray-200">
-            Financial and Ownership
-        </button>
-        </template>
-        <template x-if="!Financial">
-            <button @click="
-            Overview = false,
-            Operation = false,
-            Financial = true,
-            CorporateNetwork= false,
-            Spotlight = false"
-            class="border py-1 border-gray-700 col-span-1 uppercase text-sm  text-gray-800 hover:bg-black hover:text-gray-200">
-            Financial and Ownership
-            </button>
-        </template>
-
 
         {{-- corporatenetwork --}}
         <template x-if="CorporateNetwork">
-            <button @click="
-            Overview = false,
-            Operation = false,
-            Financial = false,
-            CorporateNetwork= true,
-            Spotlight = false"
+            <button @click="toogleCorporateNetwork"
             class="border py-1 border-gray-700 col-span-1 uppercase text-sm bg-black text-gray-200">
-            Corporate Network
+            Corporation
         </button>
         </template>
         <template x-if="!CorporateNetwork">
-            <button @click="
-            Overview = false,
-            Operation = false,
-            Financial = false,
-            CorporateNetwork= true,
-            Spotlight = false"
+            <button @click="toogleCorporateNetwork"
             class="border py-1 border-gray-700 col-span-1 uppercase text-sm  text-gray-800 hover:bg-black hover:text-gray-200">
-            Corporate Network
+            Corporation
             </button>
         </template>
 
+        {{-- financial--}}
+        <template x-if="Financial">
+            <button @click="toogleFinancial"
+            class="border py-1 border-gray-700 col-span-1 uppercase text-sm bg-black text-gray-200">
+            Financial
+        </button>
+        </template>
+        <template x-if="!Financial">
+            <button @click="toogleFinancial"
+            class="border py-1 border-gray-700 col-span-1 uppercase text-sm  text-gray-800 hover:bg-black hover:text-gray-200">
+            Financial
+            </button>
+        </template>
+
+        {{-- ownership  --}}
+        <template x-if="Ownership">
+            <button @click="toogleOwnership"
+            class="border py-1 border-gray-700 col-span-1 uppercase text-sm bg-black text-gray-200">
+            Ownership
+        </button>
+        </template>
+        <template x-if="!Ownership">
+            <button @click="toogleOwnership"
+            class="border py-1 border-gray-700 col-span-1 uppercase text-sm  text-gray-800 hover:bg-black hover:text-gray-200">
+            Ownership
+            </button>
+        </template>
 
 
          {{-- spotlightcases --}}
          <template x-if="Spotlight">
-            <button @click="
-            Overview = false,
-            Operation = false,
-            Financial = false,
-            CorporateNetwork= false,
-            Spotlight = true"
+            <button @click="toogleSpotlight"
             class="border py-1 border-gray-700 col-span-1 uppercase text-sm bg-black text-gray-200">
-            SpotlightL Cases Etc
+            Spotlight
         </button>
         </template>
         <template x-if="!Spotlight">
-            <button @click="
-            Overview = false,
-            Operation = false,
-            Financial = false,
-            CorporateNetwork= false,
-            Spotlight = true"
+            <button @click="toogleSpotlight"
             class="border py-1 border-gray-700 col-span-1 uppercase text-sm  text-gray-800 hover:bg-black hover:text-gray-200">
-            SpotlightL Cases Etc
+            Spotlight
             </button>
         </template>
     </div>
@@ -141,9 +100,14 @@
             {!! $data->operationarea !!}
         </div>
 
-        {{-- Financial and ownership --}}
+        {{-- Financial --}}
         <div x-show="Financial" x-cloak style="display: none !important" class="min-h-screen  ">
             {!! $data->financialownership !!}
+        </div>
+
+        {{-- ownership --}}
+        <div x-show="Ownership" x-cloak style="display: none !important" class="min-h-screen  ">
+            {!! $data->ownership !!}
         </div>
 
         {{-- Corporate Network --}}
@@ -157,7 +121,4 @@
         </div>
     </div>
 
-
-
-    {{-- <div class="py-6 px-6">{!! $data->name ?? '' !!}</div> --}}
 </div>
