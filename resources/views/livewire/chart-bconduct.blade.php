@@ -74,15 +74,23 @@
           yaxis: {
             type: 'string',
             labels: {
-              minWidth: 40
+              minWidth: 40,
+              formatter: function (value) {
+                return value + "%";
+              }
             },
-            min: 0
+            min: 0,
+            max: 100
           },
           tooltip: {
             shared: true,
             intersect: false,
             theme: "dark",
-
+            y: {
+              formatter: function (value) {
+                return value.toFixed(2);
+              }
+            },
           }
         };
         var chart = new ApexCharts(document.querySelector("#chart"), options);
