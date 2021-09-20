@@ -3,7 +3,7 @@
     <ul class=" sm:space-y-2  space-y-0 sm:space-x-0 mb-6 space-x-3 sm:col-span-4 col-span-12 subpixel-antialiased sm:flex sm:flex-col flex flex-row ">
         <li class="">
             <template x-if="intro">
-                <a  class=" font-bold  text-white underline  uppercase cursor-pointer"
+                <a  class=" font-bold  text-red-700 underline  uppercase cursor-pointer"
                 @click="toogleIntro">
                     Introduction
                 </a>
@@ -25,7 +25,7 @@
             <ul class="pl-6  mt-2 ">
                 <li class= "text-sm  ">
                     <template x-if="economicdev">
-                        <a class="uppercase underline text-white  cursor-pointer"
+                        <a class="uppercase underline text-red-700  cursor-pointer"
                         @click="toogleEconomicdev"
                         >a. {{__('Economic Development')}}</a>
                     </template>
@@ -35,7 +35,7 @@
                         >a. {{__('Economic Development')}}</a>
                     </template>
                     <template x-if="qframework1">
-                        <p class="pl-6 text-white text-sm mb-3 underline cursor-pointer"
+                        <p class="pl-6 text-red-700 text-sm mb-3 underline cursor-pointer"
                         @click="toogleqFramework1"
                         >Criteria, metric question, and scoring framework
                         </p>
@@ -51,7 +51,7 @@
 
                 <li class="text-sm  ">
                     <template x-if="bConduct">
-                        <a class="uppercase underline text-white  cursor-pointer"
+                        <a class="uppercase underline text-red-700  cursor-pointer"
                         @click="tooglebConduct"
                         >b. {{__('Business Conduct')}}</a>
                     </template>
@@ -61,7 +61,7 @@
                         >b. {{__('Business Conduct')}}</a>
                     </template>
                     <template x-if="qframework2">
-                        <p class="pl-6 text-white text-sm mb-3 underline cursor-pointer"
+                        <p class="pl-6 text-red-700 text-sm mb-3 underline cursor-pointer"
                         @click="toogleqFramework2"
                         >Criteria, metric question, and scoring framework
                         </p>
@@ -78,7 +78,7 @@
                 </li>
                 <li class="text-gray-300 text-sm  ">
                     <template x-if="lManagement">
-                        <a class="uppercase underline text-white  cursor-pointer"
+                        <a class="uppercase underline text-red-700 cursor-pointer"
                         @click="tooglelManagement"
                         >c. {{__('Lifecycle Management')}}</a>
                     </template>
@@ -88,7 +88,7 @@
                         >c. {{__('Lifecycle Management')}}</a>
                     </template>
                     <template x-if="qframework3">
-                        <p class="pl-6 text-white text-sm mb-3 underline cursor-pointer"
+                        <p class="pl-6 text-red-700 text-sm mb-3 underline cursor-pointer"
                         @click="toogleqFramework3"
                         >Criteria, metric question, and scoring framework
                         </p>
@@ -102,7 +102,7 @@
                 </li>
                 <li class="text-gray-300 text-sm  ">
                     <template x-if="cWellbeing">
-                        <a class="uppercase underline text-white  cursor-pointer"
+                        <a class="uppercase underline text-red-700  cursor-pointer"
                         @click="tooglecWellbeing"
                         >d. {{__('Community Wellbeing')}}</a>
                     </template>
@@ -112,7 +112,7 @@
                         >d. {{__('Community Wellbeing')}}</a>
                     </template>
                     <template x-if="qframework4">
-                        <p class="pl-6 text-white text-sm mb-3 underline cursor-pointer"
+                        <p class="pl-6 text-red-700 text-sm mb-3 underline cursor-pointer"
                         @click="toogleqFramework4"
                         >Criteria, metric question, and scoring framework
                         </p>
@@ -126,7 +126,7 @@
                 </li>
                 <li class="text-gray-300 text-sm  ">
                     <template x-if="wCondition">
-                        <a class="uppercase underline text-white  cursor-pointer"
+                        <a class="uppercase underline text-red-700  cursor-pointer"
                         @click="tooglewCondition"
                         >e. {{__('Working Conditions')}}</a>
                     </template>
@@ -136,7 +136,7 @@
                         >e. {{__('Working Conditions')}}</a>
                     </template>
                     <template x-if="qframework5">
-                        <p class="pl-6 text-white text-sm mb-3 underline cursor-pointer"
+                        <p class="pl-6 text-red-700 text-sm mb-3 underline cursor-pointer"
                         @click="toogleqFramework5"
                         >Criteria, metric question, and scoring framework
                         </p>
@@ -150,7 +150,7 @@
                 </li>
                 <li class="text-gray-300 text-sm  ">
                     <template x-if="eResponsibility">
-                        <a class="uppercase underline text-white  cursor-pointer"
+                        <a class="uppercase underline text-red-700 cursor-pointer"
                         @click="toogleeResponsibility"
                         >f. {{__('Environmental Responsibility')}}</a>
                     </template>
@@ -160,7 +160,7 @@
                         >f. {{__('Environmental Responsibility')}}</a>
                     </template>
                     <template x-if="qframework6">
-                        <p class="pl-6 text-white text-sm mb-3 underline cursor-pointer"
+                        <p class="pl-6 text-red-700 text-sm mb-3 underline cursor-pointer"
                         @click="toogleqFramework6"
                         >Criteria, metric question, and scoring framework
                         </p>
