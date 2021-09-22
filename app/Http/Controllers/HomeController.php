@@ -3,11 +3,19 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\DB;
 
 class HomeController extends Controller
 {
+    public function getCode(){
+        return  DB::table('embedcode')
+                  ->where('name', 'mapindex')
+                  ->where('place', 'index')
+                  ->first();
+    }
     public function index(){
+        $resultCode = $this->getCode();
         $title = 'Quitcoal - Responsible Mining Index';
-        return view('pages.index', compact('title'));
+        return view('pages.index', compact('title','resultCode'));
     }
 }

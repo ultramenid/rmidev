@@ -239,7 +239,12 @@
          {{-- map --}}
         <div class="max-w-6xl mx-auto px-6 md:px-8 sm:py-8 py-8">
             {{-- <img loading="lazy" src="{{ asset('assets/indonesiamap.png') }}" alt=""> --}}
-            <iframe src='https://flo.uri.sh/visualisation/7315041/embed' title='Interactive or visual content' class='flourish-embed-iframe' frameborder='0' scrolling='no' style='width:100%;height:450px;' sandbox='allow-same-origin allow-forms allow-scripts allow-downloads allow-popups allow-popups-to-escape-sandbox allow-top-navigation-by-user-activation'></iframe>
+            @if ($resultCode)
+            <div>
+                {!! $resultCode->code !!}
+            </div>
+            @endif
+
         </div>
 
 
