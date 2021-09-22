@@ -238,7 +238,8 @@
 
          {{-- map --}}
         <div class="max-w-6xl mx-auto px-6 md:px-8 sm:py-8 py-8">
-            <img loading="lazy" src="{{ asset('assets/indonesiamap.png') }}" alt="">
+            {{-- <img loading="lazy" src="{{ asset('assets/indonesiamap.png') }}" alt=""> --}}
+            <div class="flourish-embed flourish-map" data-src="visualisation/7315041"><script src="https://public.flourish.studio/resources/embed.js"></script></div>
         </div>
 
 
