@@ -139,11 +139,11 @@
                 </div>
                 <div class="mb-6">
                     <label class="text-newgray-900 dark:text-gray-300">Corporate Name:</label>
-                    <input type="text" class="w-full border border-gray-300 py-1 px-4 focus:outline-none" id="corporatename" wire:model.defer='corporatename' placeholder="Name. . . ">
+                    <input type="text" class=" w-full border border-gray-300 py-1 px-4 focus:outline-none" id="corporatename" wire:model.defer='corporatename' placeholder="Name. . . ">
                 </div>
                 <p class="text-newgray-900 dark:text-gray-300 ">Content English :</p>
                 <div wire:ignore>
-                    <textarea cols="80" id="overviewenglish"  rows="10"  wire:model.defer='overviewenglish' required></textarea>
+                    <textarea cols="80" id="overviewenglish"  rows="10"  wire:model.defer='overviewenglish' required class="bg-black"></textarea>
                 </div>
 
                 <p class="text-newgray-900 dark:text-gray-300 mt-6">Content Indonesia :</p>

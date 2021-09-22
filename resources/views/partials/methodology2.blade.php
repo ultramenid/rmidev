@@ -179,12 +179,31 @@
 
         {{-- toogle thematic mobile --}}
             <div class="flex">
-                <a x-show="thematic" @click="thematicDropdown = ! thematicDropdown"  class=" font-bold  text-gray-300   uppercase  items-center sm:hidden inline-flex" >
+                <template x-if="colorthematic">
+                    <a x-show="thematic" @click="thematicDropdown = ! thematicDropdown"  class=" font-bold underline  text-red-700  uppercase  items-center sm:hidden inline-flex" >
+                        {{__('Thematic')}}
+                        <svg xmlns="http://www.w3.org/2000/svg" class="w-4 ml-1" viewBox="0 0 20 20" fill="currentColor">
+                            <path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd" />
+                          </svg>
+                    </a>
+                </template>
+                <template x-if="!colorthematic">
+                    <a x-show="thematic" @click="thematicDropdown = ! thematicDropdown"  class=" font-bold  text-gray-300  uppercase  items-center sm:hidden inline-flex" >
+                        {{__('Thematic')}}
+                        <svg xmlns="http://www.w3.org/2000/svg" class="w-4 ml-1" viewBox="0 0 20 20" fill="currentColor">
+                            <path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd" />
+                          </svg>
+                    </a>
+                </template>
+                {{-- <a x-show="thematic" @click="thematicDropdown = ! thematicDropdown"  class=" font-bold  text-gray-300   uppercase  items-center sm:hidden inline-flex" >
                     {{__('Thematic')}}
+                    <template x-if="colorthematic">
+                        <script>console.log('hi')</script>
+                    </template>
                     <svg xmlns="http://www.w3.org/2000/svg" class="w-4 ml-1" viewBox="0 0 20 20" fill="currentColor">
                         <path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd" />
                       </svg>
-                </a>
+                </a> --}}
             </div>
     </ul>
 
@@ -193,7 +212,7 @@
         <ul class="pl-6  mt-2 ">
             <li class= "text-sm  ">
                 <template x-if="economicdev">
-                    <a class="uppercase underline text-white  cursor-pointer"
+                    <a class="uppercase underline text-red-700 cursor-pointer"
                     @click="toogleEconomicdev"
                     >a. {{__('Economic Development')}}</a>
                 </template>
@@ -203,7 +222,7 @@
                     >a. {{__('Economic Development')}}</a>
                 </template>
                 <template x-if="qframework1">
-                    <p class="pl-6 text-white text-sm mb-3 underline cursor-pointer"
+                    <p class="pl-6 text-red-700 text-sm mb-3 underline cursor-pointer"
                     @click="toogleqFramework1"
                     >Criteria, metric question, and scoring framework
                     </p>
@@ -219,7 +238,7 @@
 
             <li class="text-sm  ">
                 <template x-if="bConduct">
-                    <a class="uppercase underline text-white  cursor-pointer"
+                    <a class="uppercase underline text-red-700 cursor-pointer"
                     @click="tooglebConduct"
                     >b. {{__('Business Conduct')}}</a>
                 </template>
@@ -229,7 +248,7 @@
                     >b. {{__('Business Conduct')}}</a>
                 </template>
                 <template x-if="qframework2">
-                    <p class="pl-6 text-white text-sm mb-3 underline cursor-pointer"
+                    <p class="pl-6 text-red-700 text-sm mb-3 underline cursor-pointer"
                     @click="toogleqFramework2"
                     >Criteria, metric question, and scoring framework
                     </p>
@@ -246,7 +265,7 @@
             </li>
             <li class="text-gray-300 text-sm  ">
                 <template x-if="lManagement">
-                    <a class="uppercase underline text-white  cursor-pointer"
+                    <a class="uppercase underline text-red-700 cursor-pointer"
                     @click="tooglelManagement"
                     >c. {{__('Lifecycle Management')}}</a>
                 </template>
@@ -256,7 +275,7 @@
                     >c. {{__('Lifecycle Management')}}</a>
                 </template>
                 <template x-if="qframework3">
-                    <p class="pl-6 text-white text-sm mb-3 underline cursor-pointer"
+                    <p class="pl-6 text-red-700 text-sm mb-3 underline cursor-pointer"
                     @click="toogleqFramework3"
                     >Criteria, metric question, and scoring framework
                     </p>
@@ -270,7 +289,7 @@
             </li>
             <li class="text-gray-300 text-sm  ">
                 <template x-if="cWellbeing">
-                    <a class="uppercase underline text-white  cursor-pointer"
+                    <a class="uppercase underline text-red-700 cursor-pointer"
                     @click="tooglecWellbeing"
                     >d. {{__('Community Wellbeing')}}</a>
                 </template>
@@ -280,7 +299,7 @@
                     >d. {{__('Community Wellbeing')}}</a>
                 </template>
                 <template x-if="qframework4">
-                    <p class="pl-6 text-white text-sm mb-3 underline cursor-pointer"
+                    <p class="pl-6 text-red-700 text-sm mb-3 underline cursor-pointer"
                     @click="toogleqFramework4"
                     >Criteria, metric question, and scoring framework
                     </p>
@@ -294,7 +313,7 @@
             </li>
             <li class="text-gray-300 text-sm  ">
                 <template x-if="wCondition">
-                    <a class="uppercase underline text-white  cursor-pointer"
+                    <a class="uppercase underline text-red-700 cursor-pointer"
                     @click="tooglewCondition"
                     >e. {{__('Working Conditions')}}</a>
                 </template>
@@ -304,7 +323,7 @@
                     >e. {{__('Working Conditions')}}</a>
                 </template>
                 <template x-if="qframework5">
-                    <p class="pl-6 text-white text-sm mb-3 underline cursor-pointer"
+                    <p class="pl-6 text-red-700 text-sm mb-3 underline cursor-pointer"
                     @click="toogleqFramework5"
                     >Criteria, metric question, and scoring framework
                     </p>
@@ -318,7 +337,7 @@
             </li>
             <li class="text-gray-300 text-sm  ">
                 <template x-if="eResponsibility">
-                    <a class="uppercase underline text-white  cursor-pointer"
+                    <a class="uppercase underline text-red-700 cursor-pointer"
                     @click="toogleeResponsibility"
                     >f. {{__('Environmental Responsibility')}}</a>
                 </template>
@@ -328,7 +347,7 @@
                     >f. {{__('Environmental Responsibility')}}</a>
                 </template>
                 <template x-if="qframework6">
-                    <p class="pl-6 text-white text-sm mb-3 underline cursor-pointer"
+                    <p class="pl-6 text-red-700 text-sm mb-3 underline cursor-pointer"
                     @click="toogleqFramework6"
                     >Criteria, metric question, and scoring framework
                     </p>

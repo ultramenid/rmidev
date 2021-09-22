@@ -17,6 +17,7 @@
             eResponsibility : false,
             qframework6 : false,
             loadingSkeleton: false,
+            colorthematic:false,
 
             toogleIntro() {
                 this.intro = true,
@@ -31,7 +32,8 @@
                 this.wCondition = false,
                 this.qframework5 = false,
                 this.eResponsibility = false,
-                this.qframework6 = false
+                this.qframework6 = false,
+                this.colorthematic = false
             },
             toogleEconomicdev(){
                 this.intro = false,
@@ -46,7 +48,9 @@
                 this.wCondition = false,
                 this.qframework5 = false,
                 this.eResponsibility = false,
-                this.qframework6 = false
+                this.qframework6 = false,
+                this.colorthematic = true,
+                this.colorthematic = true
             },
             toogleqFramework1(){
                 this.intro = false,
@@ -61,7 +65,8 @@
                 this.wCondition = false,
                 this.qframework5 = false,
                 this.eResponsibility = false,
-                this.qframework6 = false
+                this.qframework6 = false,
+                this.colorthematic = true
             },
             tooglebConduct(){
                 this.intro = false,
@@ -76,7 +81,8 @@
                 this.wCondition = false,
                 this.qframework5 = false,
                 this.eResponsibility = false,
-                this.qframework6 = false
+                this.qframework6 = false,
+                this.colorthematic = true
             },
             toogleqFramework2(){
                 this.intro = false,
@@ -91,7 +97,8 @@
                 this.wCondition = false,
                 this.qframework5 = false,
                 this.eResponsibility = false,
-                this.qframework6 = false
+                this.qframework6 = false,
+                this.colorthematic = true
             },
             tooglelManagement(){
                 this.intro = false,
@@ -106,7 +113,8 @@
                 this.wCondition = false,
                 this.qframework5 = false,
                 this.eResponsibility = false,
-                this.qframework6 = false
+                this.qframework6 = false,
+                this.colorthematic = true
             },
             toogleqFramework3(){
                 this.intro = false,
@@ -121,7 +129,8 @@
                 this.wCondition = false,
                 this.qframework5 = false,
                 this.eResponsibility = false,
-                this.qframework6 = false
+                this.qframework6 = false,
+                this.colorthematic = true
             },
             tooglecWellbeing(){
                 this.intro = false,
@@ -136,7 +145,8 @@
                 this.wCondition = false,
                 this.qframework5 = false,
                 this.eResponsibility = false,
-                this.qframework6 = false
+                this.qframework6 = false,
+                this.colorthematic = true
             },
             toogleqFramework4(){
                 this.intro = false,
@@ -151,7 +161,8 @@
                 this.wCondition = false,
                 this.qframework5 = false,
                 this.eResponsibility = false,
-                this.qframework6 = false
+                this.qframework6 = false,
+                this.colorthematic = true
             },
             tooglewCondition(){
                 this.intro = false,
@@ -166,7 +177,8 @@
                 this.wCondition = true,
                 this.qframework5 = false,
                 this.eResponsibility = false,
-                this.qframework6 = false
+                this.qframework6 = false,
+                this.colorthematic = true
             },
             toogleqFramework5(){
                 this.intro = false,
@@ -181,7 +193,8 @@
                 this.wCondition = false,
                 this.qframework5 = true,
                 this.eResponsibility = false,
-                this.qframework6 = false
+                this.qframework6 = false,
+                this.colorthematic = true
             },
             toogleeResponsibility(){
                 this.intro = false,
@@ -196,7 +209,8 @@
                 this.wCondition = false,
                 this.qframework5 = false,
                 this.eResponsibility = true,
-                this.qframework6 = false
+                this.qframework6 = false,
+                this.colorthematic = true
             },
             toogleqFramework6(){
                 this.intro = false,
