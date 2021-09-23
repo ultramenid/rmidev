@@ -7,15 +7,21 @@
     <meta name="theme-color" content="black" />
     <link rel="shortcut icon" href="{{ asset('assets/favicon.ico') }}" type="image/x-icon" >
     <title>{{$title}}</title>
+
     @yield('meta')
 
     <link href="{{ asset('css/app.css') }}" rel="stylesheet" >
-    <script src="{{ asset('js/app.js') }}"  defer data-turbolinks-suppress-warning></script>
-    <script src="{{ asset('js/alpine.js')}} "></script>
+
+
 
 
 
     @livewireStyles
+    @livewireScripts
+    <script src="{{ asset('js/app.js') }}"  defer data-turbolinks-suppress-warning></script>
+    <script src="https://cdn.jsdelivr.net/gh/livewire/turbolinks@v0.1.x/dist/livewire-turbolinks.js" data-turbolinks-eval="false" data-turbo-eval="false"></script>
+    <script src="{{ asset('js/alpine.js')}} "></script>
+    <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
 
 </head>
 <body>
@@ -36,8 +42,6 @@
         </div>
     </div>
 
-    @livewireScripts
-    <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
     @stack('scripts')
 </body>
 </html>

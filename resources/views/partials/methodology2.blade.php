@@ -2,19 +2,10 @@
     @include('partials.skeletonMethodology')
     <ul class=" sm:space-y-2  space-y-0 sm:space-x-0 mb-6 space-x-3 sm:col-span-4 col-span-12 subpixel-antialiased sm:flex sm:flex-col flex flex-row ">
         <li class="">
-            <template x-if="intro">
-                <a  class=" font-bold  text-red-700 underline  uppercase cursor-pointer"
+                <a :class="intro ? 'text-red-700 underline' : 'text-gray-300 hover:underline'"  class=" font-bold    uppercase cursor-pointer"
                 @click="toogleIntro">
                     Introduction
                 </a>
-            </template>
-            <template x-if="!intro">
-                <a  class=" font-bold  text-gray-300 hover:underline  uppercase cursor-pointer"
-                @click="toogleIntro">
-                    Introduction
-                </a>
-            </template>
-
         </li>
 
         {{-- thematic desktop --}}
@@ -24,153 +15,74 @@
             </a>
             <ul class="pl-6  mt-2 ">
                 <li class= "text-sm  ">
-                    <template x-if="economicdev">
-                        <a class="uppercase underline text-red-700  cursor-pointer"
-                        @click="toogleEconomicdev"
-                        >a. {{__('Economic Development')}}</a>
-                    </template>
-                    <template x-if="!economicdev">
-                        <a class="uppercase hover:underline text-gray-300  cursor-pointer"
-                        @click="toogleEconomicdev"
-                        >a. {{__('Economic Development')}}</a>
-                    </template>
-                    <template x-if="qframework1">
-                        <p class="pl-6 text-red-700 text-sm mb-3 underline cursor-pointer"
-                        @click="toogleqFramework1"
-                        >Criteria, metric question, and scoring framework
-                        </p>
-                    </template>
-                    <template x-if="!qframework1">
-                        <p class="pl-6 text-gray-300 text-sm mb-3 hover:underline cursor-pointer"
-                        @click="toogleqFramework1"
-                        >Criteria, metric question, and scoring framework
-                        </p>
-                    </template>
+                    <div :class="economicdev ? 'text-red-700 underline' : 'text-gray-300 hover:underline'"  class=" font-bold     uppercase cursor-pointer"
+                    @click="toogleEconomicdev">
+                        a. {{__('Economic Development')}}</a>
+                    </div>
+
+                    <div :class="qframework1 ? 'text-red-700 underline' : 'text-gray-300 hover:underline'"  class="pl-6  text-sm mb-3  cursor-pointer"
+                    @click="toogleqFramework1">
+                        Criteria, metric question, and scoring framework
+                    </div>
 
                 </li>
 
                 <li class="text-sm  ">
-                    <template x-if="bConduct">
-                        <a class="uppercase underline text-red-700  cursor-pointer"
-                        @click="tooglebConduct"
-                        >b. {{__('Business Conduct')}}</a>
-                    </template>
-                    <template x-if="!bConduct">
-                        <a class="uppercase hover:underline text-gray-300  cursor-pointer"
-                        @click="tooglebConduct"
-                        >b. {{__('Business Conduct')}}</a>
-                    </template>
-                    <template x-if="qframework2">
-                        <p class="pl-6 text-red-700 text-sm mb-3 underline cursor-pointer"
-                        @click="toogleqFramework2"
-                        >Criteria, metric question, and scoring framework
-                        </p>
-                    </template>
-                    <template x-if="!qframework2">
-                        <p class="pl-6 text-gray-300 text-sm mb-3 hover:underline cursor-pointer"
-                        @click="toogleqFramework2"
-                        >Criteria, metric question, and scoring framework
-                        </p>
-                    </template>
+                    <div :class="bConduct ? 'text-red-700 underline' : 'text-gray-300 hover:underline'"  class=" font-bold     uppercase cursor-pointer"
+                    @click="tooglebConduct">
+                        b. {{__('Business Conduct')}}</a>
+                    </div>
 
-                    {{-- <a class="uppercase">b. </a> --}}
-                    {{-- <p class="pl-6 text-gray-300 text-sm mb-3">Criteria, metric question, and scoring framework</p> --}}
+                    <div :class="qframework2 ? 'text-red-700 underline' : 'text-gray-300 hover:underline'"  class="pl-6  text-sm mb-3  cursor-pointer"
+                    @click="toogleqFramework2">
+                        Criteria, metric question, and scoring framework
+                    </div>
                 </li>
                 <li class="text-gray-300 text-sm  ">
-                    <template x-if="lManagement">
-                        <a class="uppercase underline text-red-700 cursor-pointer"
-                        @click="tooglelManagement"
-                        >c. {{__('Lifecycle Management')}}</a>
-                    </template>
-                    <template x-if="!lManagement">
-                        <a class="uppercase hover:underline text-gray-300  cursor-pointer"
-                        @click="tooglelManagement"
-                        >c. {{__('Lifecycle Management')}}</a>
-                    </template>
-                    <template x-if="qframework3">
-                        <p class="pl-6 text-red-700 text-sm mb-3 underline cursor-pointer"
-                        @click="toogleqFramework3"
-                        >Criteria, metric question, and scoring framework
-                        </p>
-                    </template>
-                    <template x-if="!qframework3">
-                        <p class="pl-6 text-gray-300 text-sm mb-3 hover:underline cursor-pointer"
-                        @click="toogleqFramework3"
-                        >Criteria, metric question, and scoring framework
-                        </p>
-                    </template>
+
+                    <div :class="lManagement ? 'text-red-700 underline' : 'text-gray-300 hover:underline'"  class=" font-bold     uppercase cursor-pointer"
+                    @click="tooglelManagement">
+                        c. {{__('Lifecycle Management')}}</a>
+                    </div>
+
+                    <div :class="qframework3 ? 'text-red-700 underline' : 'text-gray-300 hover:underline'"  class="pl-6  text-sm mb-3  cursor-pointer"
+                    @click="toogleqFramework3">
+                        Criteria, metric question, and scoring framework
+                    </div>
                 </li>
                 <li class="text-gray-300 text-sm  ">
-                    <template x-if="cWellbeing">
-                        <a class="uppercase underline text-red-700  cursor-pointer"
-                        @click="tooglecWellbeing"
-                        >d. {{__('Community Wellbeing')}}</a>
-                    </template>
-                    <template x-if="!cWellbeing">
-                        <a class="uppercase hover:underline text-gray-300  cursor-pointer"
-                        @click="tooglecWellbeing"
-                        >d. {{__('Community Wellbeing')}}</a>
-                    </template>
-                    <template x-if="qframework4">
-                        <p class="pl-6 text-red-700 text-sm mb-3 underline cursor-pointer"
-                        @click="toogleqFramework4"
-                        >Criteria, metric question, and scoring framework
-                        </p>
-                    </template>
-                    <template x-if="!qframework4">
-                        <p class="pl-6 text-gray-300 text-sm mb-3 hover:underline cursor-pointer"
-                        @click="toogleqFramework4"
-                        >Criteria, metric question, and scoring framework
-                        </p>
-                    </template>
+
+                    <div :class="cWellbeing ? 'text-red-700 underline' : 'text-gray-300 hover:underline'"  class=" font-bold     uppercase cursor-pointer"
+                    @click="tooglecWellbeing">
+                        d. {{__('Community Wellbeing')}}</a>
+                    </div>
+
+                    <div :class="qframework4 ? 'text-red-700 underline' : 'text-gray-300 hover:underline'"  class="pl-6  text-sm mb-3  cursor-pointer"
+                    @click="toogleqFramework4">
+                        Criteria, metric question, and scoring framework
+                    </div>
                 </li>
                 <li class="text-gray-300 text-sm  ">
-                    <template x-if="wCondition">
-                        <a class="uppercase underline text-red-700  cursor-pointer"
-                        @click="tooglewCondition"
-                        >e. {{__('Working Conditions')}}</a>
-                    </template>
-                    <template x-if="!wCondition">
-                        <a class="uppercase hover:underline text-gray-300  cursor-pointer"
-                        @click="tooglewCondition"
-                        >e. {{__('Working Conditions')}}</a>
-                    </template>
-                    <template x-if="qframework5">
-                        <p class="pl-6 text-red-700 text-sm mb-3 underline cursor-pointer"
-                        @click="toogleqFramework5"
-                        >Criteria, metric question, and scoring framework
-                        </p>
-                    </template>
-                    <template x-if="!qframework5">
-                        <p class="pl-6 text-gray-300 text-sm mb-3 hover:underline cursor-pointer"
-                        @click="toogleqFramework5"
-                        >Criteria, metric question, and scoring framework
-                        </p>
-                    </template>
+                    <div :class="wCondition ? 'text-red-700 underline' : 'text-gray-300 hover:underline'"  class=" font-bold     uppercase cursor-pointer"
+                    @click="tooglewCondition">
+                        e. {{__('Working Conditions')}}</a>
+                    </div>
+
+                    <div :class="qframework5 ? 'text-red-700 underline' : 'text-gray-300 hover:underline'"  class="pl-6  text-sm mb-3  cursor-pointer"
+                    @click="toogleqFramework5">
+                        Criteria, metric question, and scoring framework
+                    </div>
                 </li>
                 <li class="text-gray-300 text-sm  ">
-                    <template x-if="eResponsibility">
-                        <a class="uppercase underline text-red-700 cursor-pointer"
-                        @click="toogleeResponsibility"
-                        >f. {{__('Environmental Responsibility')}}</a>
-                    </template>
-                    <template x-if="!eResponsibility">
-                        <a class="uppercase hover:underline text-gray-300  cursor-pointer"
-                        @click="toogleeResponsibility"
-                        >f. {{__('Environmental Responsibility')}}</a>
-                    </template>
-                    <template x-if="qframework6">
-                        <p class="pl-6 text-red-700 text-sm mb-3 underline cursor-pointer"
-                        @click="toogleqFramework6"
-                        >Criteria, metric question, and scoring framework
-                        </p>
-                    </template>
-                    <template x-if="!qframework6">
-                        <p class="pl-6 text-gray-300 text-sm mb-3 hover:underline cursor-pointer"
-                        @click="toogleqFramework6"
-                        >Criteria, metric question, and scoring framework
-                        </p>
-                    </template>
+                    <div :class="eResponsibility ? 'text-red-700 underline' : 'text-gray-300 hover:underline'"  class=" font-bold     uppercase cursor-pointer"
+                    @click="toogleeResponsibility">
+                        f. {{__('Environmental Responsibility')}}</a>
+                    </div>
+
+                    <div :class="qframework6 ? 'text-red-700 underline' : 'text-gray-300 hover:underline'"  class="pl-6  text-sm mb-3  cursor-pointer"
+                    @click="toogleqFramework6">
+                        Criteria, metric question, and scoring framework
+                    </div>
                 </li>
 
 
@@ -208,7 +120,7 @@
     </ul>
 
     {{-- thematic mobile --}}
-    <div class="w-full bg-black col-span-12 -mt-6 mb-2 rounded sm:hidden block" x-show="thematicDropdown" x-transition @click.away="thematicDropdown = false">
+    <div class="w-full bg-black col-span-12 -mt-6 mb-2 rounded sm:hidden block" x-show="thematicDropdown" x-cloak style="display: none !important" x-transition @click.away="thematicDropdown = false">
         <ul class="pl-6  mt-2 ">
             <li class= "text-sm  ">
                 <template x-if="economicdev">

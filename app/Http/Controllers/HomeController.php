@@ -16,6 +16,7 @@ class HomeController extends Controller
     public function index(){
         $resultCode = $this->getCode();
         $title = 'Quitcoal - Responsible Mining Index';
-        return view('pages.index', compact('title','resultCode'));
+        $nav = 'index';
+        return view('pages.index', compact('title','resultCode', 'nav'));
     }
 }

@@ -18,8 +18,11 @@
 
     @livewireScripts
     <script src="{{ asset('js/app.js') }}" defer></script>
+    <script src="https://cdn.jsdelivr.net/gh/livewire/turbolinks@v0.1.x/dist/livewire-turbolinks.js" data-turbolinks-eval="false" data-turbo-eval="false"></script>
     <script src="{{ asset('js/alpine.js')}} "></script>
     <script src="{{ asset('js/dark.js')}} "></script>
+    <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
+
 </head>
 
 <body class="selection-bg dark:selection-bg bg-white dark:bg-newgray-900">

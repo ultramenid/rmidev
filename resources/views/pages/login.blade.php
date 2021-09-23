@@ -13,13 +13,19 @@
     {{-- disable turbolinks cache --}}
     <meta name="turbolinks-cache-control" content="no-cache">
 
-
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
-    <link href="{{ asset('css/app.css') }}" rel="stylesheet" >
-    <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
-    <script src="{{ asset('js/app.js') }}" defer data-turbolinks-suppress-warning></script>
-    <script src="{{ asset('js/dark.js')}}"></script>
+
+    <link  href="{{ asset('css/app.css') }}" rel="stylesheet" >
     @livewireStyles
+
+    @livewireScripts
+
+    <script src="{{ asset('js/app.js') }}" defer ></script>
+    <script src="https://cdn.jsdelivr.net/gh/livewire/turbolinks@v0.1.x/dist/livewire-turbolinks.js" data-turbolinks-eval="false" data-turbo-eval="false"></script>
+
+    <script src="{{ asset('js/alpine.js')}} " ></script>
+    <script src="{{ asset('js/dark.js')}} " ></script>
+    <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
 
 </head>
 
@@ -28,7 +34,5 @@
     <div class="h-screen flex items-center bg-gray-200 dark:bg-newgray-900  px-4">
         <livewire:login-component />
     </div>
-
-    @livewireScripts
 </body>
 </html>

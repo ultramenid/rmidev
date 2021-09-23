@@ -49,9 +49,9 @@
                 this.qframework5 = false,
                 this.eResponsibility = false,
                 this.qframework6 = false,
-                this.colorthematic = true,
                 this.colorthematic = true
             },
+
             toogleqFramework1(){
                 this.intro = false,
                 this.economicdev =  false,

@@ -34,6 +34,7 @@ class MethodologiController extends Controller{
     public function index(){
         // $data = $this->getContentMethodology();
         $title = $this->setTitle();
-        return view('pages.methodology', compact('title'));
+        $nav = 'methodology';
+        return view('pages.methodology', compact('title', 'nav'));
     }
 }

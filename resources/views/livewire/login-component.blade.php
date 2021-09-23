@@ -29,7 +29,7 @@
                 </svg>
             </button>
 
-            <p class="text-xs text-center mt-4 "><a href="{{ url('/') }}" >Continue to site. . </a></p>
+            <p class="text-xs text-center mt-4 "><a data-turbolinks="false"  href="{{ url('/') }}" >Continue to site. . </a></p>
         </div>
 
 

@@ -16,6 +16,7 @@ class AboutController extends Controller
 
     public function index(){
         $title = $this->setTitle();
-        return view('pages.about', compact('title'));
+        $nav = "about";
+        return view('pages.about', compact('title', 'nav'));
     }
 }

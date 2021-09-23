@@ -26,13 +26,15 @@ class CorporateProfileController extends Controller{
         $title = $this->setTitle();
         // dd($this->getCorporates());
         $corporates = $this->getCorporates();
-        return view('pages.corporateprofile', compact('title', 'corporates'));
+        $nav = 'corporateprofile';
+        return view('pages.corporateprofile', compact('title', 'corporates','nav'));
     }
 
 
     public function detail($lang, $id){
         $id = $id;
+        $nav = 'corporateprofile';
         $title =  'Detail Corporate - Responsible Mining Index';
-        return view('pages.corporatesdetail', compact('title', 'id'));
+        return view('pages.corporatesdetail', compact('title', 'id', 'nav'));
     }
 }

@@ -277,6 +277,7 @@
             </div>
 
         </div>
+
         <script src="{{ asset('assets/richeditor/ckeditor.js') }}"></script>
 
         <script>
