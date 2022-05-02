@@ -11,78 +11,34 @@
 
     <main class="bgrmi h-min-screen">
 
-        {{-- flex select
-        <div class="max-w-6xl mx-auto px-6 md:px-8 sm:py-16 py-8">
-            <div class="sm:flex flex-row lg:space-x-16 md:space-x-12 space-x-0 sm:space-y-0 space-y-2">
-                <div x-data="{ open: false }" class="relative py-1 sm:w-96 w-full">
-                    <button @click="open = ! open"
-                    class="bg-gray-300 uppercase py-2 px-3 w-full text-left ">
-                    SELECT PRINCIPLE
-                    </button>
-
-                    <div x-show="open"  x-transition @click.outside="open = false" class="z-10 absolute bg-gray-300  w-full py-1 px-3 flex-row space-y-2" x-cloak style="display: none !important;">
-                        <p @click="open=false" class="hover:bg-gray-200 cursor-pointer">Select 1</p>
-                        <p @click="open=false" class="hover:bg-gray-200 cursor-pointer">Select 1</p>
-                        <p @click="open=false" class="hover:bg-gray-200 cursor-pointer">Select 1</p>
-                        <p @click="open=false" class="hover:bg-gray-200 cursor-pointer">Select 1</p>
-                    </div>
-                </div>
-                <div x-data="{ open: false }" class="relative py-1 sm:w-96 w-full">
-                    <button @click="open = ! open"
-                    class="bg-gray-300 uppercase py-2 px-3 w-full text-left ">
-                    SELECT CORPORATE
-                    </button>
-
-                    <div x-show="open" x-transition @click.outside="open = false" class="z-10 absolute bg-gray-300  w-full py-1 px-3 flex-row space-y-2" x-cloak style="display: none !important;">
-                        <p @click="open=false" class="hover:bg-gray-200 cursor-pointer">Select 1</p>
-                        <p @click="open=false" class="hover:bg-gray-200 cursor-pointer">Select 1</p>
-                        <p @click="open=false" class="hover:bg-gray-200 cursor-pointer">Select 1</p>
-                        <p @click="open=false" class="hover:bg-gray-200 cursor-pointer">Select 1</p>
-                    </div>
-                </div>
-                <div x-data="{ open: false }" class="relative py-1 sm:w-96 w-full">
-                    <button @click="open = ! open"
-                    class="bg-gray-300 uppercase py-2 px-3 w-full text-left ">
-                    LIST OF A REGION
-                    </button>
-
-                    <div x-show="open" x-transition @click.outside="open = false" class="z-10 absolute bg-gray-300  w-full py-1 px-3 flex-row space-y-2" x-cloak style="display: none !important;">
-                        <p @click="open=false" class="hover:bg-gray-200 cursor-pointer">Select 1</p>
-                        <p @click="open=false" class="hover:bg-gray-200 cursor-pointer">Select 1</p>
-                        <p @click="open=false" class="hover:bg-gray-200 cursor-pointer">Select 1</p>
-                        <p @click="open=false" class="hover:bg-gray-200 cursor-pointer">Select 1</p>
-                    </div>
-                </div>
-            </div>
-
-        </div> --}}
-
-
 
         {{-- Overall text --}}
         <div class="max-w-6xl mx-auto sm:py-16 py-8">
 
 
-            <h1 class="uppercase text-center text-gray-300 text-3xl font-bold mb-6">{{__('Overall Company Result')}}</h1>
-            <div class=" w-full h-full mb-6">
-                <span class="inline-flex items-center space-x-3 px-4 ">
-                    <img src="{{ asset('assets/handshake.png') }}" alt="" class="h-10">
-                    <a href="#" class="text-gray-300 sm:text-2xl inline-flex underline  text-xl">{{__('Bussines Conduct')}}</a>
-                </span>
-                <livewire:chart-bconduct />
+            <h1 class="uppercase text-center text-gray-300 sm:text-3xl text-xl font-bold mb-6 px-4">{{__('Overall Company Result')}}</h1>
+            <div class="flex sm:flex-row flex-col justify-between ">
+                <div class=" w-full h-full ">
+                    <span class="inline-flex items-center space-x-3 px-4 ">
+                        <img src="{{ asset('assets/handshake.png') }}" alt="" class="h-10">
+                        <a href="#" class="text-gray-300 sm:text-2xl inline-flex underline  text-xl">{{__('Bussines Conduct')}}</a>
+                    </span>
+                    <livewire:chart-bconduct />
+                </div>
+                <div class=" w-full h-full">
+                    <span class="inline-flex items-center space-x-3 px-4  ">
+                        <img src="{{ asset('assets/leaf.png') }}" alt="" class="w-9">
+                        <a href="#" class="text-gray-300 sm:text-2xl inline-flex underline text-xl">Environmental Responsibility</a>
+                    </span>
+                    <livewire:chart-eresponsibility />
+                </div>
             </div>
-            <div class=" w-full h-full">
-                <span class="inline-flex items-center space-x-3 px-4  ">
-                    <img src="{{ asset('assets/leaf.png') }}" alt="" class="w-9">
-                    <a href="#" class="text-gray-300 sm:text-2xl inline-flex underline text-xl">Environmental Responsibility</a>
-                </span>
-                <livewire:chart-eresponsibility />
-            </div>
+
         </div>
 
         {{-- rmi framework --}}
         <div class="max-w-6xl mx-auto px-6 md:px-8 sm:py-16 py-8">
-            <h1 class="uppercase text-center text-gray-300 text-3xl font-bold mb-6">{{__('RMI analytical framework')}}</h1>
+            <h1 class="uppercase text-center text-gray-300 sm:text-3xl text-xl font-bold mb-6">{{__('RMI analytical framework')}}</h1>
             <div class="flex  items-center ">
                 <div class="w-3/12 transform -rotate-90 lg:-mx-28 md:-mx-16 md:block hidden text-center ">
                     <a class=" text-gray-300 h-full ">{{__('Thematic Areas')}}</a>
@@ -235,24 +191,50 @@
 
 
 
+        <h1 class="uppercase text-center text-gray-300 sm:text-3xl text-xl font-bold mb-6">{{__('Companies')}}</h1>
+        {{-- map --}}
+         <div class="flex sm:flex-row flex-col justify-between">
+            <div id="map" class="sm:block hidden sm:w-10/12 w-full overflow-auto h-screen sm:order-1 order-2" style=" background-color: #111725 "></div>
+            <div class="flex flex-wrap sm:w-2/12 w-full sm:order-2 order-1  z-50">
+                <div id="data1" style="background-color: #111725;"  class=" hover:bg-gray-500 text-yellow-100 font-bold hover:underscore lg:w-6/12 w-full items-center flex justify-center px-2 border border-gray-800 cursor-pointer">
+                    <a href="https://rmidev.herokuapp.com/en/corporate/6">ADARO</a>
+                </div>
+                <div id="data2" style="background-color: #111725;"  class=" hover:bg-gray-500 text-yellow-100 font-bold hover:underscore lg:w-6/12 w-full items-center flex justify-center px-2 border border-gray-800 cursor-pointer">
+                    <a href="https://rmidev.herokuapp.com/en/corporate/7">ANTAM</a>
+                </div>
+                <div id="data3" style="background-color: #111725;"  class=" hover:bg-gray-500 text-yellow-100 font-bold hover:underscore lg:w-6/12 w-full items-center flex justify-center px-2 border border-gray-800 cursor-pointer">
+                    <a href="https://rmidev.herokuapp.com/en/corporate/14">BRMS</a>
+                </div>
+                <div id="data4" style="background-color: #111725;"  class=" hover:bg-gray-500 text-yellow-100 font-bold hover:underscore lg:w-6/12 w-full items-center flex justify-center px-2 border border-gray-800 cursor-pointer">
+                    <a href="https://rmidev.herokuapp.com/en/corporate/12">BUKIT ASAM</a>
+                </div>
+                <div id="data5" style="background-color: #111725;"  class=" hover:bg-gray-500 text-yellow-100 font-bold hover:underscore lg:w-6/12 w-full items-center flex justify-center px-2 border border-gray-800 cursor-pointer">
+                    <a href="https://rmidev.herokuapp.com/en/corporate/10">CITA</a>
+                </div>
+                <div id="data6" style="background-color: #111725;"  class=" hover:bg-gray-500 text-yellow-100 font-bold hover:underscore lg:w-6/12 w-full items-center flex justify-center px-2 border border-gray-800 cursor-pointer">
+                    <a href="https://rmidev.herokuapp.com/en/corporate/13">GEMS</a>
+                </div>
+                <div id="data7" style="background-color: #111725;"  class=" hover:bg-gray-500 text-yellow-100 font-bold hover:underscore lg:w-6/12 w-full items-center flex justify-center px-2 border border-gray-800 cursor-pointer">
+                    <a href="https://rmidev.herokuapp.com/en/corporate/9">MERDEKA</a>
+                </div>
+                <div id="data8" style="background-color: #111725;"  class=" hover:bg-gray-500 text-yellow-100 font-bold hover:underscore lg:w-6/12 w-full items-center flex justify-center px-2 border border-gray-800 cursor-pointer">
+                    <a href="https://rmidev.herokuapp.com/en/corporate/11">TIMAH</a>
+                </div>
+                <div id="data9" style="background-color: #111725;"  class=" hover:bg-gray-500 text-yellow-100 font-bold hover:underscore lg:w-6/12 w-full items-center flex justify-center px-2 border border-gray-800 cursor-pointer">
+                    <a href="https://rmidev.herokuapp.com/en/corporate/5">TOBA BARA</a>
+                </div>
+                <div id="data10" style="background-color: #111725;"  class=" hover:bg-gray-500 text-yellow-100 font-bold hover:underscore lg:w-6/12 w-full items-center flex justify-center px-2 border border-gray-800 cursor-pointer">
+                    <a href="https://rmidev.herokuapp.com/en/corporate/8">VALE</a>
+                </div>
 
-         {{-- map --}}
-        <div class="max-w-6xl mx-auto px-6 md:px-8 sm:py-8 py-8">
-            {{-- <img loading="lazy" src="{{ asset('assets/indonesiamap.png') }}" alt=""> --}}
-            @if ($resultCode)
-            <div>
-                {!! $resultCode->code !!}
             </div>
-            @endif
 
         </div>
 
 
-
-
          {{-- companies text --}}
         <div class="max-w-6xl mx-auto px-6 md:px-8 sm:py-16 py-8">
-           <h1 class="uppercase text-center text-gray-300 text-3xl font-bold mb-6">{{__('Companies')}}</h1>
+           <h1 class="uppercase text-center text-gray-300 sm:text-3xl text-xl font-bold mb-6">{{__('Companies')}}</h1>
            <p class="text-gray-300 sm:text-center text-left font-semibold leading-8">
             {{__('The RMI Reports 2020 covers 38 companies from 19 home countries, including publicly-listed, stated-owned and private companies. These companies operate in more than 780 mine sites in 49 producing countries and control over 200 closed or suspended mine sites. The assesment covers most mined commodities, excluding oil and gas. it is possible to filter by company, using the list of all companies on the left hand side, and also to filter by producing country or commodity, using the fields below.')}}</p>
         </div>

@@ -5,25 +5,29 @@
 </div>
 @push('scripts')
     <script>
-         var options = {
+        var corporatedata = JSON.parse('<?php echo $corporateData  ?>');
+        // console.log(corporatedata);
+        var options = {
           series: [{
             name: 'Business Execution %' ,
             type: 'bar',
-            data: [@foreach ($corporateData as $name) '{{$name->bExecution}}', @endforeach],
+            data: corporatedata.bExecution,
           }, {
             name: 'Average %',
             type: 'line',
-            data: [@foreach ($corporateData as $name) '{{$name->bAverage}}', @endforeach],
+            data: corporatedata.bAverage,
           },{
             name: 'B-ALL',
             type: 'area',
-            data: [@foreach ($corporateData as $name) '{{$name->bAll}}', @endforeach],
+            data: corporatedata.bAll,
           }],
 
           chart: {
+            id: 'bconduct',
+            group: 'charts',
             foreColor: 'gray',
             width: '100%',
-            height: 650,
+            height: 450,
             type: 'line',
             stacked: false,
             toolbar: {
@@ -40,7 +44,6 @@
               pan: false
               },
             },
-
           },
           stroke: {
             width: [0, 2, 5],
@@ -66,10 +69,10 @@
           markers: {
             size: 0
           },
-          labels:[@foreach ($corporateData as $name) '{{$name->name}}', @endforeach],
+          labels:corporatedata.name,
           xaxis: {
-              type: 'category',
-              categories: []
+              type: 'dec',
+              categories: corporatedata.name
           },
           yaxis: {
             type: 'string',

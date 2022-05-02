@@ -8,7 +8,7 @@ use Illuminate\Http\Request;
 class FinancialAndOwnershipController extends Controller
 {
     public function index(){
-        $title = 'Financial And Ownership - Responsible Mining Index';
+        $title = 'Financial And Ownership - Kinerja Tambang Indonesia';
         $nav = 'pages';
         $sidenav = 'financialandownership';
         return view('pages.cms.financialandownership', compact('title', 'nav','sidenav'));

@@ -8,7 +8,7 @@ use Livewire\WithPagination;
 
 class CorporatesMasterComponent extends Component{
     use WithPagination;
-    public $dataField = 'name', $dataOrder = 'asc', $paginate = 10, $search = '';
+    public $dataField = 'name', $dataOrder = 'asc', $paginate = 15, $search = '';
     public $deleter = false;
     public $deleteName, $deleteID;
 

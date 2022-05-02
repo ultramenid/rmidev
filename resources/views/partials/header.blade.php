@@ -58,7 +58,7 @@
         </div>
     <div class=" flex justify-center z-20">
         <a href="{{ route('index', app()->getlocale() )}}">
-            <img loading="lazy" src="{{ asset('assets/RMIndex_vector.png') }}" alt="" class="w-72 sm:py-16 py-16">
+            <img loading="lazy" src="{{ asset('assets/LogoKTIPutih.png') }}" alt="" class="sm:w-72 w-48 sm:py-12 py-16">
         </a>
     </div>
 </header>

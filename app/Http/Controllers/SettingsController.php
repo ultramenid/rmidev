@@ -7,7 +7,7 @@ use Illuminate\Http\Request;
 class SettingsController extends Controller
 {
    public function index(){
-    $title = 'Dashboard - Responsible Mining Index';
+    $title = 'Dashboard - Kinerja Tambang Indonesia';
     $nav = 'settings';
     $sidenav = 'general';
     return view('pages.cms.settings', compact('title', 'nav', 'sidenav'));

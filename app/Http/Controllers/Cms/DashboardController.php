@@ -6,7 +6,7 @@
 class DashboardController extends Controller
 {
     public function index(){
-        $title = 'Dashboard - Responsible Mining Index';
+        $title = 'Dashboard - Kinerja Tambang Indonesia';
         $nav = 'dashboard';
         return view('pages.cms.dashboard', compact('title', 'nav'));
     }

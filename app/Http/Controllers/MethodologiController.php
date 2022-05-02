@@ -26,9 +26,9 @@ class MethodologiController extends Controller{
 
     public function setTitle(){
         if (App::getLocale() == 'id') {
-          return  'Methodologi - Responsible Mining Index';
+          return  'Methodologi - Kinerja Tambang Indonesia';
         }
-        return 'Methodology - Responsible Mining Index';
+        return 'Methodology - Kinerja Tambang Indonesia';
     }
 
     public function index(){

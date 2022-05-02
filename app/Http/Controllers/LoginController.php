@@ -7,7 +7,7 @@ use Illuminate\Http\Request;
 class LoginController extends Controller
 {
     public function index(){
-        $title = 'Login - Responsible Mining Index';
+        $title = 'Login - Kinerja Tambang Indonesia';
         return view('pages.login', compact('title'));
     }
 }

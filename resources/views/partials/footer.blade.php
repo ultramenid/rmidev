@@ -2,7 +2,7 @@
     <div class="max-w-6xl mx-auto px-6 md:px-8 bg-black">
         <div class="sm:flex flex-row justify-between sm:space-y-0 space-y-6">
             <div>
-                <h2 class="uppercase text-gray-300 text-3xl font-bold mb-6">Quitcoal</h2>
+                <h2 class="uppercase text-gray-300 text-3xl font-bold mb-6">Kinerja Tambang Indonesia</h2>
                 <p class="text-gray-300 w-64">
                     {{__('Efforts to disclose information in the environmental field seem to be getting backwards. HGU as an instrument in the exploitation of state land is again declared as exempt information.')}}
                 </p>

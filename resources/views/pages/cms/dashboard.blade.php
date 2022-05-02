@@ -6,7 +6,7 @@
 
     <main class="bg-white dark:bg-newgray-900 h-screen ">
         <div class="max-w-6xl px-6 mx-auto py-6">
-            <livewire:embed-map-component />
+            <h1 class="dark:text-gray-300">Coming soon..</h1>
         </div>
     </main>
 @endsection

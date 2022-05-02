@@ -9,9 +9,9 @@ class AboutController extends Controller
 {
     public function setTitle(){
         if (App::getLocale() == 'id') {
-          return  'Tentang - Responsible Mining Index';
+          return  'Tentang - Kinerja Tambang Indonesia';
         }
-        return 'About - Responsible Mining Index';
+        return 'About - Kinerja Tambang Indonesia';
     }
 
     public function index(){

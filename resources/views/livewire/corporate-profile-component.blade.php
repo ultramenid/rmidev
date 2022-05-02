@@ -53,32 +53,32 @@
         <h1 class="sm:text-3xl text-2xl mb-6 font-semibold">{{ $data->name }}</h1>
 
         {{-- Overview --}}
-        <div x-show="Overview" x-cloak style="display: none !important" class="min-h-screen  ">
+        <div x-show="Overview" x-cloak style="display: none !important" class="min-h-screen  prose max-w-none">
             {!! $data->overview !!}
         </div>
 
          {{-- Operation Area --}}
-         <div x-show="Operation" x-cloak style="display: none !important" class="min-h-screen  ">
+         <div x-show="Operation" x-cloak style="display: none !important" class="min-h-screen prose max-w-none">
             {!! $data->operationarea !!}
         </div>
 
         {{-- Financial --}}
-        <div x-show="Financial" x-cloak style="display: none !important" class="min-h-screen  ">
+        <div x-show="Financial" x-cloak style="display: none !important" class="min-h-screen prose max-w-none">
             {!! $data->financialownership !!}
         </div>
 
         {{-- ownership --}}
-        <div x-show="Ownership" x-cloak style="display: none !important" class="min-h-screen  ">
+        <div x-show="Ownership" x-cloak style="display: none !important" class="min-h-screen prose max-w-none">
             {!! $data->ownership !!}
         </div>
 
         {{-- Corporate Network --}}
-        <div x-show="CorporateNetwork" x-cloak style="display: none !important" class="min-h-screen   ">
+        <div x-show="CorporateNetwork" x-cloak style="display: none !important" class="min-h-screen   prose max-w-none">
             {!! $data->corporatenetwork !!}
         </div>
 
         {{-- Spotlight Cases --}}
-        <div x-show="Spotlight" x-cloak style="display: none !important" class="min-h-screen  ">
+        <div x-show="Spotlight" x-cloak style="display: none !important" class="min-h-screen prose max-w-none">
             {!! $data->spotlightcases !!}
         </div>
     </div>

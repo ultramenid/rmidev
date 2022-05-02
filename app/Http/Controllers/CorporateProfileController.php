@@ -10,15 +10,15 @@ class CorporateProfileController extends Controller{
 
     public function setTitle(){
         if (App::getLocale() == 'id') {
-          return  'Profil Perusahaan - Responsible Mining Index';
+          return  'Profil Perusahaan - Kinerja Tambang Indonesia';
         }
-        return 'Corporate Profile - Responsible Mining Index';
+        return 'Corporate Profile - Kinerja Tambang Indonesia';
     }
 
     public function getCorporates(){
         return DB::table('corporateprofilepages')
-                    ->select('name', 'id')
-                    ->orderBy('id', 'desc')
+                    ->select('name', 'id','lokasi')
+                    ->orderBy('name', 'asc')
                     ->get();
     }
 
@@ -34,7 +34,7 @@ class CorporateProfileController extends Controller{
     public function detail($lang, $id){
         $id = $id;
         $nav = 'corporateprofile';
-        $title =  'Detail Corporate - Responsible Mining Index';
+        $title =  'Detail Corporate - Kinerja Tambang Indonesia';
         return view('pages.corporatesdetail', compact('title', 'id', 'nav'));
     }
 }

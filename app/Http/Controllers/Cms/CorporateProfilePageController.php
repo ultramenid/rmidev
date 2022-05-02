@@ -7,14 +7,14 @@ class CorporateProfilePageController extends Controller
 {
 
     public function overview(){
-        $title = 'Adding Corporate - Responsible Mining Index';
+        $title = 'Adding Corporate - Kinerja Tambang Indonesia';
         $nav = 'corporates';
         $sidenav = 'overview';
         return view('pages.cms.corporates.addcorporate', compact('title','nav','sidenav'));
     }
 
     public function edit($id){
-        $title = 'Editing Corporate - Responsible Mining Index';
+        $title = 'Editing Corporate - Kinerja Tambang Indonesia';
         $nav = 'corporates';
         $sidenav = 'overview';
         $id = $id;
@@ -23,7 +23,7 @@ class CorporateProfilePageController extends Controller
 
 
     public function index(){
-        $title = 'Corporates Profile - Responsible Mining Index';
+        $title = 'Corporates Profile - Kinerja Tambang Indonesia';
         $nav = 'corporates';
         $sidenav = 'overview';
         return view('pages.cms.corporateprofile', compact('title', 'nav','sidenav'));

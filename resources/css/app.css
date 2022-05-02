@@ -19,12 +19,19 @@
         color: white;
 }
 
+.text-rmi{
+    color: #152136;
+}
 .bgrmi{
     background-color: #152136 ;
 }
 
 .bgdarkrmi{
     background-color: #111725;
+}
+
+.border-rmi{
+    border-color: #152136;
 }
 
 .bg-edevelopment1{

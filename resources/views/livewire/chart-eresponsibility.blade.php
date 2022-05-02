@@ -5,25 +5,29 @@
 </div>
 @push('scripts')
     <script>
-         var options = {
+        var corporatedata = JSON.parse('<?php echo $corporateData ?>')
+        // console.log(corporatedata)
+        var options = {
           series: [{
             name: 'Environmental Responsibility %' ,
             type: 'bar',
-            data: [@foreach ($corporateData as $name) '{{$name->eResponsibility}}', @endforeach],
+            data: corporatedata.eResponsibility,
           }, {
             name: 'Average %',
             type: 'line',
-            data: [@foreach ($corporateData as $name) '{{$name->eAverage}}', @endforeach],
+            data: corporatedata.eAverage,
           },{
             name: 'F-ALL',
             type: 'area',
-            data: [@foreach ($corporateData as $name) '{{$name->fAll}}', @endforeach],
+            data: corporatedata.fAll,
           }],
 
           chart: {
+            id: 'erespon',
+            group: 'charts',
             foreColor: 'gray',
             width: '100%',
-            height: 650,
+            height: 450,
             type: 'line',
             stacked: false,
             toolbar: {
@@ -66,7 +70,7 @@
           markers: {
             size: 0
           },
-          labels:[@foreach ($corporateData as $name) '{{$name->name}}', @endforeach],
+          labels:corporatedata.name,
           xaxis: {
               type: 'category',
               categories: []

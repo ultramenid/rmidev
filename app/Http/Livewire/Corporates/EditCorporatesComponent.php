@@ -10,13 +10,15 @@ class EditCorporatesComponent extends Component{
     public $idcorporates;
     public $sidenav = 'overview';
     public $overview = true, $operationalrea = false, $financial = false, $corporatenetwork = false, $spotlight = false;
-    public $overviewenglish, $overviewindonesia, $operationenglish, $operationindonesia, $financialenglish, $financialindonesia, $ownershipenglish, $ownershipindonesia, $corporatenetworkenglish, $corporatenetworkindonesia, $corporatename, $spotlightenglish, $spotlightindonesia, $execution, $bAverage, $bAll, $responsibility, $fAverage, $fAll;
+    public $overviewenglish, $overviewindonesia, $operationenglish, $operationindonesia, $financialenglish, $financialindonesia, $ownershipenglish, $ownershipindonesia, $corporatenetworkenglish, $corporatenetworkindonesia, $corporatename, $spotlightenglish, $spotlightindonesia, $execution, $bAverage, $bAll, $responsibility, $fAverage, $fAll, $groupname, $location;
 
     public function mount($idcorporates){
         $this->idcorporates = $idcorporates;
         $data = DB::table('corporateprofilepages')->where('id', $idcorporates)->first();
 
         $this->corporatename = $data->name;
+        $this->groupname = $data->shortname;
+        $this->location = $data->lokasi;
         $this->overviewenglish = $data->overviewenglish;
         $this->overviewindonesia = $data->overviewindonesia;
         $this->operationenglish = $data->operationareaenglish;
@@ -42,6 +44,8 @@ class EditCorporatesComponent extends Component{
        if($this->setValidation()){
         DB::table('corporateprofilepages')->where('id', $this->idcorporates)->update([
             'name'=> $this->corporatename,
+            'shortname' => $this->groupname,
+            'lokasi' => $this->location,
             'overviewenglish' => $this->overviewenglish,
             'overviewindonesia' => $this->overviewindonesia,
             'operationareaenglish' => $this->operationenglish,
@@ -121,12 +125,12 @@ class EditCorporatesComponent extends Component{
             $this->emit('toast',$message, $type);
             return;
         }elseif($this->corporatenetworkenglish == ''){
-            $message = 'Corporate Network content english is required';
+            $message = 'Corporation content english is required';
             $type = 'error'; //error, success
             $this->emit('toast',$message, $type);
             return;
         }elseif($this->corporatenetworkindonesia == ''){
-            $message = 'Corporate Network content indonesia is required';
+            $message = 'Corporation content indonesia is required';
             $type = 'error'; //error, success
             $this->emit('toast',$message, $type);
             return;
@@ -137,6 +141,16 @@ class EditCorporatesComponent extends Component{
             return;
         }elseif($this->spotlightindonesia == ''){
             $message = 'Spotlight Cases content indonesia is required';
+            $type = 'error'; //error, success
+            $this->emit('toast',$message, $type);
+            return;
+        }elseif($this->groupname == ''){
+            $message = 'Group name is required';
+            $type = 'error'; //error, success
+            $this->emit('toast',$message, $type);
+            return;
+        }elseif($this->location == ''){
+            $message = 'Location is required';
             $type = 'error'; //error, success
             $this->emit('toast',$message, $type);
             return;

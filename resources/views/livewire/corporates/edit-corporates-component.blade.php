@@ -135,9 +135,18 @@
                     <h1 class="text-2xl text-newgray-900 dark:text-newgray-300 font-semibold ">Overview</h1>
                 </div>
                 <div class="mb-6">
-                    <label class="text-newgray-900 dark:text-gray-300">Corporate Name:</label>
+                    <label class="text-newgray-900 dark:text-gray-300">Name:</label>
                     <input type="text" class="w-full border border-gray-300 py-1 px-4 focus:outline-none" id="corporatename" wire:model.defer='corporatename' placeholder="Name. . . ">
                     @error('corporatename') <span class="text-red-500">{{ $message }}</span>@enderror
+                </div>
+                <div class="mb-6">
+                    <label class="text-newgray-900 dark:text-gray-300">Group Name:</label>
+                    <input type="text" class="w-full border border-gray-300 py-1 px-4 focus:outline-none" id="groupname" wire:model.defer='groupname' placeholder="Group Name. . . ">
+                    @error('groupname') <span class="text-red-500">{{ $message }}</span>@enderror
+                </div>
+                <div class="mb-6 flex flex-col">
+                    <label class="text-newgray-900 dark:text-gray-300">Location</label>
+                    <textarea cols="80" id="location"  rows="4"  wire:model.defer='location' required placeholder="Location. . ." class="border-gray-300 border px-4 py-1 focus:outline-none"></textarea>
                 </div>
                 <p class="text-newgray-900 dark:text-gray-300 ">Content English :</p>
                 <div wire:ignore>
@@ -194,7 +203,7 @@
                 </div>
                 <p class="text-newgray-900 dark:text-gray-300 ">Content English :</p>
                 <div wire:ignore>
-                    <textarea cols="80" id="ownershipenglish"  rows="10"  wire:model.defer='ownershipenglish' required></textarea>
+                    <textarea  cols="80" id="ownershipenglish"  rows="10"wire:model.defer='ownershipenglish' required ></textarea>
                 </div>
 
                 <p class="text-newgray-900 dark:text-gray-300 mt-6">Content Indonesia :</p>
